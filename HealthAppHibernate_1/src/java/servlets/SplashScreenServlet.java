@@ -396,9 +396,9 @@ public class SplashScreenServlet extends HttpServlet
             
             String percentComplete =""; 
           Double truncatedDouble1=0.0;
-        if( (int)progressOfSteps >= 100)
+        if( progressOfSteps >= 100)
         {
-            if((((int)progressOfSteps))>=100||(totalSteps>= 205920))
+            if(((progressOfSteps))>=100||(totalSteps>= 205920))
             {
                 m.setTourfinished("true");
                 MemberDB.updateMember(m);
@@ -414,7 +414,7 @@ public class SplashScreenServlet extends HttpServlet
         else 
             {
                 truncatedDouble1 = BigDecimal.valueOf(progressOfSteps)
-                        .setScale(0, RoundingMode.HALF_UP)
+                        .setScale(0, RoundingMode.HALF_EVEN)
                         .doubleValue();
                 
                 
