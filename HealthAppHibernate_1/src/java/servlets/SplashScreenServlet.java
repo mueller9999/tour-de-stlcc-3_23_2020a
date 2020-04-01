@@ -409,6 +409,9 @@ public class SplashScreenServlet extends HttpServlet
                 percentComplete = " The Tour is complete ";
                 request.setAttribute("progressofsteps",percentComplete);
                 
+                
+                
+                
             }
         }    
         else 
@@ -426,7 +429,7 @@ public class SplashScreenServlet extends HttpServlet
                 percentComplete = truncatedDouble1 + " % of tour complete " + "<br>" ;
                 
                 request.setAttribute("progressofsteps", percentComplete);
-            
+                request.setAttribute("percentcomplete", truncatedDouble1);
             
             }
  
@@ -2411,7 +2414,8 @@ public class SplashScreenServlet extends HttpServlet
         }
        
         URL = "/index.jsp";
-       
+        request.setAttribute("noErrorsAbove", noErrorsAbove);
+        request.setAttribute("enterWasPressed", enterWasPressed);
         session.setAttribute("member", m);
         session.setAttribute("routewithsteps",route);
         request.setAttribute("msg2", msg2);

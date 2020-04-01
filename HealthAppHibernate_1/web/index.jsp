@@ -455,7 +455,60 @@
 	
                         
                           ${progressofsteps}  
-                        
+                             <c:if test="${enterWasPressed&& noErrorsAbove && percentcomplete gt 0 && percentcomplete lt 205921 }">        
+                          
+                              <div id="Progress_Status" > 
+                            <div id="myprogressBar" >     </div> 
+                         
+                          </div> 
+                         
+                           
+                            
+                          </c:if>                       
+                          
+                            
+                            <style> 
+#Progress_Status { 
+  width: 50%; 
+  background-color: #ddd; 
+} 
+  
+#myprogressBar { 
+  width: 2%; 
+  height: 20px; 
+  background-color: #FFA500;
+  
+}
+
+</style> 
+ 
+  
+
+  
+
+  
+<script> 
+function update(percentcomplete) 
+{ 
+  var element = document.getElementById("myprogressBar");    
+  var width = 0; 
+  var identity = setInterval(scene, 10); 
+  function scene()
+  { 
+    if (width >= 100) 
+    { 
+      clearInterval(identity); 
+    } else 
+    {
+      while(width < percentcomplete )
+      {
+        width++;  
+        element.style.width = width + '%';  
+      }
+    } 
+  } 
+} 
+</script> 
 			<img src="images/graph-img.png" class= "graph-img"  alt="">
 
 
@@ -799,7 +852,9 @@
 			<p>Passed</p> --%>
 		</section>
 
-		
+	<script type="text/javascript">
+                    update(${percentcomplete});
+                 </script>	
 	</body>
 
    <footer class="white-section" id="footer">
