@@ -518,7 +518,7 @@ function update(percentcomplete)
 		<section id="reached-place" class="white-section">
 
 			<h3>Tour Places</h3>
-			<p>1) STLCC - Meremec</p>
+			<p>1) STLCC - Meramec</p>
 			<p>2) Museum of Transportation</p>
 			<p>3) STLCC - Wildwood Campus</p>			
 			<p>4) ???</p>
@@ -583,7 +583,7 @@ function update(percentcomplete)
           <table>
                  
             <c:if test="${(member.loctorf1)}">
-                STLCC - Meremec Passed 
+                STLCC - Meramec Passed 
                 
   
             </c:if> 
