@@ -1,0 +1,1 @@
+SELECT * FROM health78.pictures;

@@ -1,0 +1,103 @@
+body {
+  text-align: center;
+
+}
+
+.image{
+width:358px;
+height:60px;
+float: left; 
+/*Lucas */
+margin: 25px 0 0 25px;
+/*Lucas end*/
+
+}
+
+/*Lucas*/
+/* Navigation */
+.navbar{
+	font-family: 'ariel'; 
+	overflow: hidden;
+	position: fixed;
+	line-height: 60px;
+	background-color: #27496d;
+	margin: 0 0 0 0;
+	
+}
+/*Lucas end*/
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.progress-1{
+  margin: 50px 10px 0px;
+}
+.graph-img{
+  width:320px;
+  height:300px;
+  margin: 80px 10px;
+}
+
+h1{
+  font-size: 5.625rem;
+  font-family: 'Reenie Beanie', cursive;
+  color: #27496d;
+}
+.big-heading {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.0;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+h3{
+  font-family: 'Create Round', Lato;
+  font-size: 2 rem;
+}
+
+h4, h5, h6 {
+  font-family: "Crete Round";
+}
+
+.title {
+  position: relative;
+  padding: 50px 0;
+
+}
+
+.colored-section{
+background-color: #2a7886;
+color: #fff;
+}
+
+
+.reached-place{
+  float : left;
+}
+
+.white-section{
+  background-color: #fff;
+  margin: 100px 10px;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+
+    
+  
+    
+
+
+

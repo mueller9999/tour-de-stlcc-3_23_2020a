@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2020, 11:53:45 AM
+    Author     : Michael Mueller
+*/
+
+.LoginCSS
+{
+    position: relative;
+        top: -10px;
+        
+    
+}
+
+.loginCSS4
+{
+     position: relative;
+        top: -150px;
+        
+    
+}
+
+
+
+
+#my_table{
+    margin-top:-360px;
+   
+}
+
+.submitPrevious{
+   text-align: right;
+      
+   
+}
+
+
+
+    
+#main
+{
+		
+	background-color:#002453;
+	/*text-align:center;*/
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+    
+
+
+
+
+

@@ -1,0 +1,1 @@
+SET @@global.max_allowed_packet = 100 * 1048576; -- 100MB
