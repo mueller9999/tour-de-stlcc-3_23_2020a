@@ -492,7 +492,7 @@
 			<p>25) Concord Bowl and Recreation</p>
 			<p>26) Concord Plaza STL</p>
 			<p>27) Laumeir Park</p>
-			<p>28) STLCC - Meramac</p>
+			<p>28) STLCC - Meramec</p>
 
 
 		</section>
