@@ -2049,7 +2049,7 @@ public class SplashScreenServlet extends HttpServlet
            else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),3)==false)
                  
                    && MemberDB.getCurrentSteps(m) > 5702 &&
-                     25344-MemberDB.getCurrentSteps(m)>0))
+                     31046-MemberDB.getCurrentSteps(m)>0))
             {
  
                     msg3 = "Good Work! " + "Only " + (31046-MemberDB.getCurrentSteps(m)) + " steps to go "
