@@ -173,7 +173,7 @@
     <form>
         <table>   
            <c:if test="${(member.loctorf4)}">
-                ${msg7}
+                ${msg35}
         
   
            </c:if> 
@@ -184,7 +184,7 @@
     <form> 
         <table>    
              <c:if test="${(member.loctorf5)}">
-                ${msg8}
+                ${msg36}
         
   
            </c:if> 
@@ -195,7 +195,7 @@
      <form> 
         <table>    
              <c:if test="${(member.loctorf6)}">
-                ${msg9}
+                ${msg37}
         
   
            </c:if> 
@@ -517,35 +517,226 @@ function update(percentcomplete)
 
 		<section id="reached-place" class="white-section">
 
-			<h3>Tour Places</h3>
-			<p>1) STLCC - Meramec</p>
-			<p>2) Museum of Transportation</p>
-			<p>3) STLCC - Wildwood Campus</p>			
-			<p>4) ???</p>
-			<p>5) ???</p>
-			<p>6) ???</p>
-			<p>7) STLCC - Corporate College</p>
-			<p>8) St.Louis Lambert International Airport</p>
-			<p>9) Musick Park</p>
-			<p>10) Imo's Pizza</p>
-			<p>11) STLCC - Florissant Valley</p>
-			<p>12) Koeneman Park</p>
-			<p>13) O'Fallon Park</p>
-			<p>14) Griot Museum of Black History</p>
-			<p>15) STLCC - Harrison Park</p>
-			<p>16) Contemporary Art</p>
-			<p>17) Pappy's Smokehouse</p>
-			<p>18) Ikea</p>
-			<p>19) STLCC - Forest Park</p>
-			<p>20) St.Louis Zoo</p>
-			<p>21) Eat at Gus' Pretzels</p>
-			<p>22) Ted Drewes</p>
-			<p>23) South County Center</p>
-			<p>24) Pink Galleon Billiards and games</p>
-			<p>25) Concord Bowl and Recreation</p>
-			<p>26) Concord Plaza STL</p>
-			<p>27) Laumeir Park</p>
-			<p>28) STLCC - Meramec</p>
+			<h3>Tour Place Information</h3>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Location</th>
+          <th scope="col">Address</th>
+          <th scope="col">Steps</th>
+          <th scope="col">Miles</th>
+          <th scope="col">Total Miles</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/">STLCC-Meramec</a></th>
+          <td>11333 Big Bend Rd</td>
+          <td>Start</td>
+          <td>Start</td>
+          <td>Start</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://tnmot.org/">Musium Of Transportation</a></th>
+          <td>2933 Barrett Station Rd</td>
+          <td>5702</td>
+          <td>2.7</td>
+          <td>2.7</td>
+
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/wildwood/">STLCC-Wildwood</th>
+          <td>2645 Generations Dr</td>
+          <td>25344</td>
+          <td>12</td>
+          <td>14.7</td>
+        </tr>
+
+         <tr>
+          <th scope="row"><a href="https://mallseeker.com/chesterfield-mall.aspx/">Chesterfield Mall</th>
+          <td>291 Chesterfield Center, Chesterfield</td>
+          <td>18797</td>
+          <td>8.9</td>
+          <td>23.6</td>
+        </tr>
+         <tr>
+          <th scope="row"><a href ="http://www.missouribotanicalgarden.org/mbhhome.aspx">The Butterfly House</th>
+          <td>15193 Olive Blvd, Chesterfield</td>
+          <td>3590</td>
+          <td>1.7</td>
+          <td>25.3</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href ="https://www.stlouisco.com/Parks-and-Recreation/Park-Pages/Creve-Coeur">Dates Park</th>
+          <td>2143 Creve Coeur Mill Rd, St. Louis</td>
+          <td>8870</td>
+          <td>4.2</td>
+          <td>29.5</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/workforce/corporate-college/">STLCC-Coporate college</th>
+          <td>3221 McKelvey Rd</td>
+          <td>42240</td>
+          <td>20</td>
+          <td>34.7</td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="https://www.flystl.com/">Lambert Airport</th>
+          <td>2645 Generations Dr</td>
+          <td> 9293</td>
+          <td>4.4 </td>
+          <td>39.1 </td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="http://www.hazelwoodmo.org/Facilities/Facility/Details/Musick-Park-18">Musick Park</th>
+          <td>8617 Latty Ave </td>
+          <td>9715 </td>
+          <td>4.6 </td>
+          <td>43.7 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.imospizza.com/store/florissant/">Imo's Pizza</th>
+          <td>1939 Washington St </td>
+          <td>4435 </td>
+          <td>2.1</td>
+          <td>45.8 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/florissant-valley/">STLCC - Florissant Valley </th>
+          <td> 3400 Pershall Rd</td>
+          <td>3168 </td>
+          <td>1.5 </td>
+          <td>47.3 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://nature.mdc.mo.gov/discover-nature/places/jennings-koeneman-park-lake">Koeneman Park </th>
+          <td> 8937 Lucas and Hunt </td>
+          <td>10349 </td>
+          <td>4.9 </td>
+          <td>52.2 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlouis-mo.gov/parks/parks/browse-parks/view-park.cfm?parkID=68&parkName=O">O'Fallon Park </th>
+          <td> 799 E Taylor Ave </td>
+          <td>10560 </td>
+          <td>5 </td>
+          <td>57.2 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.thegriotmuseum.com/">Griot Museum of Black History </th>
+          <td>2505 St Louis Ave  </td>
+          <td>5280 </td>
+          <td>2.5 </td>
+          <td>59.7 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/william-j-harrison-education-center/">STLCC - Harrison Park </th>
+          <td>3140 Cass Ave </td>
+          <td>2323 </td>
+          <td>1.1 </td>
+          <td>60.8 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://camstl.org/">Contemporary Art</th>
+          <td>3750 Washington Blvd </td>
+          <td>2112 </td>
+          <td>1 </td>
+          <td>61.8 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.pappyssmokehouse.com/">Pappy's Smokehouse </th>
+          <td>3106 Olive St </td>
+          <td>1690 </td>
+          <td>0.8 </td>
+          <td>62.6 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.ikea.com/us/en/stores/st-louis/">Ikea </th>
+          <td>1 Ikea Way </td>
+          <td>2957 </td>
+          <td>1.4 </td>
+          <td>64 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/forest-park/index.aspx">STLCC - Forest Park </th>
+          <td>5600 Oakland Ave </td>
+          <td>4858 </td>
+          <td>2.3 </td>
+          <td>66.3 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlzoo.org/">St.Louis Zoo </th>
+          <td>Government Dr </td>
+          <td>3379 </td>
+          <td>1.6 </td>
+          <td>67.9 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.guspretzels.com/">Eat at Gus' Pretzels </th>
+          <td>1820 Arsenal St</td>
+          <td>13306 </td>
+          <td>6.3 </td>
+          <td>74.2 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="http://teddrewes.com/">Ted Drewes </th>
+          <td>6726 Chippewa St </td>
+          <td>10982 </td>
+          <td>5.2 </td>
+          <td>79.4 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.shopsouthcountycenter.com/">South County Center </th>
+          <td>18 S County Center Way </td>
+          <td>15206 </td>
+          <td>7.2 </td>
+          <td>86.6 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://pinkgalleon.com/">Pink Galleon Billiards and games </th>
+          <td>4010 Butler Hill Rd </td>
+          <td>4435 </td>
+          <td>2.1 </td>
+          <td>88.7 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://concordbowl.com/">Concord Bowl and Recreation </th>
+          <td>11801 Tesson Ferry Rd </td>
+          <td>6758 </td>
+          <td>3.2 </td>
+          <td>91.9 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.facebook.com/pages/category/Shopping-Mall/Concord-Plaza-Shopping-Center-845535872130545/">Concord Plaza STL</th>
+          <td>91 Concord Plaza Shopping Center </td>
+          <td>634 </td>
+          <td>0.3 </td>
+          <td>92.2 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.laumeiersculpturepark.org/">Laumeir Park </th>
+          <td>12580 Rott Rd </td>
+          <td>8870 </td>
+          <td>4.2 </td>
+          <td>96.4 </td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/">STLCC - Meramac </th>
+          <td>11333 Big Bend Rd </td>
+          <td>2323 </td>
+          <td>1.1 </td>
+          <td>97.5 </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
 
 
 		</section>
@@ -617,7 +808,7 @@ function update(percentcomplete)
         <table>   
            <c:if test="${(member.loctorf4)}">
                
-        
+               Chesterfied Mall Passed
   
            </c:if> 
     </table>  
@@ -627,7 +818,7 @@ function update(percentcomplete)
         <table>    
              <c:if test="${(member.loctorf5)}">
                
-        
+                 The Butterfly House Passed
   
            </c:if> 
         </table>
@@ -636,7 +827,7 @@ function update(percentcomplete)
         <table>    
              <c:if test="${(member.loctorf6)}">
                 
-        
+                 Dates Park Passed
   
            </c:if> 
         </table>
@@ -653,7 +844,7 @@ function update(percentcomplete)
     <form> 
         <table>    
              <c:if test="${(member.loctorf8)}">
-               St.Louis Lambert International AirportPassed
+               St.Louis Lambert International Airport Passed
         
   
            </c:if> 

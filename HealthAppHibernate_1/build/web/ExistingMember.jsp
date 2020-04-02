@@ -8,6 +8,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+     <link rel="stylesheet" href="css/styles.css">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    
     <body>
         
         <c:choose>
@@ -96,7 +104,7 @@
             <tr>
                 <hr>
                 <td></td>
-                <td><input type="submit" value="Insert Member data" onclick=form.action="MemberUpdate"><br><br><br></td>
+                <td><input type="submit" style="height: 60px;width: 150px;" value="Insert Member data" onclick=form.action="MemberUpdate"><br><br><br></td>
             </tr>
             <br>
             
@@ -110,10 +118,10 @@
                 <td><h2>Do you want to start the STLCC Virtual Tour ?</h2><br></td>
             <tr>
             <tr> 
-                <td><input type="submit" value="Yes" onclick=form.action="ToTheSplashScreen">
+                <td><input type="submit" value="Yes"style="height:60px;width: 100px;" onclick=form.action="ToTheSplashScreen">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     
-                <input type="submit" value="No" onclick=form.action="HealthLogon.jsp"></td>
+                <input type="submit" style="height: 60px;width: 100px;" value="No" onclick=form.action="HealthLogon.jsp"></td>
                 
                 
                 

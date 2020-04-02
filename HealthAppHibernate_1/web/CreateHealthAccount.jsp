@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
  <body>
-        <h1>Add Tour de STLCC member Data</h1>
+        <h1>Add STLCC Virtual Tour member Data</h1>
         <form id="memupdate" action="MemberUpdate" method="post">
             <table class="member-details">
             <tr>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Insert Member data" onclick=form.action="CreateAccount" ></td>
+                <td><input type="submit" style="width: 100px;height: 60px;" value="Insert Member data" onclick=form.action="CreateAccount" ></td>
             </tr>
             </table>
         </form>

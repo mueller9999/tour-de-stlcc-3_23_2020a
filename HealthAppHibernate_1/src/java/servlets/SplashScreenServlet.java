@@ -106,7 +106,9 @@ public class SplashScreenServlet extends HttpServlet
         String msg33 ="";
        
         String msg34 ="";
-        
+        String msg35 = "";
+        String msg36 = "";
+        String msg37 = "";
         
         boolean noErrorsAbove =false;
         HttpSession session = request.getSession();
@@ -316,12 +318,12 @@ public class SplashScreenServlet extends HttpServlet
             int counter1 =0;
             
             int counter2 = steps;
-            if(counter2 > 30000)
+            if(counter2 > 80000)
             {
                 
-                while(counter2 > 30000)
+                while(counter2 > 80000)
                 {
-                   if(counter2 > 30000)
+                   if(counter2 > 80000)
                    {
                        counter2--;
                        
@@ -331,9 +333,9 @@ public class SplashScreenServlet extends HttpServlet
                 }
                 
                 steps = counter2;
-                msgTooManySteps = "The limit for steps for the day is 30000"+ "<br>";
+                msgTooManySteps = "The limit for steps for the day is 80000"+ "<br>";
             }
-            else if(steps <=30000)
+            else if(steps <=80000)
             {
                 
                 steps=steps;
@@ -608,8 +610,120 @@ public class SplashScreenServlet extends HttpServlet
   
             }
             
+             if((MemberDB.getCurrentSteps(m) >= 49843) )       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 4; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(4);
+                    m.setLoctorf4(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
             
-             if((MemberDB.getCurrentSteps(m) >= 73206) )       
+            
+               if((MemberDB.getCurrentSteps(m) >= 53434) )       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 5; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(5);
+                    m.setLoctorf5(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+            }
+                    if((MemberDB.getCurrentSteps(m) >= 62304) )       
+            {
+                
+                boolean setToTrue = true;
+                int locID = 6; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(6);
+                    m.setLoctorf6(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+                 
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            
+            
+             
+             
+             
+            if((MemberDB.getCurrentSteps(m) >= 73206) )       
             {
                 
                  boolean setToTrue = true;
@@ -1448,11 +1562,11 @@ public class SplashScreenServlet extends HttpServlet
                        
                          msg5a+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,1) + " see Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc1' value = '1' onclick=form.action='LocationsUnlocked1.jsp' >"
+                                 "<button id='loc1' value = '1'style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked1.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked1.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button'style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1470,11 +1584,11 @@ public class SplashScreenServlet extends HttpServlet
                        
                          msg5+=  "<td>" +"You Passed "  + RouteWithStepsDB.getDestination(route,2) + " see Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc2' value = '2' onclick=form.action='LocationsUnlocked2.jsp' >"
+                                 "<button id='loc2' style=\"width: 100px;height: 60px;\" value = '2' onclick=form.action='LocationsUnlocked2.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked2.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1493,11 +1607,11 @@ public class SplashScreenServlet extends HttpServlet
                        
                         msg6+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,3) + " see Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc3' value = '3' onclick=form.action='LocationsUnlocked3.jsp' >"
+                                 "<button id='loc3' value = '3'style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked3.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked3.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1513,13 +1627,13 @@ public class SplashScreenServlet extends HttpServlet
                     {
                         
                        
-                        msg7+= "<td>" +"You Passed "  + RouteWithStepsDB.getDestination(route,4) + " see Tour Place? " + "<br>"+
-                                  
-                                 "<button id='loc4' value = '4' onclick=form.action='LocationsUnlocked4.jsp' >"
+                        msg35+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,4) + " see Tour Place? " + "<br>"+
+                                 
+                                 "<button id='loc4' value = '4'style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked28.jsp' >"
                                  + "Yes" + "</button>" 
-                                 + "<a href='LocationsUnlocked4.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
+                                 + "<a href='LocationsUnlocked28.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1534,10 +1648,14 @@ public class SplashScreenServlet extends HttpServlet
                     {
                         
                        
-                         msg8+= "<td>" +" You Passed "  + RouteWithStepsDB.getDestination(route,5) + " see Tour Place? " + "<br>"+
-                                  "<input type='button' value='Yes'>" + "<a href='LocationsUnlocked.jsp' id='CreateCourse' >"+"see location "+ "</a>"+"&nbsp;"+
+                        
+                        msg36+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,5) + " see Tour Place? " + "<br>"+
+                                 
+                                 "<button id='loc4' value = '4'style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked29.jsp' >"
+                                 + "Yes" + "</button>" 
+                                 + "<a href='LocationsUnlocked29.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash' >"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1553,11 +1671,14 @@ public class SplashScreenServlet extends HttpServlet
      {
                         
                        
-          msg9+="<td>"  + " You Passed "  + RouteWithStepsDB.getDestination(route,6) + " see Tour Place? " + "<br>"+
-                                  "<input type='button' value='Yes'>" + "<a href='LocationsUnlocked.jsp' id='CreateCourse' >"+"see location "+ "</a>"+"&nbsp;"+
+          msg37+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,6) + " see Tour Place? " + "<br>"+
+                                 
+                                 "<button id='loc4' value = '4'style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked30.jsp' >"
+                                 + "Yes" + "</button>" 
+                                 + "<a href='LocationsUnlocked30.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash' >"+"  stay on this webpage and clear messages "+
-              "</a>" + "</td>"+"<br>" ;               
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+              "</a>"+"</td>"+"<br>" ;             
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
                          
@@ -1574,11 +1695,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg10+="<td>"+   "You Passed "  + RouteWithStepsDB.getDestination(route,7) + " see Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc7' value = '7' onclick=form.action='LocationsUnlocked7.jsp' >"
+                                 "<button id='loc7' style=\"width: 100px;height: 60px;\" value = '7' onclick=form.action='LocationsUnlocked7.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked7.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+ "</td>"+"<br>" ;             
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1596,11 +1717,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg11+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,8) + " See Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc8' value = '8' onclick=form.action='LocationsUnlocked8.jsp' >"
+                                 "<button id='loc8'style=\"width: 100px;height: 60px;\" value = '8' onclick=form.action='LocationsUnlocked8.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked8.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1618,11 +1739,11 @@ public class SplashScreenServlet extends HttpServlet
                        
            msg12+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,9) + " See Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc9' value = '9' onclick=form.action='LocationsUnlocked9.jsp' >"
+                                 "<button id='loc9' style=\"width: 100px;height: 60px;\" value = '9' onclick=form.action='LocationsUnlocked9.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked9.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1638,11 +1759,11 @@ public class SplashScreenServlet extends HttpServlet
                         
         msg13+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,10) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc10' value = '10' onclick=form.action='LocationsUnlocked10.jsp' >"
+                                 "<button id='loc10' style=\"width: 100px;height: 60px;\" value = '10' onclick=form.action='LocationsUnlocked10.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked10.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1659,11 +1780,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg14+="<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,11) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc11' value = '11' onclick=form.action='LocationsUnlocked11.jsp' >"
+                                 "<button id='loc11' style=\"width: 100px;height: 60px;\" value = '11' onclick=form.action='LocationsUnlocked11.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked11.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ; 
                      
                     
@@ -1681,11 +1802,11 @@ public class SplashScreenServlet extends HttpServlet
                        
          msg15+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,12) + " See Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc12' value = '12' onclick=form.action='LocationsUnlocked12.jsp' >"
+                                 "<button id='loc12' style=\"width: 100px;height: 60px;\" value = '12' onclick=form.action='LocationsUnlocked12.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked12.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1702,11 +1823,11 @@ public class SplashScreenServlet extends HttpServlet
                        
          msg16+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,13) + " See Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc13' value = '13' onclick=form.action='LocationsUnlocked13.jsp' >"
+                                 "<button id='loc13' style=\"width: 100px;height: 60px;\" value = '13' onclick=form.action='LocationsUnlocked13.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked13.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;                
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1723,11 +1844,11 @@ public class SplashScreenServlet extends HttpServlet
                        
         msg17+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,14) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc14' value = '14' onclick=form.action='LocationsUnlocked14.jsp' >"
+                                 "<button id='loc14' style=\"width: 100px;height: 60px;\" value = '14' onclick=form.action='LocationsUnlocked14.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked14.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1744,11 +1865,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg18+="<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,15) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc15' value = '15' onclick=form.action='LocationsUnlocked15.jsp' >"
+                                 "<button id='loc15' value = '15' style=\"width: 100px;height: 60px;\" onclick=form.action='LocationsUnlocked15.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked15.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1765,11 +1886,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg19+="<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,16) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc16' value = '16' onclick=form.action='LocationsUnlocked16.jsp' >"
+                                 "<button id='loc16' style=\"width: 100px;height: 60px;\" value = '16' onclick=form.action='LocationsUnlocked16.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked16.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1787,11 +1908,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg20+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,17) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc17' value = '17' onclick=form.action='LocationsUnlocked17.jsp' >"
+                                 "<button id='loc17'  style=\"width: 100px;height: 60px;\" value = '17' onclick=form.action='LocationsUnlocked17.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked17.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;                
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1809,11 +1930,11 @@ public class SplashScreenServlet extends HttpServlet
                          
           msg21+= "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,18) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc18' value = '18' onclick=form.action='LocationsUnlocked18.jsp' >"
+                                 "<button id='loc18' style=\"width: 100px;height: 60px;\" value = '18' onclick=form.action='LocationsUnlocked18.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked18.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1831,11 +1952,11 @@ public class SplashScreenServlet extends HttpServlet
                          
           msg26+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,19) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc19' value = '19' onclick=form.action='LocationsUnlocked19.jsp' >"
+                                 "<button id='loc19' style=\"width: 100px;height: 60px;\" value = '19' onclick=form.action='LocationsUnlocked19.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked19.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;             
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1852,11 +1973,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg23+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,20) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc20' value = '20' onclick=form.action='LocationsUnlocked20.jsp' >"
+                                 "<button id='loc20' style=\"width: 100px;height: 60px;\" value = '20' onclick=form.action='LocationsUnlocked20.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked20.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1873,11 +1994,11 @@ public class SplashScreenServlet extends HttpServlet
                        
              msg24+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,21) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc21' value = '21' onclick=form.action='LocationsUnlocked21.jsp' >"
+                                 "<button id='loc21' style=\"width: 100px;height: 60px;\" value = '21' onclick=form.action='LocationsUnlocked21.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked21.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1895,11 +2016,11 @@ public class SplashScreenServlet extends HttpServlet
                        
            msg25+="<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,22) + " See Tour Place? " + "<br>"+
                                   
-                                 "<button id='loc22' value = '22' onclick=form.action='LocationsUnlocked22.jsp' >"
+                                 "<button id='loc22' style=\"width: 100px;height: 60px;\" value = '22' onclick=form.action='LocationsUnlocked22.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked22.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages"+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1916,11 +2037,11 @@ public class SplashScreenServlet extends HttpServlet
                        
          msg29+=  "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,23) + " See Tour Place? " + "<br>"+
                                
-                                 "<button id='loc23' value = '23' onclick=form.action='LocationsUnlocked23.jsp' >"
+                                 "<button id='loc23' style=\"width: 100px;height: 60px;\" value = '23' onclick=form.action='LocationsUnlocked23.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked23.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;               
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1937,11 +2058,11 @@ public class SplashScreenServlet extends HttpServlet
                        
          msg30+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,24) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc24' value = '24' onclick=form.action='LocationsUnlocked24.jsp' >"
+                                 "<button id='loc24' style=\"width: 100px;height: 60px;\" value = '24' onclick=form.action='LocationsUnlocked24.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked24.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;             
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1958,11 +2079,11 @@ public class SplashScreenServlet extends HttpServlet
                        
          msg31+=  "<td>" + "Passed "  + RouteWithStepsDB.getDestination(route,25) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc25' value = '25' onclick=form.action='LocationsUnlocked25.jsp' >"
+                                 "<button id='loc25' style=\"width: 100px;height: 60px;\" value = '25' onclick=form.action='LocationsUnlocked25.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked25.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;              
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -1979,11 +2100,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg32+="<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,26) + " See Tour Place? " + "<br>"+
                                  
-                                 "<button id='loc26' value = '26' onclick=form.action='LocationsUnlocked26.jsp' >"
+                                 "<button id='loc26' style=\"width: 100px;height: 60px;\" value = '26' onclick=form.action='LocationsUnlocked26.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked26.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button'style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;             
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -2001,11 +2122,11 @@ public class SplashScreenServlet extends HttpServlet
                        
           msg33+=  "<td>" + "You Passed "  + RouteWithStepsDB.getDestination(route,27) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc27' value = '27' onclick=form.action='LocationsUnlocked27.jsp' >"
+                                 "<button id='loc27' style=\"width: 100px;height: 60px;\" value = '27' onclick=form.action='LocationsUnlocked27.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked27.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;                 
                     
                          //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
@@ -2022,11 +2143,11 @@ public class SplashScreenServlet extends HttpServlet
                         
             msg34+= "<td>" +  "You Passed "  + RouteWithStepsDB.getDestination(route,28) + " See Tour Place? " + "<br>"+
                                 
-                                 "<button id='loc1' value = '1' onclick=form.action='LocationsUnlocked1.jsp' >"
+                                 "<button id='loc1' style=\"width: 100px;height: 60px;\" value = '1' onclick=form.action='LocationsUnlocked1.jsp' >"
                                  + "Yes" + "</button>" 
                                  + "<a href='LocationsUnlocked1.jsp'>"+"see location "+ "</a>"+"&nbsp;"+
                                 "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp" +
-                      "<input type='button' name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
+                      "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No'>"+  "<a href='index.jsp' id='splash'>"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;             
                        
                     
@@ -2062,14 +2183,14 @@ public class SplashScreenServlet extends HttpServlet
                 
             } 
              
-           /*
+           
            else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),4)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 13115 &&
-                     21715-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 31046 &&
+                     49843-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Job! " + "Only " + (21715-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Job! " + "Only " + (49843-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT LOCATION!";
                     m.setLoctorf4(false);
         
@@ -2078,11 +2199,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),5)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 21715 &&
-                     31820-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 49843  &&
+                     53434-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Job! " + "Only " + (31820-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Job! " + "Only " + (53434-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT LOCATION!";
                     m.setLoctorf5(false);
         
@@ -2091,17 +2212,17 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),6)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 31820 &&
-                     46440-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 52434 &&
+                     62304-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Job! " + "Only " + (46440-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Job! " + "Only " + (62304-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT LOCATION!";
                     m.setLoctorf6(false);
         
                 
             } 
-            */
+            
                else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),7)==false)
                  
                    && MemberDB.getCurrentSteps(m) > 31046 &&
@@ -2457,9 +2578,9 @@ public class SplashScreenServlet extends HttpServlet
         
          request.setAttribute("msg34", msg34);
           request.setAttribute("msg5a", msg5a);
-        
-        
-        
+          request.setAttribute("msg35", msg35);
+         request.setAttribute("msg36", msg36);
+         request.setAttribute("msg37", msg37);
         
         
         request.setAttribute("msgtest", msgTest);

@@ -53,7 +53,7 @@
             
               <table>
               <tr>
-                  <td><input type="submit" value="Logon" onclick=form.action="Logon"><br>
+                  <td><input type="submit" style="height: 60px;width: 100px" value="Logon" onclick=form.action="Logon"><br>
                       <br></td>
     
               </tr>      
@@ -63,7 +63,8 @@
              
               
               <tr>
-                  <td><input type ="submit" value="Create New Account" onclick=form.action="GoToCreateAccount"></td>
+                  <td><input type ="submit" style="height: 60px;width: 150px;" value="Create New Account" onclick=form.action="GoToCreateAccount"></td>
+                  
              
               </tr>
               <tr>
