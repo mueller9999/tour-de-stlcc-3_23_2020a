@@ -1658,7 +1658,7 @@ public class SplashScreenServlet extends HttpServlet
                       "<input type='button' style=\"width: 100px;height: 60px;\" name='No' value='No' onclick =\"window.location.href = 'index.jsp';\">"+  "<a href='index.jsp' id='splash' onclick =\"window.location.href = 'index.jsp';\">"+" stay on this webpage and clear messages "+
               "</a>"+"</td>"+"<br>" ;
                     
-                         //MemberDB.setLocationValueForMemberToTrueVar2(true,m3.getMemid(),2);   
+                        
                          
                          
                          m3.setLoctorf5(true); 
