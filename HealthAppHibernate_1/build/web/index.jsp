@@ -119,7 +119,7 @@
                                 <button type="submit"  onclick=form.action="SplashScreen">Calculate</button>
 			</form>
                        
-                        
+                      <%--  <input type="button" style="width: 100px;height: 60px;" name='No' value='No' onclick ="window.location.href = 'index.jsp';">      </button> --%>       
                         
     <center>
         <h2> ${progressofsteps}</h2>    
