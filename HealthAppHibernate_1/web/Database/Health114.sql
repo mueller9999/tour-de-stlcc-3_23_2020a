@@ -125,7 +125,7 @@ INSERT INTO tblroutewithsteps VALUES (6, "Dates Park
 
 ',4.2,8870,62304,'false');
 
-INSERT INTO tblroutewithsteps VALUES (7, 'STLCC -Corporate College
+INSERT INTO tblroutewithsteps VALUES (7, 'STLCC - Corporate College
 ',' 3221 McKelvey Rd, Bridgeton, MO 63044
 ',20,42240,73206,'false');
 
@@ -138,8 +138,8 @@ INSERT INTO tblroutewithsteps VALUES (9, "Musick Park
 ",' 8617 Latty Ave, Hazelwood, MO 63042
 ',4.6,9715,92294,'false');
 
-INSERT INTO tblroutewithsteps VALUES (10, "'Imo's Pizza
-'",' 1939 Washington St, Florissant, MO 63033
+INSERT INTO tblroutewithsteps VALUES (10, "Imo's Pizza
+",' 1939 Washington St, Florissant, MO 63033
 ',2.1,4435,96730,'false');
 
 INSERT INTO tblroutewithsteps VALUES (11, 'STLCC - Florissant Valley'

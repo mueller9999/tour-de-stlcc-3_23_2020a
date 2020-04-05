@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS Health106;
-CREATE DATABASE Health106;
-USE Health106;
+DROP DATABASE IF EXISTS Health116;
+CREATE DATABASE Health116;
+USE Health116;
 
 
 CREATE TABLE tblMembers (
@@ -11,7 +11,7 @@ CREATE TABLE tblMembers (
   Age INT,
   MemDt DATE,
   Gender boolean default 0,
-  	
+  tourfinished varchar(5) default 'false',  	
  
   Password VARCHAR(30),
   Steps INT,
@@ -111,8 +111,21 @@ INSERT INTO tblroutewithsteps VALUES (3, "STLCC - Wildwood campus
 ",' 2645 Generations Dr, Grover, MO 63040
 ',12,25344,31046,'false');
 
+INSERT INTO tblroutewithsteps VALUES (4, "Chesterfield Mall
+",' 291 Chesterfield Center, Chesterfield, MO 63017
 
-INSERT INTO tblroutewithsteps VALUES (7, 'STLCC -Corporate College
+',8.9,18797,49843,'false');
+
+INSERT INTO tblroutewithsteps VALUES (5, "The Butterfly House
+",' 15193 Olive Blvd, Chesterfield, MO 63017
+',1.7,3590,534434,'false');
+
+INSERT INTO tblroutewithsteps VALUES (6, "Dates Park
+",' 2143 Creve Coeur Mill Rd, St. Louis, MO 63146
+
+',4.2,8870,62304,'false');
+
+INSERT INTO tblroutewithsteps VALUES (7, 'STLCC - Corporate College
 ',' 3221 McKelvey Rd, Bridgeton, MO 63044
 ',20,42240,73206,'false');
 
@@ -125,8 +138,8 @@ INSERT INTO tblroutewithsteps VALUES (9, "Musick Park
 ",' 8617 Latty Ave, Hazelwood, MO 63042
 ',4.6,9715,92294,'false');
 
-INSERT INTO tblroutewithsteps VALUES (10, "'Imo's Pizza
-'",' 1939 Washington St, Florissant, MO 63033
+INSERT INTO tblroutewithsteps VALUES (10, "Imo's Pizza
+",' 1939 Washington St, Florissant, MO 63033
 ',2.1,4435,96730,'false');
 
 INSERT INTO tblroutewithsteps VALUES (11, 'STLCC - Florissant Valley'
@@ -135,8 +148,8 @@ INSERT INTO tblroutewithsteps VALUES (11, 'STLCC - Florissant Valley'
 INSERT INTO tblroutewithsteps VALUES (12, 'Koeneman Park',
 '8937 Lucas and Hunt, Jennings, MO 63136',4.9,10349,110246,'false');
 
-INSERT INTO tblroutewithsteps VALUES (13, "'O'Fallon Park'",
-'10701 Lambert International Blvd, St. Louis, MO 63145',
+INSERT INTO tblroutewithsteps VALUES (13, "O'Fallon Park",
+"'O'Fallon Park, 799 E Taylor Ave, St. Louis, MO 63147'",
 5, 10560,120806,'false');
 
 INSERT INTO tblroutewithsteps VALUES (14, 'Griot Museum of Black History
@@ -151,7 +164,7 @@ INSERT INTO tblroutewithsteps VALUES (16,
 'Contemporary Art',
 ' 3750 Washington Blvd, St. Louis, MO 63108',1.0,2112,130522,'false');
 
-INSERT INTO tblroutewithsteps VALUES (17, "'Pappy's Smokehouse'",
+INSERT INTO tblroutewithsteps VALUES (17, "Pappy's Smokehouse",
 '3106 Olive St, St. Louis, MO 63103',0.8,1690,132211,'false');
 
 INSERT INTO tblroutewithsteps VALUES (18, 'Ikea',
@@ -184,7 +197,7 @@ INSERT INTO tblroutewithsteps VALUES (25, ' Concord Bowl and Recreation',
 3.2, 6758,194093,'false');
 
 INSERT INTO tblroutewithsteps VALUES (26, 'Concord Plaza STL',
-'91 Concord Plaza Shopping Center, St. Louis, MO 63128.
+'129 Concord Plaza Shopping Center, St. Louis, MO 63128.
 ',0.3, 634,194726,'false');
 
 
@@ -192,7 +205,7 @@ INSERT INTO tblroutewithsteps VALUES (27, 'Laumeir Park',
 '12580 Rott Rd, St. Louis, MO 63127'
 ,4.2, 8870,203579,'false');
 
-INSERT INTO tblroutewithsteps VALUES (28, 'STLCC - Meramac',
+INSERT INTO tblroutewithsteps VALUES (28, 'STLCC - Meramec',
 '11333 Big Bend Rd, St. Louis, MO 63122',
 1.1, 2323,205920,'false');
 

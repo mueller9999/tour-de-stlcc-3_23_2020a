@@ -538,7 +538,7 @@ function update(percentcomplete)
           <td>Start</td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://tnmot.org/">Musium Of Transportation</a></th>
+          <th scope="row"><a href="https://tnmot.org/">Museum Of Transportation</a></th>
           <td>2933 Barrett Station Rd</td>
           <td>5702</td>
           <td>2.7</td>

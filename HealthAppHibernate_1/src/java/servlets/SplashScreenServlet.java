@@ -2165,7 +2165,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (5702-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "+(RouteWithStepsDB.getDestination(route, 2));
                     m.setLoctorf2(false);
         
                 
@@ -2177,7 +2177,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (31046-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + (RouteWithStepsDB.getDestination(route, 3));
                     m.setLoctorf3(false);
         
                 
@@ -2191,7 +2191,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Job! " + "Only " + (49843-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT LOCATION!";
+                     + " until the NEXT LOCATION called " + (RouteWithStepsDB.getDestination(route, 4));
                     m.setLoctorf4(false);
         
                 
@@ -2204,7 +2204,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Job! " + "Only " + (53434-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT LOCATION!";
+                     + " until the NEXT LOCATION called " + (RouteWithStepsDB.getDestination(route, 5));
                     m.setLoctorf5(false);
         
                 
@@ -2217,7 +2217,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Job! " + "Only " + (62304-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT LOCATION!";
+                     + " until the NEXT LOCATION called " +  (RouteWithStepsDB.getDestination(route, 6));
                     m.setLoctorf6(false);
         
                 
@@ -2225,12 +2225,12 @@ public class SplashScreenServlet extends HttpServlet
             
                else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),7)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 31046 &&
+                   && MemberDB.getCurrentSteps(m) > 62304 &&
                      73206-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (73206-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                    msg3 = "Good Work! " + "Only " + (73206-MemberDB.getCurrentSteps(m)) + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 7));
                     m.setLoctorf7(false);
         
                 
@@ -2243,7 +2243,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (82579-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + 
+                             (RouteWithStepsDB.getDestination(route, 8));
                     m.setLoctorf8(false);
         
                 
@@ -2256,7 +2257,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (92294-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 9));
                     m.setLoctorf9(false);
         
                 
@@ -2269,7 +2271,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (96730-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 10));
                     m.setLoctorf10(false);
         
                 
@@ -2282,7 +2285,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (99898-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 11));
                     m.setLoctorf11(false);
         
                 
@@ -2296,7 +2300,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Work! " + "Only " + (110246-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + 
+                             (RouteWithStepsDB.getDestination(route, 12));
                     m.setLoctorf12(false);
         
                 
@@ -2309,7 +2314,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Work! " + "Only " + (120806-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 13));
                     m.setLoctorf13(false);
         
                 
@@ -2322,7 +2328,7 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great WORK! " + "Only " + (126086-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + (RouteWithStepsDB.getDestination(route, 14));
                     m.setLoctorf14(false);
         
                 
@@ -2335,7 +2341,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Work! " + "Only " + (128410-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 15));
                     m.setLoctorf15(false);
         
                 
@@ -2349,7 +2356,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (130522-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 16));
                     m.setLoctorf16(false);
         
                 
@@ -2362,7 +2370,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (132211-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE " +
+                      " called " + (RouteWithStepsDB.getDestination(route, 17));
                     m.setLoctorf17(false);
         
                 
@@ -2376,7 +2385,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (135168-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " +
+                             (RouteWithStepsDB.getDestination(route, 18));
                     m.setLoctorf18(false);
         
                 
@@ -2390,7 +2400,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (140026-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 19));
                     m.setLoctorf19(false);
         
                 
@@ -2404,7 +2415,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great Work! " + "Only " + (143405-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 20));
                     m.setLoctorf20(false);
         
                 
@@ -2418,7 +2430,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Great WORK! " + "Only " + (156710-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 21));
                     m.setLoctorf21(false);
         
                 
@@ -2432,7 +2445,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (167693-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 22));
                     m.setLoctorf22(false);
         
                 
@@ -2446,7 +2460,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (182899-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 23));
                     m.setLoctorf23(false);
         
                 
@@ -2458,7 +2473,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (187344-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 24));
                     m.setLoctorf24(false);
         
                 
@@ -2471,7 +2487,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (194093-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 25));
                     m.setLoctorf25(false);
         
                 
@@ -2484,7 +2501,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (194726-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 26));
                     m.setLoctorf26(false);
         
                 
@@ -2497,7 +2515,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (203597-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 27));
                     m.setLoctorf27(false);
         
                 
@@ -2510,7 +2529,8 @@ public class SplashScreenServlet extends HttpServlet
             {
  
                     msg3 = "Good Work! " + "Only " + (205920-MemberDB.getCurrentSteps(m)) + " steps to go "
-                     + " until the NEXT TOUR PLACE!";
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 28));
                     m.setLoctorf28(false);
         
                 
