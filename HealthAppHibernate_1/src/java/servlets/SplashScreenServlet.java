@@ -394,13 +394,13 @@ public class SplashScreenServlet extends HttpServlet
            
           
             
-            double progressOfSteps = (totalSteps/205920.0) * 100;
+            double progressOfSteps = (totalSteps/207187.0) * 100;
             
             String percentComplete =""; 
           Double truncatedDouble1=0.0;
         if( progressOfSteps >= 100)
         {
-            if(((progressOfSteps))>=100||(totalSteps>= 205920))
+            if(((progressOfSteps))>=100||(totalSteps>= 207187))
             {
                 m.setTourfinished("true");
                 MemberDB.updateMember(m);
@@ -436,7 +436,7 @@ public class SplashScreenServlet extends HttpServlet
             }
  
             int myMinimum =0;
-            int myMaximum = 205920;
+            int myMaximum = 207187;
     
            // ProgressBar bar = new ProgressBar();
             
@@ -529,7 +529,7 @@ public class SplashScreenServlet extends HttpServlet
             
            
           
-            if((MemberDB.getCurrentSteps(m) >= 5702) )       
+            if((MemberDB.getCurrentSteps(m) >= 5702) ) //total 2.7 miles      
             {
                 
                 boolean setToTrue = true;
@@ -574,7 +574,7 @@ public class SplashScreenServlet extends HttpServlet
            
              boolean destinationVisited3 =false;
           
-            if((MemberDB.getCurrentSteps(m) >= 31046) )       
+            if((MemberDB.getCurrentSteps(m) >= 31046) ) //total 14.7 miles      
             {
                 
                 boolean setToTrue = true;
@@ -610,7 +610,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }
             
-             if((MemberDB.getCurrentSteps(m) >= 49843) )       
+             if((MemberDB.getCurrentSteps(m) >= 49843) )       //total 23.6 miles
             {
                 
                 boolean setToTrue = true;
@@ -647,7 +647,7 @@ public class SplashScreenServlet extends HttpServlet
             }
             
             
-               if((MemberDB.getCurrentSteps(m) >= 53434) )       
+               if((MemberDB.getCurrentSteps(m) >= 53434) ) //total 25.3 miles      
             {
                 
                 boolean setToTrue = true;
@@ -678,7 +678,7 @@ public class SplashScreenServlet extends HttpServlet
                     
                 }
             }
-                    if((MemberDB.getCurrentSteps(m) >= 62304) )       
+            if((MemberDB.getCurrentSteps(m) >= 62304) )       //29.5 miles
             {
                 
                 boolean setToTrue = true;
@@ -723,7 +723,7 @@ public class SplashScreenServlet extends HttpServlet
              
              
              
-            if((MemberDB.getCurrentSteps(m) >= 73206) )       
+            if((MemberDB.getCurrentSteps(m) >= 74554) ) //35.3 miles      
             {
                 
                  boolean setToTrue = true;
@@ -761,7 +761,7 @@ public class SplashScreenServlet extends HttpServlet
             
             
              
-              if((MemberDB.getCurrentSteps(m) >= 82579) )       
+              if((MemberDB.getCurrentSteps(m) >= 83846) )//39.7       
             {
                 
                 boolean setToTrue = true;
@@ -797,7 +797,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }
              
-              if((MemberDB.getCurrentSteps(m) >= 92294) )       
+              if((MemberDB.getCurrentSteps(m) >= 93562) ) //44.3 miles 
              {
                 
                  boolean setToTrue = true;
@@ -834,7 +834,7 @@ public class SplashScreenServlet extends HttpServlet
             }  
              
              
-             if((MemberDB.getCurrentSteps(m) >= 96730) )       
+             if((MemberDB.getCurrentSteps(m) >= 97997) )//46.4 miles       
             {
                 
                 boolean setToTrue = true;
@@ -870,7 +870,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }  
              
-             if((MemberDB.getCurrentSteps(m) >= 99898) )       
+             if((MemberDB.getCurrentSteps(m) >= 101165) )//47.9 miles       
             {
                 
                 boolean setToTrue = true;
@@ -907,7 +907,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
              
              
-              if((MemberDB.getCurrentSteps(m) >= 110246) )       
+              if((MemberDB.getCurrentSteps(m) >= 111514) )//52.8       
             {
                 
                 boolean setToTrue = true;
@@ -943,7 +943,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }
              
-             if((MemberDB.getCurrentSteps(m) >= 120806) )       
+             if((MemberDB.getCurrentSteps(m) >= 122074) ) //57.8 miles      
             {
                 
                 boolean setToTrue = true;
@@ -980,7 +980,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
               
              
-              if((MemberDB.getCurrentSteps(m) >= 126086) )       
+              if((MemberDB.getCurrentSteps(m) >= 127354) ) //60.3 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1016,7 +1016,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }
              
-               if((MemberDB.getCurrentSteps(m) >= 128410) )       
+               if((MemberDB.getCurrentSteps(m) >= 129677) )// 61.4 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1052,7 +1052,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }
               
-              if((MemberDB.getCurrentSteps(m) >= 130522) )       
+              if((MemberDB.getCurrentSteps(m) >= 131789) ) //62.4 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1089,7 +1089,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
               
               
-              if((MemberDB.getCurrentSteps(m) >= 132211) )       
+              if((MemberDB.getCurrentSteps(m) >= 133478) ) //63.2 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1126,7 +1126,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
                 
               
-              if((MemberDB.getCurrentSteps(m) >= 135168) )       
+              if((MemberDB.getCurrentSteps(m) >= 136435) )//64.6 miles       
             {
                 
                 boolean setToTrue = true;
@@ -1163,7 +1163,7 @@ public class SplashScreenServlet extends HttpServlet
             }  
               
             
-               if((MemberDB.getCurrentSteps(m) >= 140026) )       
+               if((MemberDB.getCurrentSteps(m) >= 141293) )//66.9 miles       
                {
                 
                 boolean setToTrue = true;
@@ -1200,7 +1200,7 @@ public class SplashScreenServlet extends HttpServlet
             }
                
                
-               if((MemberDB.getCurrentSteps(m) >= 143405) )       
+               if((MemberDB.getCurrentSteps(m) >= 144672) ) //68.5  miles    
             {
                 
                 boolean setToTrue = true;
@@ -1236,7 +1236,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }    
               
-                if((MemberDB.getCurrentSteps(m) >= 156710) )       
+                if((MemberDB.getCurrentSteps(m) >= 157978) )//74.8 miles       
             {
                 
                 boolean setToTrue = true;
@@ -1273,7 +1273,7 @@ public class SplashScreenServlet extends HttpServlet
             }
                
                
-               if((MemberDB.getCurrentSteps(m) >= 167693) )       
+               if((MemberDB.getCurrentSteps(m) >= 168960) ) //80 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1309,7 +1309,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }   
              
-              if((MemberDB.getCurrentSteps(m) >= 182899) )       
+              if((MemberDB.getCurrentSteps(m) >= 184166) )       
             {
                 
                 boolean setToTrue = true;
@@ -1345,7 +1345,7 @@ public class SplashScreenServlet extends HttpServlet
   
             }   
                
-             if((MemberDB.getCurrentSteps(m) >= 187344) )       
+             if((MemberDB.getCurrentSteps(m) >= 188602) )//89.3 miles       
             {
                 
                 boolean setToTrue = true;
@@ -1381,7 +1381,7 @@ public class SplashScreenServlet extends HttpServlet
   
             } 
              
-             if((MemberDB.getCurrentSteps(m) >= 194093 ) )       
+             if((MemberDB.getCurrentSteps(m) >= 195360 ) )//92.5 miles       
             {
                 
                 boolean setToTrue = true;
@@ -1418,7 +1418,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
              
              
-              if((MemberDB.getCurrentSteps(m) >= 194726) )       
+              if((MemberDB.getCurrentSteps(m) >= 195994) ) //92.8 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1455,7 +1455,7 @@ public class SplashScreenServlet extends HttpServlet
             } 
              
               
-             if((MemberDB.getCurrentSteps(m) >= 203597) )       
+             if((MemberDB.getCurrentSteps(m) >= 204864) ) //97 miles      
             {
                 
                 boolean setToTrue = true;
@@ -1492,7 +1492,7 @@ public class SplashScreenServlet extends HttpServlet
             }  
              
              
-                if((MemberDB.getCurrentSteps(m) >= 205920) )       
+                if((MemberDB.getCurrentSteps(m) >= 207187) )   //98.1 miles    
             {
                 
                 boolean setToTrue = true;
@@ -2212,7 +2212,7 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),6)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 52434 &&
+                   && MemberDB.getCurrentSteps(m) > 53434 &&
                      62304-MemberDB.getCurrentSteps(m)>0))
             {
  
@@ -2226,10 +2226,10 @@ public class SplashScreenServlet extends HttpServlet
                else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),7)==false)
                  
                    && MemberDB.getCurrentSteps(m) > 62304 &&
-                     73206-MemberDB.getCurrentSteps(m)>0))
+                     74554-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (73206-MemberDB.getCurrentSteps(m)) + " until the NEXT TOUR PLACE called " 
+                    msg3 = "Good Work! " + "Only " + (74554-MemberDB.getCurrentSteps(m)) + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 7));
                     m.setLoctorf7(false);
         
@@ -2238,11 +2238,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),8)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 53965 &&
-                     82579-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 74554 &&
+                     83846-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (82579-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (83846-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + 
                              (RouteWithStepsDB.getDestination(route, 8));
                     m.setLoctorf8(false);
@@ -2252,11 +2252,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),9)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 82579 &&
-                     92294-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 83846 &&
+                     93562-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (92294-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (93562-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 9));
                     m.setLoctorf9(false);
@@ -2266,11 +2266,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),10)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 92294 &&
-                     96730-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 93562 &&
+                     97997-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (96730-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (97997-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 10));
                     m.setLoctorf10(false);
@@ -2280,11 +2280,11 @@ public class SplashScreenServlet extends HttpServlet
             
             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),11)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 96730 &&
-                     99898-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 97997 &&
+                     101165-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (99898-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (101165-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + 
                             (RouteWithStepsDB.getDestination(route, 11));
                     m.setLoctorf11(false);
@@ -2295,11 +2295,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),12)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 99898 &&
-                     110246-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 101165 &&
+                     111514-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Work! " + "Only " + (110246-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Work! " + "Only " + (111514-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + 
                              (RouteWithStepsDB.getDestination(route, 12));
                     m.setLoctorf12(false);
@@ -2309,11 +2309,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),13)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 110246 &&
-                     120806-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 111514 &&
+                     122074-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Work! " + "Only " + (120806-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Work! " + "Only " + (122074-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 13));
                     m.setLoctorf13(false);
@@ -2323,11 +2323,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),14)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 120806 &&
-                     126086-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 122074 &&
+                     127354-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great WORK! " + "Only " + (126086-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great WORK! " + "Only " + (127354-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + (RouteWithStepsDB.getDestination(route, 14));
                     m.setLoctorf14(false);
         
@@ -2336,11 +2336,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),15)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 126086 &&
-                     128410-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 127354 &&
+                     129677-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Work! " + "Only " + (128410-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Work! " + "Only " + (129677-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + 
                             (RouteWithStepsDB.getDestination(route, 15));
                     m.setLoctorf15(false);
@@ -2351,11 +2351,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),16)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 128410 &&
-                     130522-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 129677 &&
+                     131789-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (130522-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (131789-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " + 
                             (RouteWithStepsDB.getDestination(route, 16));
                     m.setLoctorf16(false);
@@ -2365,11 +2365,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),17)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 130522 &&
-                     132211-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 131789 &&
+                     133478-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (132211-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (133478-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE " +
                       " called " + (RouteWithStepsDB.getDestination(route, 17));
                     m.setLoctorf17(false);
@@ -2380,11 +2380,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),18)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 132211 &&
-                     135168-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 133478 &&
+                     136435-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (135168-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (136435-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " +
                              (RouteWithStepsDB.getDestination(route, 18));
                     m.setLoctorf18(false);
@@ -2395,11 +2395,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),19)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 135168 &&
-                     140026-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 136435 &&
+                     141293-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (140026-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (141293-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 19));
                     m.setLoctorf19(false);
@@ -2410,11 +2410,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),20)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 140026 &&
-                     143405-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 141293 &&
+                     144672-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great Work! " + "Only " + (143405-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great Work! " + "Only " + (144672-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 20));
                     m.setLoctorf20(false);
@@ -2425,11 +2425,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),21)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 143405 &&
-                     156710-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 144672 &&
+                     157978-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Great WORK! " + "Only " + (156710-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Great WORK! " + "Only " + (157978-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 21));
                     m.setLoctorf21(false);
@@ -2440,11 +2440,11 @@ public class SplashScreenServlet extends HttpServlet
             
               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),22)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 156710 &&
-                     167693-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 157978 &&
+                     168960-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (167693-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (168960-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 22));
                     m.setLoctorf22(false);
@@ -2455,11 +2455,11 @@ public class SplashScreenServlet extends HttpServlet
             
              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),23)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 167693 &&
-                     182899-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 168960 &&
+                     184166-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (182899-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (184166-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called " 
                             + (RouteWithStepsDB.getDestination(route, 23));
                     m.setLoctorf23(false);
@@ -2468,11 +2468,11 @@ public class SplashScreenServlet extends HttpServlet
             }
   else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),24)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 182899 &&
-                     187344-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 184166 &&
+                     188602-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (187344-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (188602-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 24));
                     m.setLoctorf24(false);
@@ -2482,11 +2482,11 @@ public class SplashScreenServlet extends HttpServlet
             
     else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),25)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 187334 &&
-                     194093-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 188602 &&
+                     195360-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (194093-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (195360-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 25));
                     m.setLoctorf25(false);
@@ -2496,11 +2496,11 @@ public class SplashScreenServlet extends HttpServlet
             
   else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),26)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 194093 &&
-                     194726-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 195360 &&
+                     195994-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (194726-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (195994-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 26));
                     m.setLoctorf26(false);
@@ -2510,11 +2510,11 @@ public class SplashScreenServlet extends HttpServlet
             
   else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),27)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 194726 &&
-                     203597-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 195994 &&
+                     204864-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (203597-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (204864-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 27));
                     m.setLoctorf27(false);
@@ -2524,11 +2524,11 @@ public class SplashScreenServlet extends HttpServlet
             
   else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),28)==false)
                  
-                   && MemberDB.getCurrentSteps(m) > 203597 &&
-                     205920-MemberDB.getCurrentSteps(m)>0))
+                   && MemberDB.getCurrentSteps(m) > 204864 &&
+                     207187-MemberDB.getCurrentSteps(m)>0))
             {
  
-                    msg3 = "Good Work! " + "Only " + (205920-MemberDB.getCurrentSteps(m)) + " steps to go "
+                    msg3 = "Good Work! " + "Only " + (207187-MemberDB.getCurrentSteps(m)) + " steps to go "
                      + " until the NEXT TOUR PLACE called "
                             + (RouteWithStepsDB.getDestination(route, 28));
                     m.setLoctorf28(false);

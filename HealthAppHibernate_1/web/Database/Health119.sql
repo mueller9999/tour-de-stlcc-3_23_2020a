@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS Health118;
-CREATE DATABASE Health118;
-USE Health118;
+DROP DATABASE IF EXISTS Health119;
+CREATE DATABASE Health119;
+USE Health119;
 
 
 CREATE TABLE tblMembers (
@@ -118,7 +118,7 @@ INSERT INTO tblroutewithsteps VALUES (4, "Chesterfield Mall
 
 INSERT INTO tblroutewithsteps VALUES (5, "The Butterfly House
 ",' 15193 Olive Blvd, Chesterfield, MO 63017
-',1.7,3590,534434,'false');
+',1.7,3590,53434,'false');
 
 INSERT INTO tblroutewithsteps VALUES (6, "Dates Park
 ",' 2143 Creve Coeur Mill Rd, St. Louis, MO 63146

@@ -579,9 +579,9 @@ function update(percentcomplete)
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/workforce/corporate-college/">STLCC-Coporate college</th>
           <td>3221 McKelvey Rd</td>
-          <td>42240</td>
-          <td>20</td>
-          <td>34.7</td>
+          <td>12250</td>
+          <td>5.8</td>
+          <td>35.3</td>
         </tr>
 
         <tr>
@@ -589,7 +589,7 @@ function update(percentcomplete)
           <td>2645 Generations Dr</td>
           <td> 9293</td>
           <td>4.4 </td>
-          <td>39.1 </td>
+          <td>39.7 </td>
         </tr>
 
         <tr>
@@ -597,140 +597,140 @@ function update(percentcomplete)
           <td>8617 Latty Ave </td>
           <td>9715 </td>
           <td>4.6 </td>
-          <td>43.7 </td>
+          <td>44.3 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.imospizza.com/store/florissant/">Imo's Pizza</th>
           <td>1939 Washington St </td>
           <td>4435 </td>
           <td>2.1</td>
-          <td>45.8 </td>
+          <td>46.4 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/florissant-valley/">STLCC - Florissant Valley </th>
           <td> 3400 Pershall Rd</td>
           <td>3168 </td>
           <td>1.5 </td>
-          <td>47.3 </td>
+          <td>47.9 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://nature.mdc.mo.gov/discover-nature/places/jennings-koeneman-park-lake">Koeneman Park </th>
           <td> 8937 Lucas and Hunt </td>
           <td>10349 </td>
           <td>4.9 </td>
-          <td>52.2 </td>
+          <td>52.8 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlouis-mo.gov/parks/parks/browse-parks/view-park.cfm?parkID=68&parkName=O">O'Fallon Park </th>
           <td> 799 E Taylor Ave </td>
           <td>10560 </td>
           <td>5 </td>
-          <td>57.2 </td>
+          <td>57.8 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.thegriotmuseum.com/">Griot Museum of Black History </th>
           <td>2505 St Louis Ave  </td>
           <td>5280 </td>
           <td>2.5 </td>
-          <td>59.7 </td>
+          <td>60.3 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/william-j-harrison-education-center/">STLCC - Harrison Park </th>
           <td>3140 Cass Ave </td>
           <td>2323 </td>
           <td>1.1 </td>
-          <td>60.8 </td>
+          <td>61.4 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://camstl.org/">Contemporary Art</th>
           <td>3750 Washington Blvd </td>
           <td>2112 </td>
           <td>1 </td>
-          <td>61.8 </td>
+          <td>62.4 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.pappyssmokehouse.com/">Pappy's Smokehouse </th>
           <td>3106 Olive St </td>
           <td>1690 </td>
           <td>0.8 </td>
-          <td>62.6 </td>
+          <td>63.2 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.ikea.com/us/en/stores/st-louis/">Ikea </th>
           <td>1 Ikea Way </td>
-          <td>2957 </td>
+          <td>1690 </td>
           <td>1.4 </td>
-          <td>64 </td>
+          <td>64.6 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/forest-park/index.aspx">STLCC - Forest Park </th>
           <td>5600 Oakland Ave </td>
           <td>4858 </td>
           <td>2.3 </td>
-          <td>66.3 </td>
+          <td>66.9 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlzoo.org/">St.Louis Zoo </th>
           <td>Government Dr </td>
           <td>3379 </td>
           <td>1.6 </td>
-          <td>67.9 </td>
+          <td>68.5 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.guspretzels.com/">Eat at Gus' Pretzels </th>
           <td>1820 Arsenal St</td>
           <td>13306 </td>
           <td>6.3 </td>
-          <td>74.2 </td>
+          <td>74.8 </td>
         </tr>
         <tr>
           <th scope="row"><a href="http://teddrewes.com/">Ted Drewes </th>
           <td>6726 Chippewa St </td>
           <td>10982 </td>
           <td>5.2 </td>
-          <td>79.4 </td>
+          <td>80 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.shopsouthcountycenter.com/">South County Center </th>
           <td>18 S County Center Way </td>
           <td>15206 </td>
           <td>7.2 </td>
-          <td>86.6 </td>
+          <td>87.2 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://pinkgalleon.com/">Pink Galleon Billiards and games </th>
           <td>4010 Butler Hill Rd </td>
           <td>4435 </td>
           <td>2.1 </td>
-          <td>88.7 </td>
+          <td>89.3 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://concordbowl.com/">Concord Bowl and Recreation </th>
           <td>11801 Tesson Ferry Rd </td>
           <td>6758 </td>
           <td>3.2 </td>
-          <td>91.9 </td>
+          <td>92.5 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.facebook.com/pages/category/Shopping-Mall/Concord-Plaza-Shopping-Center-845535872130545/">Concord Plaza STL</th>
           <td>91 Concord Plaza Shopping Center </td>
           <td>634 </td>
           <td>0.3 </td>
-          <td>92.2 </td>
+          <td>92.8 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.laumeiersculpturepark.org/">Laumeir Park </th>
           <td>12580 Rott Rd </td>
           <td>8870 </td>
           <td>4.2 </td>
-          <td>96.4 </td>
+          <td>97 </td>
         </tr>
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/">STLCC - Meramac </th>
           <td>11333 Big Bend Rd </td>
           <td>2323 </td>
           <td>1.1 </td>
-          <td>97.5 </td>
+          <td>98.1 </td>
         </tr>
 
 

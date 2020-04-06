@@ -127,7 +127,7 @@ INSERT INTO tblroutewithsteps VALUES (6, "Dates Park
 
 INSERT INTO tblroutewithsteps VALUES (7, 'STLCC - Corporate College
 ',' 3221 McKelvey Rd, Bridgeton, MO 63044
-',20,10902,73206,'false');
+',20,12250,73206,'false');
 
 INSERT INTO tblroutewithsteps VALUES (8, 'St.Louis Lambert International Airport
 ','2645 Generations Dr, Grover, MO 63040
