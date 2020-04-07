@@ -658,7 +658,7 @@ function update(percentcomplete)
         <tr>
           <th scope="row"><a href="https://www.ikea.com/us/en/stores/st-louis/">Ikea </th>
           <td>1 Ikea Way </td>
-          <td>1690 </td>
+          <td>2957 </td>
           <td>1.4 </td>
           <td>64.6 </td>
         </tr>

@@ -68,7 +68,7 @@ public class LogonServlet extends HttpServlet
       if(userID=="")
       {
            msg = "The Logon User ID and Password can not be blank " + "<br>"
-                  +"to create a new account click the New Member button " +"<br>";
+                  +"to create a new account click the Create New Account button " +"<br>";
           
       }
       
@@ -76,7 +76,7 @@ public class LogonServlet extends HttpServlet
       if(passWord=="")
       {
           msg = "The Logon User ID and Password can not be blank " +"<br>"
-                  +"to create a new account click the New Member button " +"<br>";
+                  +"to create a new account click the Create New Account button " +"<br>";
           
       }
       
@@ -88,7 +88,7 @@ public class LogonServlet extends HttpServlet
             if (m == null)
             {
                   msg = "The Logon User ID and Password can not be blank " + "<br>"
-                  +"to create a new account click the New Member button " +"<br>";
+                  +"to create a new account click the Create New Account button " +"<br>";
             } else
             {
                 msg = "Welcome Member "+ m.getFirstnm();
@@ -105,7 +105,7 @@ public class LogonServlet extends HttpServlet
                    
                       //  msg=" ERROR: invalid password attempt "+ e.getMessage();
                        msg = "The Logon User ID and Password can not be blank " +"<br>"
-                  +"to create a new account click the New Member button " +"<br>";
+                  +"to create a new account click the Create New Account button " +"<br>";
                 }
                     
                     
@@ -116,7 +116,7 @@ public class LogonServlet extends HttpServlet
                 if (!m.isAuthenticated())
                 {
                      msg = "The Logon User ID and Password can not be blank " + "<br>"
-                  +"to create a new account click the New Member button " +"<br>";
+                  +"to create a new account click the Create New Account button " +"<br>";
                 } else
                 {
                     
