@@ -198,7 +198,7 @@ public class CreateAccountServlet extends HttpServlet
       catch(Exception e)
       {
           
-          msg+="weight must be a number: " + e.getMessage() + "<br>";
+          msg+="weight must be a number the problem is: " + e.getMessage() + "<br>";
           fieldIsBlank = true;
       }
       
