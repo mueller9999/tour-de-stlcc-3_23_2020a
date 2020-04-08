@@ -553,8 +553,10 @@ function update(percentcomplete)
           <td>14.7</td>
         </tr>
 
+        
+        
          <tr>
-          <th scope="row"><a href="https://mallseeker.com/chesterfield-mall.aspx/">Chesterfield Mall</th>
+          <th scope="row"><%--<a href="https://mallseeker.com/chesterfield-mall.aspx/">--%>Chesterfield Mall</th>
           <td>291 Chesterfield Center, Chesterfield</td>
           <td>18797</td>
           <td>8.9</td>
@@ -569,7 +571,7 @@ function update(percentcomplete)
         </tr>
         
         <tr>
-          <th scope="row"><a href ="https://www.stlouisco.com/Parks-and-Recreation/Park-Pages/Creve-Coeur">Dates Park</th>
+          <th scope="row"><%--<a href ="https://www.stlouisco.com/Parks-and-Recreation/Park-Pages/Creve-Coeur">--%>Dates Park</th>
           <td>2143 Creve Coeur Mill Rd, St. Louis</td>
           <td>8870</td>
           <td>4.2</td>
