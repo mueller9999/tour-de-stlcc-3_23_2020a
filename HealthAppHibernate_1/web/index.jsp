@@ -423,7 +423,7 @@
     </form>
     </center>
     <center>                      
-    <form> 
+        <form> 
         <table>    
              <c:if test="${(member.loctorf27)}">
                 ${msg33}

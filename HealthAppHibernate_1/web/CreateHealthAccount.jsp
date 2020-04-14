@@ -16,8 +16,19 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
- <body>
+ 
+ <head>
+        <meta charset="utf-8">
+     <link rel="stylesheet" href="css/styles.css">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+
+
+<body>
         <h1>Add STLCC Virtual Tour member Data</h1>
+        <hr> 
         <form id="memupdate" action="MemberUpdate" method="post">
             <table class="member-details">
             <tr>

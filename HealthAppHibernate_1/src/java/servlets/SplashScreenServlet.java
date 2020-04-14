@@ -2602,7 +2602,12 @@ public class SplashScreenServlet extends HttpServlet
          request.setAttribute("msg36", msg36);
          request.setAttribute("msg37", msg37);
         
-        
+        boolean tourIsFinished = false;
+        if(MemberDB.getCurrentSteps(m)>=207187)
+        {
+           tourFinished = true;
+           request.setAttribute("tourisfinished", tourIsFinished);
+        }
         request.setAttribute("msgtest", msgTest);
         request.setAttribute("route", route);
         session.setAttribute("route", route);
