@@ -3,6 +3,17 @@
     Created on : Feb 4, 2020, 6:39:01 PM
     Author     : Michael Mueller
 --%>
+
+<%--
+		
+		STLCC Virtual Tour
+		Author: International Scrums
+		Date: March 13th, 2020
+		
+		Filename: HealthLogon.jsp
+		 
+	
+		--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

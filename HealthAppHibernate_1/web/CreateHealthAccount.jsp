@@ -3,6 +3,16 @@
     Created on : Feb 4, 2020, 7:59:31 PM
     Author     : Michael Mueller
 --%>
+<%--
+		
+		STLCC Virtual Tour
+		Author: International Scrums
+		Date: March 13th, 2020
+		
+		Filename: CreateHealthAccount.jsp
+		 
+	
+		--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
