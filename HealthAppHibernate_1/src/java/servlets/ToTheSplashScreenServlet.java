@@ -11,6 +11,8 @@ import business.RouteWithSteps;
 import business.RouteWithStepsDB;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -39,10 +41,10 @@ public class ToTheSplashScreenServlet extends HttpServlet
     {
         response.setContentType("text/html;charset=UTF-8");
         
-        
+          boolean noErrorsAbove =false;
         String URL = "/index.jsp";
         String msg ="";
- 
+         boolean tourIsFinished = false;
         String msg2 ="";
         String msg3 ="";
          String msg4 ="";
@@ -52,8 +54,9 @@ public class ToTheSplashScreenServlet extends HttpServlet
         String msg7 ="";
         String msg8 ="";
         String msg9 ="";
-        
+        boolean tourFinished =false;
         String msgTest ="";
+         boolean noErrors = false;
         
         
         String msg28 ="";
@@ -86,7 +89,7 @@ public class ToTheSplashScreenServlet extends HttpServlet
         String msg35 = "";
         String msg36 = "";
         String msg37 = "";
-        
+        boolean enterwaspressed =true;
         
          HttpSession session = request.getSession();
         
@@ -101,16 +104,1215 @@ public class ToTheSplashScreenServlet extends HttpServlet
          
          request.setAttribute("m1", m1);
         
+         int steps1 =0;
+         int steps = steps1;
           RouteWithSteps route = new RouteWithSteps();
-        boolean tourIsFinished = false;
+       // boolean tourIsFinished = false;
         if(MemberDB.getCurrentSteps(m1)>=207187)
         {
+            
+            
+            
             tourIsFinished = true;
             request.setAttribute("tourisfinished", tourIsFinished);
+             steps1 =  MemberDB.getCurrentSteps(m);
+        
+             
+            
+             
+            int stepsFromDataBase =steps1;
+           
+             double caloriesBurnedForDay = 0.0;
+                  caloriesBurnedForDay =  ((steps * 30.0)/63360)* m .getWeight() * .653; 
+            //calculation comes from site http://www.jsmadeeasy.com/javascripts/Calculators/Calorie%20Calculator/index.htm
+            //there are 63360 inches in a mile
+        
+           
+            
+            
+            
+            
+            m.setCaloriesBurned(caloriesBurnedForDay);
+            
+            MemberDB.setCaloriesForDay(caloriesBurnedForDay,m);
+          //  msgTest += "calories burned for day " + MemberDB.getCaloriesForTheDay(m);
+            double totalCaloriesBurned =0.0;
+            
+           
+            
+            totalCaloriesBurned = caloriesBurnedForDay + ((stepsFromDataBase * 30.0)
+                    /63360)*m .getWeight() * .653;
+            
+           
+             Double truncatedDouble = BigDecimal.valueOf(totalCaloriesBurned)
+    .setScale(4, RoundingMode.HALF_UP)
+    .doubleValue();
+            //msgTest += "total calories burned " + totalCaloriesBurned;
+            
+           // totalCaloriesBurned =  MemberDB.getCurrentTotalCalories(m) + MemberDB.getCaloriesForTheDay(m);
+            
+         
+           
+           
+            m.setTotalcaloriesburned(truncatedDouble);
+            MemberDB.settotalCalories(truncatedDouble, m);
+            
+            
+            int totalSteps = steps + stepsFromDataBase; 
+        
+            MemberDB.setTotalSteps(totalSteps, m);
+           
+          
+            
+            double progressOfSteps = (totalSteps/207187.0) * 100;
+            
+            String percentComplete =""; 
+          Double truncatedDouble1=0.0;
+        if( progressOfSteps >= 100)
+        {
+            if(((progressOfSteps))>=100||(totalSteps>= 207187))
+            {
+                m.setTourfinished("true");
+                MemberDB.updateMember(m);
+                
+                
+                session.setAttribute("member", m1);
+                tourFinished=true;
+                percentComplete = " The Tour is complete ";
+                request.setAttribute("progressofsteps",percentComplete);
+                
+                
+                
+                
+            }
+        }    
+        else 
+            {
+                truncatedDouble1 = BigDecimal.valueOf(progressOfSteps)
+                        .setScale(0, RoundingMode.HALF_EVEN)
+                        .doubleValue();
+                
+                
+                
+                m.setTourfinished("false");
+                MemberDB.updateMember(m);
+                
+                session.setAttribute("member", m1);
+                percentComplete = truncatedDouble1 + " % of tour complete " + "<br>" ;
+                
+                request.setAttribute("progressofsteps", percentComplete);
+                request.setAttribute("percentcomplete", truncatedDouble1);
+            
+            }
+ 
+            int myMinimum =0;
+            int myMaximum = 207187;
+    
+           // ProgressBar bar = new ProgressBar();
+            
+           // bar.updateBar((int)progressOfSteps);
+            
+            
+            //convert steps to miles    
+            //difference = (myDistance * myWeight) * .653;
+          
+           // double totalCurrentCaloriesFromDatabase = MemberDB.getCurrentCalories(m);
+            
+            
+           
+            
+            
+           
+            
            
             
        
-               if(MemberDB.getTORFValueForLocation(m3.getMemid().trim(),1)==true)
+             msg2 = "Your total steps of single walking steps(30 inches in a step) since " + date +"<br>"+
+                    "is " + MemberDB.getCurrentSteps(m) + " and you've burned around "
+                     + MemberDB.getCurrentTotalCalories(m) + " " + "calories since you started!!";
+                     
+            m.setNoErrors(noErrors);
+            
+            
+            //add a location count in db later to tell when to print you unlocked
+            //the location and to deternmine whether to print 
+            //how many feet until next locaiton
+           
+           
+              boolean destinationVisited2 =false;
+        
+            if(MemberDB.getCurrentSteps(m) >= 0 )  
+            {
+                
+                
+                
+             if((MemberDB.getCurrentSteps(m) >= 0) )       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 1; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),1)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),1)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(1);
+                    m.setLoctorf1(setToTrue);
+                    destinationVisited2=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                
+                
+                
+                 
+                
+            }
+            
+           
+          
+            if((MemberDB.getCurrentSteps(m) >= 5702) ) //total 2.7 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 2; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),2)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),2)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(2);
+                    m.setLoctorf2(setToTrue);
+                    destinationVisited2=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                
+                
+                
+                 
+                
+            }
+            
+            
+            
+           
+       {
+           
+             boolean destinationVisited3 =false;
+          
+            if((MemberDB.getCurrentSteps(m) >= 31046) ) //total 14.7 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 3; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(3);
+                    m.setLoctorf3(setToTrue);
+                    destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+            
+             if((MemberDB.getCurrentSteps(m) >= 49843) )       //total 23.6 miles
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 4; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(4);
+                    m.setLoctorf4(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+            
+            
+               if((MemberDB.getCurrentSteps(m) >= 53434) ) //total 25.3 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 5; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(5);
+                    m.setLoctorf5(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+            }
+            if((MemberDB.getCurrentSteps(m) >= 62304) )       //29.5 miles
+            {
+                
+                boolean setToTrue = true;
+                int locID = 6; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(6);
+                    m.setLoctorf6(setToTrue);
+                    //destinationVisited4=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+                 
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            
+            
+             
+             
+             
+            if((MemberDB.getCurrentSteps(m) >= 74554) ) //35.3 miles      
+            {
+                
+                 boolean setToTrue = true;
+                 int locID = 7; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(7);
+                    m.setLoctorf7(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+            
+            
+             
+              if((MemberDB.getCurrentSteps(m) >= 83846) )//39.7       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 8; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(8);
+                    m.setLoctorf8(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+             
+              if((MemberDB.getCurrentSteps(m) >= 93562) ) //44.3 miles 
+             {
+                
+                 boolean setToTrue = true;
+                 int locID = 9; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(9);
+                    m.setLoctorf9(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }  
+             
+             
+             if((MemberDB.getCurrentSteps(m) >= 97997) )//46.4 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 10; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(10);
+                    m.setLoctorf10(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }  
+             
+             if((MemberDB.getCurrentSteps(m) >= 101165) )//47.9 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 11; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(11);
+                    m.setLoctorf11(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+             
+             
+              if((MemberDB.getCurrentSteps(m) >= 111514) )//52.8       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 12; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(12);
+                    m.setLoctorf12(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+             
+             if((MemberDB.getCurrentSteps(m) >= 122074) ) //57.8 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 13; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),13)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(true,13,route);
+                     MemberDB.setLocationValueForMemberToTrue(true,m3.getMemid(),13,route);
+                 
+                    route.setLocationID(13);
+                    m.setLoctorf13(true);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+              
+             
+              if((MemberDB.getCurrentSteps(m) >= 127354) ) //60.3 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 14; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(14);
+                    m.setLoctorf14(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+             
+               if((MemberDB.getCurrentSteps(m) >= 129677) )// 61.4 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 15; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(15);
+                    m.setLoctorf15(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+              
+              if((MemberDB.getCurrentSteps(m) >= 131789) ) //62.4 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 16; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(16);
+                    m.setLoctorf16(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+              
+              
+              if((MemberDB.getCurrentSteps(m) >= 133478) ) //63.2 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 17; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(17);
+                    m.setLoctorf17(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+                
+              
+              if((MemberDB.getCurrentSteps(m) >= 136435) )//64.6 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 18; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(18);
+                    m.setLoctorf18(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }  
+              
+            
+               if((MemberDB.getCurrentSteps(m) >= 141293) )//66.9 miles       
+               {
+                
+                boolean setToTrue = true;
+                 int locID = 19; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(19);
+                    m.setLoctorf19(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+               
+               
+               if((MemberDB.getCurrentSteps(m) >= 144672) ) //68.5  miles    
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 20; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(20);
+                    m.setLoctorf20(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }    
+              
+                if((MemberDB.getCurrentSteps(m) >= 157978) )//74.8 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 21; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(21);
+                    m.setLoctorf21(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+               
+               
+               if((MemberDB.getCurrentSteps(m) >= 168960) ) //80 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 22; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(22);
+                    m.setLoctorf22(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }   
+             
+              if((MemberDB.getCurrentSteps(m) >= 184166) )       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 23; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(23);
+                    m.setLoctorf23(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }   
+               
+             if((MemberDB.getCurrentSteps(m) >= 188602) )//89.3 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 24; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(24);
+                    m.setLoctorf24(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+             
+             if((MemberDB.getCurrentSteps(m) >= 195360 ) )//92.5 miles       
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 25; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(25);
+                    m.setLoctorf25(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+             
+             
+              if((MemberDB.getCurrentSteps(m) >= 195994) ) //92.8 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 26; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(26);
+                    m.setLoctorf26(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            } 
+             
+              
+             if((MemberDB.getCurrentSteps(m) >= 204864) ) //97 miles      
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 27; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(27);
+                    m.setLoctorf27(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }  
+             
+             
+                if((MemberDB.getCurrentSteps(m) >= 207187) )   //98.1 miles    
+            {
+                
+                boolean setToTrue = true;
+                 int locID = 28; 
+                
+                 if(MemberDB.getTORFValueForLocation(m3.getMemid(),locID)==true) 
+                 {
+                     
+                    msg3 ="";
+                     
+                 }
+                 else if (MemberDB.getTORFValueForLocation(m3.getMemid().trim(),locID)==false)
+                 {
+                     
+                     RouteWithStepsDB.setLocationValueToTrue(setToTrue,locID,route);
+                     MemberDB.setLocationValueForMemberToTrue(setToTrue,m3.getMemid(),locID,route);
+                 
+                    route.setLocationID(28);
+                    m.setLoctorf28(setToTrue);
+                    //destinationVisited3=true;
+                 }
+               
+                else
+                {
+                    
+                   
+                    
+                    
+                }
+                //route.setUnlockedLocation(noErrors);
+                //3 is the location id
+                 
+  
+            }
+             
+             
+              
+              
+            
+            int locid3 =3;
+            int locid2 =2;
+            
+            
+                     boolean loc3IsFalse = false;
+                     //loc2IsFalse =  (boolean)request.getAttribute("loc2IsFalse");
+                
+                     if(loc3IsFalse==false)
+                     {
+                         
+                         loc3IsFalse = false;
+                         
+                         
+                     }
+                     else if((boolean)request.getAttribute("loc3IsFalse")==true)
+                     {
+                         loc3IsFalse= true;
+                         
+                     }
+                     
+            
+                   
+                   
+                      if(MemberDB.getTORFValueForLocation(m3.getMemid().trim(),1)==true)
               
                     {
                         
@@ -711,11 +1913,470 @@ public class ToTheSplashScreenServlet extends HttpServlet
                          
        m3.setLoctorf28(true); 
                      
-    }
-            
-            
+    }  
+         
+     
+      
+            if((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),2)==false)
+                     && 5702-MemberDB.getCurrentSteps(m)>0)
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (5702-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "+(RouteWithStepsDB.getDestination(route, 2));
+                    m.setLoctorf2(false);
         
+                
+            } 
+           else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),3)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 5702 &&
+                     31046-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (31046-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + (RouteWithStepsDB.getDestination(route, 3));
+                    m.setLoctorf3(false);
+        
+                
+            } 
+             
+           
+           else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),4)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 31046 &&
+                     49843-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Job! " + "Only " + (49843-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT LOCATION called " + (RouteWithStepsDB.getDestination(route, 4));
+                    m.setLoctorf4(false);
+        
+                
+            } 
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),5)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 49843  &&
+                     53434-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Job! " + "Only " + (53434-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT LOCATION called " + (RouteWithStepsDB.getDestination(route, 5));
+                    m.setLoctorf5(false);
+        
+                
+            } 
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),6)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 53434 &&
+                     62304-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Job! " + "Only " + (62304-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT LOCATION called " +  (RouteWithStepsDB.getDestination(route, 6));
+                    m.setLoctorf6(false);
+        
+                
+            } 
+            
+               else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),7)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 62304 &&
+                     74554-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (74554-MemberDB.getCurrentSteps(m)) + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 7));
+                    m.setLoctorf7(false);
+        
+                
+            } 
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),8)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 74554 &&
+                     83846-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (83846-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + 
+                             (RouteWithStepsDB.getDestination(route, 8));
+                    m.setLoctorf8(false);
+        
+                
+            } 
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),9)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 83846 &&
+                     93562-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (93562-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 9));
+                    m.setLoctorf9(false);
+        
+                
+            } 
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),10)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 93562 &&
+                     97997-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (97997-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 10));
+                    m.setLoctorf10(false);
+        
+                
+            } 
+            
+            else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),11)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 97997 &&
+                     101165-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (101165-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 11));
+                    m.setLoctorf11(false);
+        
+                
+            } 
+            
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),12)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 101165 &&
+                     111514-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Work! " + "Only " + (111514-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + 
+                             (RouteWithStepsDB.getDestination(route, 12));
+                    m.setLoctorf12(false);
+        
+                
+            }
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),13)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 111514 &&
+                     122074-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Work! " + "Only " + (122074-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 13));
+                    m.setLoctorf13(false);
+        
+                
+            }
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),14)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 122074 &&
+                     127354-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great WORK! " + "Only " + (127354-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + (RouteWithStepsDB.getDestination(route, 14));
+                    m.setLoctorf14(false);
+        
+                
+            }
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),15)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 127354 &&
+                     129677-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Work! " + "Only " + (129677-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 15));
+                    m.setLoctorf15(false);
+        
+                
+            }
+            
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),16)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 129677 &&
+                     131789-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (131789-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " + 
+                            (RouteWithStepsDB.getDestination(route, 16));
+                    m.setLoctorf16(false);
+        
+                
+            }
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),17)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 131789 &&
+                     133478-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (133478-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE " +
+                      " called " + (RouteWithStepsDB.getDestination(route, 17));
+                    m.setLoctorf17(false);
+        
+                
+            }
+            
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),18)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 133478 &&
+                     136435-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (136435-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " +
+                             (RouteWithStepsDB.getDestination(route, 18));
+                    m.setLoctorf18(false);
+        
+                
+            }
+            
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),19)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 136435 &&
+                     141293-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (141293-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 19));
+                    m.setLoctorf19(false);
+        
+                
+            }
+            
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),20)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 141293 &&
+                     144672-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great Work! " + "Only " + (144672-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 20));
+                    m.setLoctorf20(false);
+        
+                
+            }
+            
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),21)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 144672 &&
+                     157978-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Great WORK! " + "Only " + (157978-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 21));
+                    m.setLoctorf21(false);
+        
+                
+            }
+            
+            
+              else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),22)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 157978 &&
+                     168960-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (168960-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 22));
+                    m.setLoctorf22(false);
+        
+                
+            }
+            
+            
+             else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),23)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 168960 &&
+                     184166-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (184166-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called " 
+                            + (RouteWithStepsDB.getDestination(route, 23));
+                    m.setLoctorf23(false);
+        
+                
+            }
+  else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),24)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 184166 &&
+                     188602-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (188602-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 24));
+                    m.setLoctorf24(false);
+        
+                
+            }
+            
+    else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),25)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 188602 &&
+                     195360-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (195360-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 25));
+                    m.setLoctorf25(false);
+        
+                
+            }
+            
+  else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),26)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 195360 &&
+                     195994-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (195994-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 26));
+                    m.setLoctorf26(false);
+        
+                
+            }
+            
+  else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),27)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 195994 &&
+                     204864-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (204864-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 27));
+                    m.setLoctorf27(false);
+        
+                
+            }
+            
+  else if(((MemberDB.getTORFValueForLocation(m3.getMemid().trim(),28)==false)
+                 
+                   && MemberDB.getCurrentSteps(m) > 204864 &&
+                     207187-MemberDB.getCurrentSteps(m)>0))
+            {
+ 
+                    msg3 = "Good Work! " + "Only " + (207187-MemberDB.getCurrentSteps(m)) + " steps to go "
+                     + " until the NEXT TOUR PLACE called "
+                            + (RouteWithStepsDB.getDestination(route, 28));
+                    m.setLoctorf28(false);
+        
+                
+            }
+            
+
+            
+
+        else
+        {
+            
+           
+            
+            
+            
+        }     
+            
         }
+       
+       
+        }
+        }
+       
+        URL = "/index.jsp";
+        request.setAttribute("noErrorsAbove", noErrorsAbove);
+        request.setAttribute("enterWasPressed", enterwaspressed);
+        session.setAttribute("member", m);
+        session.setAttribute("routewithsteps",route);
+        request.setAttribute("msg2", msg2);
+        request.setAttribute("msg3",msg3);
+        //request.setAttribute("finishedtour", finishedTour);
+        request.setAttribute("m1", m);
+        request.setAttribute("msg4", msg4);
+         request.setAttribute("msg5", msg5);
+        request.setAttribute("msg6", msg6);
+        request.setAttribute("msgTooManySteps", msgTooManySteps);
+        request.setAttribute("msg7", msg7);
+         request.setAttribute("msg8", msg8);
+        request.setAttribute("msg9", msg9);
+        request.setAttribute("msg10", msg10);
+        request.setAttribute("msg11", msg11);
+        request.setAttribute("msg12", msg12);
+        request.setAttribute("msg13", msg13);
+        request.setAttribute("msg14", msg14);
+        request.setAttribute("msg15", msg15);
+        request.setAttribute("msg16", msg16);
+        request.setAttribute("msg17", msg17);
+        request.setAttribute("msg18", msg18);
+        request.setAttribute("msg19", msg19);
+        request.setAttribute("msg20", msg20);
+        request.setAttribute("msg21", msg21);
+      //  request.setAttribute("msg22", msg22);
+        request.setAttribute("msg23", msg23);
+        request.setAttribute("msg26", msg26);
+        request.setAttribute("msg24", msg24); 
+        request.setAttribute("msg25", msg25);
+        
+        request.setAttribute("msg28", msg28);
+        request.setAttribute("msg29", msg29);
+        
+         request.setAttribute("msg30", msg30);
+        request.setAttribute("msg31", msg31); 
+         request.setAttribute("msg32", msg32);
+        request.setAttribute("msg33", msg33);
+        
+         request.setAttribute("msg34", msg34);
+          request.setAttribute("msg5a", msg5a);
+          request.setAttribute("msg35", msg35);
+         request.setAttribute("msg36", msg36);
+         request.setAttribute("msg37", msg37);
+        
+       // boolean tourIsFinished = false;
+        if(MemberDB.getCurrentSteps(m)>=207187)
+        {
+           tourFinished = true;
+           request.setAttribute("tourisfinished", tourIsFinished);
+        
+        request.setAttribute("msgtest", msgTest);
+        request.setAttribute("route", route);
+        session.setAttribute("route", route);
+        RequestDispatcher disp = getServletContext().getRequestDispatcher(URL);
+        disp.forward(request, response);
+            
+        }    
+        else if(MemberDB.getCurrentSteps(m)< 207187)    
+        {
+           
+        
+        
         
        // m1.is
         
@@ -770,11 +2431,12 @@ public class ToTheSplashScreenServlet extends HttpServlet
        session.setAttribute("m1", m1);
         request.setAttribute("m1", m1);
         request.setAttribute("msg", msg);
-        RequestDispatcher disp = getServletContext().getRequestDispatcher(URL);
-        disp.forward(request, response);
+        RequestDispatcher disp1 = getServletContext().getRequestDispatcher(URL);
+        disp1.forward(request, response);
         
+        }
+    
     }
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

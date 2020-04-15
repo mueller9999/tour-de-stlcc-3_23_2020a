@@ -455,7 +455,7 @@
 	
                         
                           ${progressofsteps}  
-                             <c:if test="${enterWasPressed&& noErrorsAbove && percentcomplete gt 0 && percentcomplete lt 205921 }">        
+                             <c:if test="${enterWasPressed&& noErrorsAbove && percentcomplete gt 0 && percentcomplete lt 207187 }">        
                           
                               <div id="Progress_Status" > 
                             <div id="myprogressBar" >     </div> 
