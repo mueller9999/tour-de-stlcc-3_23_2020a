@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="GuessingGame_starter/GuessingGame_starter/src"/>
+	<classpathentry kind="lib" path="GuessingGame_starter/GuessingGame_starter/dist/GuessingGame.jar"/>
+	<classpathentry kind="lib" path="GuessingGame_starter/GuessingGame_starter/dist/lib/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="GuessingGame_starter/GuessingGame_starter/dist/lib/swing-worker-1.1.jar"/>
+	<classpathentry kind="output" path="GuessingGame_starter/GuessingGame_starter/build/classes"/>
+</classpath>

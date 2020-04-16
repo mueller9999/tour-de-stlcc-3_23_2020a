@@ -1,0 +1,23 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  CustomURLProtocolDlg.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xutility(3606,22): warning C4244: '=': conversion from 'const wchar_t' to 'char', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xutility(3643): message : see reference to function template instantiation '_OutIt *std::_Copy_unchecked<const wchar_t*,char*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _InIt=const wchar_t *
+          ]
+C:\TourDeStlcc from Dell M4600 pc\tour-de-stlcc-3_23_2020\HealthAppHibernate_1\Custom URL Protocol invokes a app\CustomURLProtocol_Src\CustomURLProtocolDlg.cpp(198): message : see reference to function template instantiation '_OutIt std::copy<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<char>>>>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=wchar_t,
+              _InIt=std::_String_const_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+  CustomURLProtocolApp.cpp
+  CustomURLProtocol.cpp
+  Generating Code...
+CustomURLProtocol.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+  CustomURLProtocol.vcxproj -> C:\TourDeStlcc from Dell M4600 pc\tour-de-stlcc-3_23_2020\HealthAppHibernate_1\Custom URL Protocol invokes a app\CustomURLProtocol_Src\Debug\CustomURLProtocol.exe

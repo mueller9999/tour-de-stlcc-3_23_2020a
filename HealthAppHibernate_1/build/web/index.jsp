@@ -42,7 +42,11 @@
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    </head>
+                  <meta name="viewport"
+           content ="width=device-width,initial-scale=1.0">
+       <meta name="viewport"
+           content ="width=device-height,initial-scale=1.0">  
+   </head>
       <c:if test="${!member.authenticated}">
               
          <script type="text/javascript">
@@ -443,9 +447,17 @@
            </c:if> 
         </table>
     </form>
-    </center>      
-                
-             
+    </center>
+    <br>
+    <br>
+    <%--source code comes from https://www.codeproject.com/Articles/332206/Custom-URL-Protocol-for-Invoking-Application --%>
+    <c:if test="${member.loctorf28}">
+        <h2> <a href="MyTicTacToeProtocol:">you've unlocked the bonus c# tic tac toe app click this link to run it</a></h2>
+    </c:if>         
+    <c:if test="${member.loctorf28}">
+        <h2> <a href="MyJavaGuessingGameProtocol:">you've unlocked the bonus Java Guessing Game app click this link to run it</a></h2>
+    </c:if> 
+        
          
 		</section>
 
