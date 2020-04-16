@@ -455,7 +455,7 @@
         <h2> <a href="MyTicTacToeProtocol:">you've unlocked the bonus c# tic tac toe app click this link to run it</a></h2>
     </c:if>         
     <c:if test="${member.loctorf28}">
-        <h2> <a href="MyJavaGuessingGameProtocol:">you've unlocked the bonus Java Guessing Game app click this link to run it</a></h2>
+        <h2> <a href="JavaGuessingGame:">you've unlocked the bonus Java Guessing Game app click this link to run it</a></h2>
     </c:if> 
         
          
