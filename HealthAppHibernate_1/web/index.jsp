@@ -450,7 +450,7 @@
     </center>
     <br>
     <br>
-    <%--source code comes from https://www.codeproject.com/Articles/332206/Custom-URL-Protocol-for-Invoking-Application --%>
+    <%--source code to create a URL protocol comes from https://www.codeproject.com/Articles/332206/Custom-URL-Protocol-for-Invoking-Application --%>
     <c:if test="${member.loctorf28}">
         <h2> <a href="MyTicTacToeProtocol:">you've unlocked the bonus c# tic tac toe app click this link to run it</a></h2>
     </c:if>         
