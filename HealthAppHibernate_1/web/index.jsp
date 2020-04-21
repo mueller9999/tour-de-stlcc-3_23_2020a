@@ -461,7 +461,7 @@
         <%--Source code links come from https://www.youtube.com/watch?v=pLzkAfwVP5o 
         I chose to download the source code from google drive--%>
      <c:if test="${member.loctorf28}">
-        <h2> <a href="SlotMachine:">you've unlocked the bonus Java Slot Machine Game app click this link to run it</a></h2>
+        <h2> <a href="SlotMachine1:">you've unlocked the bonus Java Slot Machine Game app click this link to run it</a></h2>
     </c:if>    
          
 		</section>
