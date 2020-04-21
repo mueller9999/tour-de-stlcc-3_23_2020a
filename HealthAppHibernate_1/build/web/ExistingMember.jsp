@@ -124,7 +124,7 @@
                 <td><input type="submit" value="Yes"style="height:60px;width: 100px;" onclick=form.action="ToTheSplashScreen">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     
-                <input type="submit" style="height: 60px;width: 100px;" value="No" onclick=form.action="HealthLogon.jsp"></td>
+                <input type="submit" style="height: 60px;width: 100px;" value="No" onclick=form.action="HealthLogon.jsp"> <a href="HealthLogon.jsp">Return to the Logon page</a></td>
                 
                 
                 
