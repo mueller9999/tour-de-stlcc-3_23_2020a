@@ -1,6 +1,6 @@
 # tour-de-stlcc-3_23_2020a
 STLCC VIRTUAL TOUR
-works with Health122.sql database
+works with Health124.sql database
 
 The C# tic tac toe game and the java guessing game that are unlocked when a user completes the tour are experimental
 If you download it and try to run the app those links on the index.jsp page will probably not work.
@@ -9,5 +9,5 @@ I think it has to do something in the windows registry to work. Ill test it on a
 
 The CustomURLProtocol application which I did not write it was from source code I downloaded from https://www.codeproject.com/Articles/332206/Custom-URL-Protocol-for-Invoking-Application the application is in the Debug folder which is somewhere inside the Custom URL Protocol involes a app folder
 
-
+I was thinking about adding a slots game that I downloaded. I downloaded the source code and modified it slightly but discovered it didn't seem to have error handling so for right now I took it out.
 
