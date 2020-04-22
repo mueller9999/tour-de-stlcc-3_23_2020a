@@ -123,7 +123,7 @@ public class SlotMachineApp extends javax.swing.JFrame {
         win++; labWin.setText("Win > "+win); score=score+20; 
         labMa2.setForeground(Color.blue); detail="Sweet! You have matched TWO!! +20 points";}
         if(mm==1){ lose++; labLose.setText("Lose > "+lose); 
-        score=score-10; labLose.setForeground(Color.red); detail="OOPS! There's no any match! -10 points";}
+        score=score-10; labLose.setForeground(Color.red); detail="OOPS! There's not any match! -10 points";}
         LabScore.setText("Score > "+score);
         btnBoard.setText("$"+(score-topup));
         if(score > topup)
@@ -140,13 +140,35 @@ public class SlotMachineApp extends javax.swing.JFrame {
         {
             setVisible(false);
             do{
-                deci = Integer.parseInt(JOptionPane.showInputDialog("You Have Lost All Your Money. \nPress 1 to Topup\nPress 2 to Exit"));
+                
+                try
+                {
+                
+                    deci = Integer.parseInt(JOptionPane.showInputDialog("You Have Lost All Your Money. \nPress 1 to Topup\nPress 2 to Exit"));
+                }
+                catch(Exception e)
+                {
+            
+                    System.out.println("Error with the selection you made: " + e.getMessage());
+                    System.exit(0);
+                }
+                
             }while(deci != 1 && deci != 2);
             
             if(deci==1)
             {
                 do{
-                    score = Integer.parseInt(JOptionPane.showInputDialog("Enter Topup Amount: (Min=20) "));
+                    try
+                    {
+                    
+                        score = Integer.parseInt(JOptionPane.showInputDialog("Enter Topup Amount: (Min=20) "));
+                    }
+                    catch(Exception e)
+                    {
+            
+                        System.out.println("Error with the score value: " + e.getMessage());
+                        System.exit(0);
+                    }
                 }while(score < 20); setVisible(true); topup = topup+score; LabScore.setText("Score > "+score);
             }
             else{
@@ -349,9 +371,21 @@ public class SlotMachineApp extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         
-        int score;
+        int score =0;
         do{
+        try
+        {
             score = Integer.parseInt(JOptionPane.showInputDialog("Enter Your Starting Amount: (Min=30) "));
+        
+        
+        
+        }
+        catch(Exception e)
+        {
+            
+            System.out.println("Error with the score value: " + e.getMessage());
+            System.exit(0);
+        }
         }while(score < 30);
         
         
