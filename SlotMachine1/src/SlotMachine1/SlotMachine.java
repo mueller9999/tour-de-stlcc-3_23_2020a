@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.Random;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,6 +33,9 @@ public class SlotMachine extends javax.swing.JFrame
     public static int matched4 =0;
     
     public static int wins =0;
+    public static double amountWon =0;
+    
+    
     
     /**
      * Creates new form SlotMachine
@@ -166,8 +170,7 @@ public class SlotMachine extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -178,15 +181,15 @@ public class SlotMachine extends javax.swing.JFrame
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         lblMessage = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("SPin");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
@@ -205,15 +208,6 @@ public class SlotMachine extends javax.swing.JFrame
 
         jLabel6.setText("Current Amount:");
 
-        jTextField1.setEditable(false);
-        jTextField1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -229,24 +223,19 @@ public class SlotMachine extends javax.swing.JFrame
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(87, 87, 87))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(367, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(159, 159, 159)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(312, 312, 312)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31))))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(lblMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(45, 45, 45)
+                .addComponent(lblMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -258,8 +247,6 @@ public class SlotMachine extends javax.swing.JFrame
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(lblMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
@@ -270,11 +257,21 @@ public class SlotMachine extends javax.swing.JFrame
                         .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
                         .addGap(165, 165, 165)
                         .addComponent(jLabel6))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
         );
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -290,7 +287,7 @@ public class SlotMachine extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(220, Short.MAX_VALUE))
         );
 
         pack();
@@ -299,7 +296,7 @@ public class SlotMachine extends javax.swing.JFrame
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
     
-        
+       
         
         
         int rand1 = 1 + (int)(Math.random() * 27); 
@@ -317,11 +314,15 @@ public class SlotMachine extends javax.swing.JFrame
         if(rand2 != rand1 && rand2 == rand3) { numberMatched++; }
         if(rand2 != rand1 && rand2 == rand4) { numberMatched++; }
         if(rand3 != rand1 && rand3 != rand2 && rand3 == rand4) { numberMatched++; } 
-
+        //if(rand1==rand4&& rand2 == rand3){numberMatched++;}
+        
+        
         if(numberMatched==1)
         {
             
             startingAmount1-=10.0;
+            
+            
             jLabel5.setText( "$" + String.format("%.2f",startingAmount1)+": Matched none");
             //lblMessage.setText("Matched None");
            // jTextField1.setText("Matched None");
@@ -353,13 +354,72 @@ public class SlotMachine extends javax.swing.JFrame
         if(startingAmount1 <=0)
         {
              int input = JOptionPane.showConfirmDialog(null,
-                "Your out of money", "out of money", JOptionPane.DEFAULT_OPTION);
+                "You are out of money", "out of money", JOptionPane.DEFAULT_OPTION);
              
             System.out.println(input);
             
             System.exit(0);
         }
         
+        
+            
+            for(int i=0;i< Integer.MAX_VALUE-20;i+=10)
+            {
+                
+                
+                if(startingAmount1 - amountWon < -60)
+                {
+                    
+                    if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 60  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
+                             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+                        {
+    // yes option           
+                            break;
+                        } 
+                        else
+                        {
+                            System.exit(0);
+    // no option    
+                        }
+                    
+                }
+                
+                
+                
+                if(i>20)
+                {
+                    if(((startingAmount1 - amountWon) == i))
+                    {
+            
+       //         JOptionPane.showConfirmDialog(JOptionPane.YES_NO_OPTION,"your winnings are " +);
+            
+                        if (JOptionPane.showConfirmDialog(null, "Your winnings are greater than  $ 20  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
+                             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+                        {
+    // yes option   
+                    
+                        } 
+                        else
+                        {
+                            System.exit(0);
+    // no option    
+                        }
+                    }
+                }
+            }
+            
+            
+        
+        String inputa ="";
+        /*
+        if((startingAmount1 - amountWon >=10))
+        {
+            
+           JOptionPane.showConfirmDialog(null,"your winnings are "+ (startingAmount1-amountWon));
+            
+            
+        }
+        */
         
             //pic1[i] =getImage(getDocumentBase(),"aa" + (i +1) + ".png");
             
@@ -487,12 +547,7 @@ public class SlotMachine extends javax.swing.JFrame
         */
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField1ActionPerformed
-    {//GEN-HEADEREND:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
+    
     /**
      * @param args the command line arguments
      */
@@ -533,21 +588,57 @@ public class SlotMachine extends javax.swing.JFrame
         {
             public void run()
             {
-                String input = JOptionPane.showInputDialog("Enter a starting amount");
-                System.out.println("starting amount: " + Integer.parseInt(input));
-                if(input!=null)
+                String input ="";
+                String input1 ="";
+                try
                 {
-                      new SlotMachine(Integer.parseInt(input)).setVisible(true);
                     
-                    
-                }
-                else 
-                {
-                    System.exit(0);
-                    
-                }
-              
                 
+                    input1 = JOptionPane.showInputDialog("Enter a starting Integer amount greater than zero");
+                 
+                    if(Integer.parseInt(input1) > 0)
+                    {
+                        
+                        input = input1;
+                        amountWon = Integer.parseInt(input);
+                    }
+                    if(input!=null && ((Integer.parseInt(input)) > 0))
+                    {
+                        new SlotMachine(Integer.parseInt(input)).setVisible(true);
+                    
+                    
+                    }
+                    else 
+                    {
+                        System.exit(0);
+                    
+                    }
+              
+                }
+                catch(Exception e)
+                {
+                   JOptionPane optionPane = new JOptionPane("Error",JOptionPane.ERROR_MESSAGE);
+                   JDialog dialog = optionPane.createDialog("Enter a Integer number");
+                   
+                   JOptionPane.showConfirmDialog(null,
+                "Integer Number was not entered or was not greater than zero or was too large", "Error", JOptionPane.DEFAULT_OPTION);
+                   System.exit(0);
+                  
+                   
+                }
+                
+                try
+                {
+                    System.out.println("starting amount: " + Integer.parseInt(input));
+                }
+                catch(Exception e)
+                {
+                    System.out.println("Enter a Integer Starting Amount: " + e.getMessage());
+                    
+                }
+               
+                
+               
             }
         });
     }
@@ -560,8 +651,10 @@ public class SlotMachine extends javax.swing.JFrame
     private static javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblMessage;
     // End of variables declaration//GEN-END:variables
 }
