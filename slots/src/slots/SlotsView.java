@@ -118,6 +118,7 @@ public static double startingAmount1;
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu fileMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
@@ -156,6 +157,9 @@ public static double startingAmount1;
         jLabel5.setText(resourceMap.getString("jLabel5.text")); // NOI18N
         jLabel5.setName("jLabel5"); // NOI18N
 
+        jLabel6.setText(resourceMap.getString("jLabel6.text")); // NOI18N
+        jLabel6.setName("jLabel6"); // NOI18N
+
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
@@ -173,7 +177,9 @@ public static double startingAmount1;
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addGap(451, 451, 451)
                 .addComponent(btnSpin, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 229, Short.MAX_VALUE)
+                .addGap(62, 62, 62)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(73, 73, 73))
         );
@@ -197,7 +203,9 @@ public static double startingAmount1;
                 .addGap(97, 97, 97)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSpin, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
+                    .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnSpin, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(78, 78, 78))
         );
 
@@ -398,10 +406,10 @@ public static double startingAmount1;
             {
                 
                 
-                if(startingAmount1 - amountWon < -60)
+                if(startingAmount1 - amountWon < -350)
                 {
                     
-                    if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 60  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
+                    if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 350  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
                              JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
                         {
     // yes option           
@@ -589,6 +597,7 @@ public static double startingAmount1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JProgressBar progressBar;

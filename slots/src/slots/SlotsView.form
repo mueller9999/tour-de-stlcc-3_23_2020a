@@ -24,7 +24,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="451" max="-2" attributes="0"/>
                   <Component id="btnSpin" min="-2" pref="175" max="-2" attributes="0"/>
-                  <EmptySpace pref="229" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                  <Component id="jLabel6" pref="147" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" pref="180" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
               </Group>
@@ -56,7 +58,10 @@
                   <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jLabel5" max="32767" attributes="0"/>
-                      <Component id="btnSpin" pref="70" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnSpin" alignment="3" pref="70" max="32767" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
               </Group>
@@ -111,6 +116,12 @@
           <Properties>
             <Property name="text" type="java.lang.String" resourceKey="jLabel5.text"/>
             <Property name="name" type="java.lang.String" value="jLabel5" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel6.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel6" noResource="true"/>
           </Properties>
         </Component>
       </SubComponents>
