@@ -457,6 +457,10 @@
     <c:if test="${member.loctorf28}">
         <h2> <a href="JavaGuessingGame:">you've unlocked the bonus Java Guessing Game app click this link to run it</a></h2>
     </c:if> 
+    <c:if test="${member.loctorf28}">
+        <h2> <a href="slots:">you've unlocked the bonus Java slots Game app click this link to run it</a></h2>
+    </c:if>
+        
         
         <%--Source code links come from https://www.youtube.com/watch?v=pLzkAfwVP5o 
         I chose to download the source code from google drive--%>

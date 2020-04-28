@@ -312,9 +312,14 @@ public static double startingAmount1;
                    JOptionPane optionPane = new JOptionPane("Error",JOptionPane.ERROR_MESSAGE);
                    JDialog dialog = optionPane.createDialog("Enter a Integer number");
                    
-                   JOptionPane.showConfirmDialog(null,
-                "Integer Number was not entered or was not greater than zero or was too large", "Error", JOptionPane.DEFAULT_OPTION);
-                   System.exit(0);
+                   
+                   if(input == null || (input != null && ("".equals(input))))   
+                    {
+                         JOptionPane.showConfirmDialog(null,
+                        "Integer Number was not entered or was not greater than zero or was too large or cancel button was pressed", "Error", JOptionPane.DEFAULT_OPTION);
+                        System.exit(0);
+                    }
+                  
                   
                    
                 }
@@ -406,7 +411,7 @@ public static double startingAmount1;
             {
                 
                 
-                if(startingAmount1 - amountWon < -350)
+                if(startingAmount1 - amountWon < -100)
                 {
                     
                     if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 350  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
