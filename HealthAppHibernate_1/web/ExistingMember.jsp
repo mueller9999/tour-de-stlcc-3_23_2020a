@@ -60,12 +60,43 @@
                            value="${m.age}" ></td>
             </tr>
            --%>
-     
+     <%-- got code for show hide of weight at https://www.geeksforgeeks.org/show-hide-password-using-javascript/--%>
             <tr>
                 <td>Member Weight in pounds(lb unit):</td>
-                <td><input type="text" id="weight" name="weight" 
+                <td><input type="password" id="weight" name="weight" 
                            value="${m.weight}" ></td>
+                <td><input type="checkbox" onclick="Toggle()"> 
+    <b>Show Weight</b> </td>
             </tr>
+            
+            <script> 
+    // Change the type of input to password or text 
+        function Toggle() { 
+            var temp = document.getElementById("weight"); 
+            if (temp.type === "password") { 
+                temp.type = "text"; 
+            } 
+            else { 
+                temp.type = "password"; 
+            } 
+        } 
+</script> 
+
+  <script> 
+    // Change the type of input to password or text 
+        function TogglePass() { 
+            var temp = document.getElementById("psswd"); 
+            if (temp.type === "password") { 
+                temp.type = "text"; 
+            } 
+            else { 
+                temp.type = "password"; 
+            } 
+        } 
+</script> 
+
+
+
             <%--   
             <tr>
                 <td> height in inches:</td>
@@ -97,6 +128,8 @@
                 <td>Password:</td>
                 <td><input type="password" id="psswd" name="psswd" 
                            value="${m.password}" size="22"></td>
+                <td><input type="checkbox" onclick="TogglePass()"> 
+    <b>Show Password</b> </td>
             </tr>
             
             
