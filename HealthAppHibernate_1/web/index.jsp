@@ -1086,7 +1086,7 @@ function update(percentcomplete)
         <form>
       
     
-            <input type ="submit" style="height: 60px;width: 150px;" value="go back to logon page" onclick=form.action="Invalidate">
+            <input type ="submit" style="height: 60px;width: 200px;" value="go back to logon page" onclick=form.action="Invalidate">
  
         </form>        
   </html>

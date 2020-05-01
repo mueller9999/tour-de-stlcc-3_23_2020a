@@ -157,7 +157,7 @@
                 <td><input type="submit" value="Yes"style="height:60px;width: 100px;" onclick=form.action="ToTheSplashScreen">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     
-                <input type ="submit" style="height: 60px;width: 150px;" value="No(return to logon page)" onclick=form.action="Invalidate">
+                <input type ="submit" style="height: 60px;width: 200px;" value="No(return to logon page)" onclick=form.action="Invalidate">
                     
                 <form>
       
@@ -179,7 +179,7 @@
         
         ${msg}
         <hr>
-        <a href="HealthLogon.jsp">Return to the Logon page</a>
+        <input type ="submit" style="height: 60px;width: 200px;" value="return to logon page" onclick=form.action="Invalidate">
         <hr>
         
         
