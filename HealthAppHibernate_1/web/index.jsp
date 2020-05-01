@@ -1083,7 +1083,10 @@ function update(percentcomplete)
 
 		</div>
    </footer>
-
-<a href="HealthLogon.jsp">Return to the Logon page</a>
-
- </html>
+        <form>
+      
+    
+            <input type ="submit" style="height: 60px;width: 150px;" value="go back to logon page" onclick=form.action="Invalidate">
+ 
+        </form>        
+  </html>

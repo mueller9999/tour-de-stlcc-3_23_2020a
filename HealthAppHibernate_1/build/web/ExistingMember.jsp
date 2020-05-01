@@ -66,7 +66,7 @@
                 <td><input type="password" id="weight" name="weight" 
                            value="${m.weight}" ></td>
                 <td><input type="checkbox" onclick="Toggle()"> 
-    <b>Show Weight</b> </td>
+    <b>Show/hide Weight</b> </td>
             </tr>
             
             <script> 
@@ -129,7 +129,7 @@
                 <td><input type="password" id="psswd" name="psswd" 
                            value="${m.password}" size="22"></td>
                 <td><input type="checkbox" onclick="TogglePass()"> 
-    <b>Show Password</b> </td>
+    <b>Show/hide Password</b> </td>
             </tr>
             
             
@@ -157,9 +157,14 @@
                 <td><input type="submit" value="Yes"style="height:60px;width: 100px;" onclick=form.action="ToTheSplashScreen">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     
-                <input type="submit" style="height: 60px;width: 100px;" value="No" onclick=form.action="HealthLogon.jsp"> <a href="HealthLogon.jsp">Return to the Logon page</a></td>
-                
-                
+                <input type ="submit" style="height: 60px;width: 150px;" value="No(return to logon page)" onclick=form.action="Invalidate">
+                    
+                <form>
+      
+    
+           
+ 
+        </form>
                 
                 
                    

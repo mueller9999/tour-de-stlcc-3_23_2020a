@@ -36,6 +36,10 @@
         <servlet-name>UnlockedServlet</servlet-name>
         <servlet-class>servlets.UnlockedServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InvalidateServlet</servlet-name>
+        <servlet-class>servlets.InvalidateServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LogonServlet</servlet-name>
         <url-pattern>/Logon</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>UnlockedServlet</servlet-name>
         <url-pattern>/Unlocked</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InvalidateServlet</servlet-name>
+        <url-pattern>/Invalidate</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

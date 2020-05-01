@@ -46,15 +46,30 @@
                 <td>First Name:</td>
                 <td><input type="text" id="firstname" name="firstname" 
                            value="" ></td>
+                
             </tr>
           
          
           
              <tr>
                 <td>Weight in pounds(lb unit):</td>
-                <td><input type="text" id="weight" name="weight" 
+                <td><input type="password" id="weight" name="weight" 
                            value="" ></td>
+                <td><input type="checkbox" onclick="Toggle()"> 
+    <b>Show/hide Weight</b> </td>
              </tr>
+ <script>
+              function Toggle() { 
+            var temp = document.getElementById("weight"); 
+            if (temp.type === "password") { 
+                temp.type = "text"; 
+            } 
+            else { 
+                temp.type = "password"; 
+            } 
+        } 
+</script> 
+             
              <%--
              <tr>
              <tr>
