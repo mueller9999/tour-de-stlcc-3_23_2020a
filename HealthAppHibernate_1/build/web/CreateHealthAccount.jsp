@@ -26,13 +26,30 @@
            content ="width=device-width,initial-scale=1.0">
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">  
- 
+
+       <%--begin code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+    </script>
+     <%--end code--%>
+    
  </head>
 
 
 
 <body>
-        <h1>Add STLCC Virtual Tour member Data</h1>
+      
+    <script>
+<%--begin code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+
+    </script>
+    <h1>Add STLCC Virtual Tour member Data</h1>
         <hr> 
         <form id="memupdate" action="MemberUpdate" method="post">
             <table class="member-details">

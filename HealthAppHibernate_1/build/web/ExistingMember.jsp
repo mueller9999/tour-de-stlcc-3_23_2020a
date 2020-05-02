@@ -13,6 +13,11 @@
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">
+      <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+    </script>
+
     </head>
     <meta name="viewport"
            content ="width=device-width,initial-scale=1.0">
@@ -21,16 +26,43 @@
     
     <body>
         
+        <script>
+<%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+
+    </script>
+           
+
+        
         <c:choose>
         
         <c:when test="${!member.authenticated}">
-              
+       
+            
         <script type="text/javascript">
+            
+             
+         
+            
+        
             window.location = "/HealthAppHibernate_1";
+            
+            
+        
         </script>      
-              
+     
+        
+       
+        
         </c:when>
         <c:otherwise>
+        
+           
             
             
         <h1>STLCC Virtual Tour member Data</h1>

@@ -46,15 +46,24 @@
            content ="width=device-width,initial-scale=1.0">
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">  
+        <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+    </script>
+   
+    
+    
    </head>
-      <c:if test="${!member.authenticated}">
+     
+   
+   <c:if test="${!member.authenticated}">
               
          <script type="text/javascript">
             window.location = "/HealthAppHibernate_1";
          </script>      
               
       </c:if>
-
+         
 
     <section id="title">
 		<div class="colored-section">
@@ -95,11 +104,21 @@
 		</div>
 	</section>
 
+         
 	<body>
+         
+            
             
 		<section id="map" class="white-section">
+    
+                    
     <title>Clock</title>
+    
+   
+    
+    
     <%--<link rel="stylesheet" href="clock.css">--%>
+    
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="clock.js"></script>
    <%-- <h1>Current Time</h1>--%>
@@ -130,7 +149,9 @@
      <h2 style="color: #FFA500">  ${msgTooManySteps} </h2>
      ${msg2}
      ${msg3}    
-    <form>
+   
+     
+     <form>
     
     <table>
                  

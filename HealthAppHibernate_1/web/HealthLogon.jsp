@@ -28,6 +28,10 @@
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">     
 
+     <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+    </script>
        
        <style>
     #myCanvas
@@ -40,7 +44,18 @@
 </style>
  </head> 
  <body >
-          <div id= "container">
+     
+     <script>
+<%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+
+    </script>
+     <div id= "container">
     <canvas id="myCanvas" width="500" height="500"></canvas>
 </div>
      
