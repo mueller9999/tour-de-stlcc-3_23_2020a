@@ -428,7 +428,7 @@ public static double startingAmount1;
                 if(startingAmount1 - amountWon < -100)
                 {
                     
-                    if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 350  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
+                    if (JOptionPane.showConfirmDialog(null, "Your losses are greater than  $ 100  \"want to continue?\"Winnings:$ "+ ((startingAmount1-amountWon)+"" ), "continue?",
                              JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
                         {
     // yes option           
