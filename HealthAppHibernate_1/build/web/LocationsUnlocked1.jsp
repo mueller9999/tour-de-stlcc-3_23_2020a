@@ -177,7 +177,7 @@
     <img src = "images/MeramecPicGoogleMaps.jpg" style="align-content: center" width="1152" height="648">   
     <br>
     <button onclick="window.history.go(-1)"><h2 style="color: orange">go back a page to the Main STLCC Virtual Tour page </h2></button>
-    
+   
     
     </body>
     

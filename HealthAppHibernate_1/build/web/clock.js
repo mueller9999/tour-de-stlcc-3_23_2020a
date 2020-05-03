@@ -82,10 +82,10 @@ window.onload = function()
    
 //<!--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser-->
  
-        function disableBack() { window.history.forward() }
+        //function disableBack() { window.history.forward() }
 
-        window.onload = disableBack();
-        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      //  window.onload = disableBack();
+       // window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
    
 
     
