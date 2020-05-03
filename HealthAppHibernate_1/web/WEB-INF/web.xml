@@ -40,6 +40,10 @@
         <servlet-name>InvalidateServlet</servlet-name>
         <servlet-class>servlets.InvalidateServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GoBackToSplashScreenServlet</servlet-name>
+        <servlet-class>servlets.GoBackToSplashScreenServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LogonServlet</servlet-name>
         <url-pattern>/Logon</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>InvalidateServlet</servlet-name>
         <url-pattern>/Invalidate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GoBackToSplashScreenServlet</servlet-name>
+        <url-pattern>/GoBackToSplashScreen</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

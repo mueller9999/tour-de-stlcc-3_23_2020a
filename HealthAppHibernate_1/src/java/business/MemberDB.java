@@ -672,8 +672,15 @@ Transaction tx = session2.beginTransaction();
 
 
            Query q  = session2.createQuery( "SELECT steps FROM Member c WHERE c.memid =:oldName" );
-                            q.setString("oldName", m.getMemid() );
-                           
+           try
+           {
+                q.setString("oldName", m.getMemid() );
+           }
+           catch(Exception e)
+           {
+               
+               
+           }
                             
            steps = Integer.parseInt(q.uniqueResult().toString());
                             

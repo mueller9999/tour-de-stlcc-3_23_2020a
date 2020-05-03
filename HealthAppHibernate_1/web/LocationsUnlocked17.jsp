@@ -24,10 +24,26 @@
            content ="width=device-width,initial-scale=1.0">
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">  
+     <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+    </script>
+    
     </head>
    
     <body>
-         <c:if test="${!member.authenticated}">
+   
+          <script>
+<%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+
+    </script>
+        <c:if test="${!member.authenticated}">
               
          <script type="text/javascript">
             window.location = "/HealthAppHibernate_1";
@@ -62,7 +78,7 @@
                 
             <tr>
             <tr> 
-                <td><input type="submit" value="Back To the Main page"style="height:60px;width: 500px;" onclick=form.action="ToTheSplashScreen">
+                <td><input type="submit" value="Back To the Main page"style="height:60px;width: 500px;" onclick=form.action="GoBackToSplashScreen">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     
                
