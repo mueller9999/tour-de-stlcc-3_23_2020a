@@ -105,9 +105,9 @@
 	</section>
 
          
-	<body>
-         
+	
             
+           
             
 		<section id="map" class="white-section">
     
@@ -121,6 +121,8 @@
     
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="clock.js"></script>
+  <%--<script src="NoGoBack.js"> </script>--%>
+  
    <%-- <h1>Current Time</h1>--%>
    <h2>Welcome User ${member.firstnm} </h2>
    
@@ -139,7 +141,7 @@
                         <form action="" method="post">
 				<input type="text" id="howmanystepstoday" name="howmanystepstoday" placeholder="Type Steps so far">
 
-                                <button type="submit"  onclick=form.action="SplashScreen">Calculate</button>
+                                <button type="submit"  name="submit" id="submit" onclick=form.action="SplashScreen">Calculate</button>
 			</form>
                        
                       <%--  <input type="button" style="width: 100px;height: 60px;" name='No' value='No' onclick ="window.location.href = 'index.jsp';">      </button> --%>       

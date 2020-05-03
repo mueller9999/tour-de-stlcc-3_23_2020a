@@ -1,43 +1,24 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/history/deleteAll
 
-(function (global) { 
 
-    if(typeof (global) === "undefined") {
-        throw new Error("window is undefined");
+window.onload = function() 
+{
+
+    function onDeleteAll() 
+    {
+  console.log("Deleted all history");
     }
 
-    var _hash = "!";
-    var noBackPlease = function () {
-        global.location.href += "#";
+function deleteAllHistory()
+{
+  var deletingAll = browser.history.deleteAll();
+  deletingAll.then(onDeleteAll);
+}
 
-        // making sure we have the fruit available for juice (^__^)
-        global.setTimeout(function () {
-            global.location.href += "!";
-        }, 50);
-    };
-
-    global.onhashchange = function () {
-        if (global.location.hash !== _hash) {
-            global.location.hash = _hash;
-        }
-    };
-
-    global.onload = function () {            
-        noBackPlease();
-
-        // disables backspace on page except on input fields and textarea..
-        document.body.onkeydown = function (e) {
-            var elm = e.target.nodeName.toLowerCase();
-            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
-                e.preventDefault();
-            }
-            // stopping event bubbling up the DOM tree..
-            e.stopPropagation();
-        };          
-    }
-
-})(window);
+deleteAllHistory();
+    
+ 
+// set initial clock display and then set interval timer to display
+    // new time every second. Don't store timer object because it
+    // won't be needed - clock will just run.
+};

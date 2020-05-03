@@ -174,7 +174,25 @@
   
   
     <img src = "images/WildWoodPicGoogleMaps.jpg" width="700" height="700">   
-   <button onclick="window.history.go(-1)"><h2 style="color: orange">go back a page to the Main STLCC Virtual Tour page </h2></button>
+   <form id="starttourornot"  method="post">
+          <table>
+            <tr>
+                
+            <tr>
+            <tr> 
+                <td><input type="submit" value="Back To the Main page"style="height:60px;width: 500px;" onclick=form.action="ToTheSplashScreen">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    
+               
+                    
+                            
+           
+                
+            </tr>
+          </table>
+            
+            </form>            
+                    
     
     
     </body>

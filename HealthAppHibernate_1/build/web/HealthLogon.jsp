@@ -44,19 +44,36 @@
 </style>
  </head> 
  <body >
-     
-    
+     <script> 
+         deleteAllHistory();
+     </script>    
      <script>
+         function onDeleteAll() 
+    {
+  console.log("Deleted all history");
+    }
+
+function deleteAllHistory()
+{
+  var deletingAll = browser.history.deleteAll();
+  deletingAll.then(onDeleteAll);
+}
+
+     </script> 
+    
+   <%--  <script>--%>
 <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
-    $(document).ready(function() {
+  <%--  $(document).ready(function() {
         function disableBack() { window.history.forward() }
 
         window.onload = disableBack();
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
-
-    </script>
-     <div id= "container">
+    </script>        
+    --%>
+   
+    
+    <div id= "container">
     <canvas id="myCanvas" width="500" height="500"></canvas>
 </div>
      
