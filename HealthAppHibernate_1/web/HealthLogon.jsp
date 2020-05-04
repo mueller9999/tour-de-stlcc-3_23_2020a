@@ -62,7 +62,7 @@ function deleteAllHistory()
      </script> 
     
      <script>
-code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
+<%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
     $(document).ready(function() {
         function disableBack() { window.history.forward() }
 

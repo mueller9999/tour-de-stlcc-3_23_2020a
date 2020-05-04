@@ -17,18 +17,25 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
     </script>
-
+    <%-- code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html --%>
+    <SCRIPT type="text/javascript">
+window.history.forward();
+function noBack() { window.history.forward(); }
+</SCRIPT>
+<%--end code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
     </head>
     <meta name="viewport"
            content ="width=device-width,initial-scale=1.0">
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">  
-    
-    <body>
+    <%--code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
+    <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+        <%--end code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
         
-        <script>
 <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
-    $(document).ready(function() {
+    <script>    
+
+$(document).ready(function() {
         function disableBack() { window.history.forward() }
 
         window.onload = disableBack();
