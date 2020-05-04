@@ -49,12 +49,8 @@
     });
 
     </script>
-	<div class="colored-section">
     <h1>Add STLCC Virtual Tour member Data</h1>
-	  </div>	
-		
         <hr> 
-	<div class = "input-info">
         <form id="memupdate" action="MemberUpdate" method="post">
             <table class="member-details">
             <tr>
@@ -80,12 +76,15 @@
     <b>Show/hide Weight</b> </td>
              </tr>
  <script>
-              function Toggle() { 
+              function Toggle()
+              { 
             var temp = document.getElementById("weight"); 
-            if (temp.type === "password") { 
+            if (temp.type === "password")
+            { 
                 temp.type = "text"; 
             } 
-            else { 
+            else
+            { 
                 temp.type = "password"; 
             } 
         } 
@@ -131,7 +130,7 @@
             </table>
         </form>
         <br>
-	</div>
+        
         ${msg}
         <hr>
         <a href="HealthLogon.jsp">Go back to login/newmember screen</a>
