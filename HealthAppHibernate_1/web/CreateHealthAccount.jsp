@@ -49,8 +49,12 @@
     });
 
     </script>
+	<div class="colored-section">
     <h1>Add STLCC Virtual Tour member Data</h1>
+	  </div>	
+		
         <hr> 
+	<div class = "input-info">
         <form id="memupdate" action="MemberUpdate" method="post">
             <table class="member-details">
             <tr>
@@ -127,7 +131,7 @@
             </table>
         </form>
         <br>
-        
+	</div>
         ${msg}
         <hr>
         <a href="HealthLogon.jsp">Go back to login/newmember screen</a>
