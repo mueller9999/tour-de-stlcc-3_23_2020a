@@ -76,12 +76,15 @@
     <b>Show/hide Weight</b> </td>
              </tr>
  <script>
-              function Toggle() { 
+              function Toggle()
+              { 
             var temp = document.getElementById("weight"); 
-            if (temp.type === "password") { 
+            if (temp.type === "password")
+            { 
                 temp.type = "text"; 
             } 
-            else { 
+            else
+            { 
                 temp.type = "password"; 
             } 
         } 
