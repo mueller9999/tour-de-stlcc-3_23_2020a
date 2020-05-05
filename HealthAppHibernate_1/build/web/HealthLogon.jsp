@@ -181,7 +181,7 @@ function deleteAllHistory()
     <img class="mb-4" src="images/stlcc_logo.jpg" alt="" width="200" height="72">
     <h2 class="h3 mb-3 font-weight-normal">Login</h1>
      
-    
+    <div class = "input-info">
               <table >
                 <tr>
                     <td><h2> User ID:</h2></td>
@@ -228,6 +228,8 @@ function deleteAllHistory()
              
                 
             </table>
+	     </div>   
+	    
         </form>
         <br>
         <h3 style="background-color: #D57900"> ${msg} </h3>
