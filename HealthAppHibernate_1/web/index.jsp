@@ -576,14 +576,14 @@ function update(percentcomplete)
       </thead>
       <tbody>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/">STLCC-Meramec</a></th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/"target="_blank">STLCC-Meramec</a></th>
           <td>11333 Big Bend Rd</td>
           <td>Start</td>
           <td>Start</td>
           <td>Start</td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://tnmot.org/">Museum Of Transportation</a></th>
+          <th scope="row"><a href="https://tnmot.org/"target="_blank">Museum Of Transportation</a></th>
           <td>2933 Barrett Station Rd</td>
           <td>5702</td>
           <td>2.7</td>
@@ -591,7 +591,7 @@ function update(percentcomplete)
 
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/wildwood/">STLCC-Wildwood</th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/wildwood/"target="_blank">STLCC-Wildwood</th>
           <td>2645 Generations Dr</td>
           <td>25344</td>
           <td>12</td>
@@ -608,7 +608,7 @@ function update(percentcomplete)
           <td>23.6</td>
         </tr>
          <tr>
-          <th scope="row"><a href ="http://www.missouribotanicalgarden.org/mbhhome.aspx">The Butterfly House</th>
+          <th scope="row"><a href ="http://www.missouribotanicalgarden.org/mbhhome.aspx"target="_blank">The Butterfly House</th>
           <td>15193 Olive Blvd, Chesterfield</td>
           <td>3591</td>
           <td>1.7</td>
@@ -624,7 +624,7 @@ function update(percentcomplete)
         </tr>
         
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/workforce/corporate-college/">STLCC-Coporate college</th>
+          <th scope="row"><a href="https://www.stlcc.edu/workforce/corporate-college/"target="_blank">STLCC-Coporate college</th>
           <td>3221 McKelvey Rd</td>
           <td>12250</td>
           <td>5.8</td>
@@ -632,7 +632,7 @@ function update(percentcomplete)
         </tr>
 
         <tr>
-          <th scope="row"><a href="https://www.flystl.com/">Lambert Airport</th>
+          <th scope="row"><a href="https://www.flystl.com/"target="_blank">Lambert Airport</th>
           <td>2645 Generations Dr</td>
           <td> 9292</td>
           <td>4.4 </td>
@@ -640,140 +640,140 @@ function update(percentcomplete)
         </tr>
 
         <tr>
-          <th scope="row"><a href="http://www.hazelwoodmo.org/Facilities/Facility/Details/Musick-Park-18">Musick Park</th>
+          <th scope="row"><a href="http://www.hazelwoodmo.org/Facilities/Facility/Details/Musick-Park-18"target="_blank">Musick Park</th>
           <td>8617 Latty Ave </td>
           <td>9716 </td>
           <td>4.6 </td>
           <td>44.3 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.imospizza.com/store/florissant/">Imo's Pizza</th>
+          <th scope="row"><a href="https://www.imospizza.com/store/florissant/"target="_blank">Imo's Pizza</th>
           <td>1939 Washington St </td>
           <td>4434 </td>
           <td>2.1</td>
           <td>46.4 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/florissant-valley/">STLCC - Florissant Valley </th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/florissant-valley/"target="_blank">STLCC - Florissant Valley </th>
           <td> 3400 Pershall Rd</td>
           <td>3168 </td>
           <td>1.5 </td>
           <td>47.9 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://nature.mdc.mo.gov/discover-nature/places/jennings-koeneman-park-lake">Koeneman Park </th>
+          <th scope="row"><a href="https://nature.mdc.mo.gov/discover-nature/places/jennings-koeneman-park-lake"target="_blank">Koeneman Park </th>
           <td> 8937 Lucas and Hunt </td>
           <td>10349 </td>
           <td>4.9 </td>
           <td>52.8 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlouis-mo.gov/parks/parks/browse-parks/view-park.cfm?parkID=68&parkName=O">O'Fallon Park </th>
+          <th scope="row"><a href="https://www.stlouis-mo.gov/parks/parks/browse-parks/view-park.cfm?parkID=68&parkName=O"target="_blank">O'Fallon Park </th>
           <td> 799 E Taylor Ave </td>
           <td>10560 </td>
           <td>5 </td>
           <td>57.8 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.thegriotmuseum.com/">Griot Museum of Black History </th>
+          <th scope="row"><a href="https://www.thegriotmuseum.com/"target="_blank">Griot Museum of Black History </th>
           <td>2505 St Louis Ave  </td>
           <td>5280 </td>
           <td>2.5 </td>
           <td>60.3 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/william-j-harrison-education-center/">STLCC - Harrison Park </th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/william-j-harrison-education-center/"target="_blank">STLCC - Harrison Park </th>
           <td>3140 Cass Ave </td>
           <td>2323 </td>
           <td>1.1 </td>
           <td>61.4 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://camstl.org/">Contemporary Art</th>
+          <th scope="row"><a href="https://camstl.org/"target="_blank">Contemporary Art</th>
           <td>3750 Washington Blvd </td>
           <td>2112 </td>
           <td>1 </td>
           <td>62.4 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.pappyssmokehouse.com/">Pappy's Smokehouse </th>
+          <th scope="row"><a href="https://www.pappyssmokehouse.com/"target="_blank">Pappy's Smokehouse </th>
           <td>3106 Olive St </td>
           <td>1689 </td>
           <td>0.8 </td>
           <td>63.2 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.ikea.com/us/en/stores/st-louis/">Ikea </th>
+          <th scope="row"><a href="https://www.ikea.com/us/en/stores/st-louis/"target="_blank">Ikea </th>
           <td>1 Ikea Way </td>
           <td>2957 </td>
           <td>1.4 </td>
           <td>64.6 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/forest-park/index.aspx">STLCC - Forest Park </th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/forest-park/index.aspx"target="_blank">STLCC - Forest Park </th>
           <td>5600 Oakland Ave </td>
           <td>4858 </td>
           <td>2.3 </td>
           <td>66.9 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlzoo.org/">St.Louis Zoo </th>
+          <th scope="row"><a href="https://www.stlzoo.org/"target="_blank">St.Louis Zoo </th>
           <td>Government Dr </td>
           <td>3379 </td>
           <td>1.6 </td>
           <td>68.5 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.guspretzels.com/">Eat at Gus' Pretzels </th>
+          <th scope="row"><a href="https://www.guspretzels.com/"target="_blank">Eat at Gus' Pretzels </th>
           <td>1820 Arsenal St</td>
           <td>13306 </td>
           <td>6.3 </td>
           <td>74.8 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="http://teddrewes.com/">Ted Drewes </th>
+          <th scope="row"><a href="http://teddrewes.com/"target="_blank">Ted Drewes </th>
           <td>6726 Chippewa St </td>
           <td>10982 </td>
           <td>5.2 </td>
           <td>80 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.shopsouthcountycenter.com/">South County Center </th>
+          <th scope="row"><a href="https://www.shopsouthcountycenter.com/"target="_blank">South County Center </th>
           <td>18 S County Center Way </td>
           <td>15206 </td>
           <td>7.2 </td>
           <td>87.2 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://pinkgalleon.com/">Pink Galleon Billiards and games </th>
+          <th scope="row"><a href="https://pinkgalleon.com/"target="_blank">Pink Galleon Billiards and games </th>
           <td>4010 Butler Hill Rd </td>
           <td>4436 </td>
           <td>2.1 </td>
           <td>89.3 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://concordbowl.com/">Concord Bowl and Recreation </th>
+          <th scope="row"><a href="https://concordbowl.com/"target="_blank">Concord Bowl and Recreation </th>
           <td>11801 Tesson Ferry Rd </td>
           <td>6758 </td>
           <td>3.2 </td>
           <td>92.5 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.facebook.com/pages/category/Shopping-Mall/Concord-Plaza-Shopping-Center-845535872130545/">Concord Plaza STL</th>
+          <th scope="row"><a href="https://www.facebook.com/pages/category/Shopping-Mall/Concord-Plaza-Shopping-Center-845535872130545/"target="_blank">Concord Plaza STL</th>
           <td>91 Concord Plaza Shopping Center </td>
           <td>634 </td>
           <td>0.3 </td>
           <td>92.8 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.laumeiersculpturepark.org/">Laumeir Park </th>
+          <th scope="row"><a href="https://www.laumeiersculpturepark.org/"target="_blank">Laumeir Park </th>
           <td>12580 Rott Rd </td>
           <td>8870 </td>
           <td>4.2 </td>
           <td>97 </td>
         </tr>
         <tr>
-          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/">STLCC - Meramac </th>
+          <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/"target="_blank">STLCC - Meramac </th>
           <td>11333 Big Bend Rd </td>
           <td>2323 </td>
           <td>1.1 </td>
