@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>0</y>
+      <w>260</w>
+      <h>4560</h>
+    </coordinates>
+    <panel_attributes>business::Member
+--
+-memid: java.lang.String
+-firstnm: java.lang.String
+-weight: double
+-height: int
+-age: int
+-Gender: boolean
+-tourfinished: java.lang.String
+-memdt: java.util.Date
+-password: java.lang.String
+-steps: int
+-counter: int
+-counter2: int
+-startdate: java.lang.String
+-loctorf1: boolean
+-loctorf2: boolean
+-loctorf3: boolean
+-loctorf4: boolean
+-loctorf5: boolean
+-loctorf6: boolean
+-loctorf7: boolean
+-loctorf8: boolean
+-loctorf9: boolean
+-loctorf10: boolean
+-loctorf11: boolean
+-loctorf12: boolean
+-loctorf13: boolean
+-loctorf14: boolean
+-loctorf15: boolean
+-loctorf16: boolean
+-loctorf17: boolean
+-loctorf18: boolean
+-loctorf19: boolean
+-loctorf20: boolean
+-loctorf21: boolean
+-loctorf22: boolean
+-loctorf23: boolean
+-loctorf24: boolean
+-loctorf25: boolean
+-loctorf26: boolean
+-loctorf27: boolean
+-loctorf28: boolean
+-loctorf1a: boolean
+-loctorf2a: boolean
+-loctorf3a: boolean
+-loctorf4a: boolean
+-loctorf5a: boolean
+-loctorf6a: boolean
+-loctorf7a: boolean
+-loctorf8a: boolean
+-loctorf9a: boolean
+-loctorf10a: boolean
+-loctorf11a: boolean
+-loctorf12a: boolean
+-loctorf13a: boolean
+-loctorf14a: boolean
+-loctorf15a: boolean
+-loctorf16a: boolean
+-loctorf17a: boolean
+-loctorf18a: boolean
+-loctorf19a: boolean
+-loctorf20a: boolean
+-loctorf21a: boolean
+-loctorf22a: boolean
+-loctorf23a: boolean
+-caloriesBurned: double
+-totalcaloriesburned: double
+-passattempt: java.lang.String
+-StepsForToday: int
+-dateOfToday: java.lang.String
+-EnterWasPressed: boolean
+-totalSteps: int
+-noErrors: boolean
+-returnzero: int
+-returnone: int
+-tourIsFinished: boolean
+--
++isTourIsFinished(): boolean
++setTourIsFinished(boolean): void
++getNoerrors(): boolean
++setNoErrors(boolean): void
++Member(): ctor
++getMemid(): java.lang.String
++setMemid(java.lang.String): void
++getFirstnm(): java.lang.String
++setFirstnm(java.lang.String): void
++getMemdt(): java.util.Date
++setMemdt(java.util.Date): void
++getMemDtS(): java.lang.String
++getPassword(): java.lang.String
++setPassword(java.lang.String): void
++setPassAttempt(java.lang.String): void
++isAuthenticated(): boolean
++getDateoftoday(): java.lang.String
++setDateoftoday(java.lang.String): void
++getEnterwaspressed(): boolean
++setEnterwaspressed(boolean): void
++getPassattempt(): java.lang.String
++setPassattempt(java.lang.String): void
++getStepsfortoday(): int
++setStepsfortoday(int): void
++getTotalsteps(): int
++setTotalsteps(int): void
++getsteps(): int
++setsteps(int): void
++getCounter(): int
++setCounter(int): void
++getStartdate(): java.lang.String
++setStartdate(java.lang.String): void
++getSteps(): int
++setSteps(int): void
++getLoctorf1(): boolean
++setLoctorf1(boolean): void
++getLoctorf2(): boolean
++setLoctorf2(boolean): void
++getLoctorf3(): boolean
++setLoctorf3(boolean): void
++getLoctorf4(): boolean
++setLoctorf4(boolean): void
++getLoctorf5(): boolean
++setLoctorf5(boolean): void
++getLoctorf6(): boolean
++setLoctorf6(boolean): void
++getLoctorf7(): boolean
++setLoctorf7(boolean): void
++getLoctorf8(): boolean
++setLoctorf8(boolean): void
++getLoctorf9(): boolean
++setLoctorf9(boolean): void
++getLoctorf10(): boolean
++setLoctorf10(boolean): void
++getLoctorf11(): boolean
++setLoctorf11(boolean): void
++getLoctorf12(): boolean
++setLoctorf12(boolean): void
++getLoctorf13(): boolean
++setLoctorf13(boolean): void
++getLoctorf14(): boolean
++setLoctorf14(boolean): void
++getLoctorf15(): boolean
++setLoctorf15(boolean): void
++getLoctorf16(): boolean
++setLoctorf16(boolean): void
++getLoctorf17(): boolean
++setLoctorf17(boolean): void
++getLoctorf18(): boolean
++setLoctorf18(boolean): void
++getLoctorf19(): boolean
++setLoctorf19(boolean): void
++getLoctorf20(): boolean
++setLoctorf20(boolean): void
++getLoctorf21(): boolean
++setLoctorf21(boolean): void
++getLoctorf22(): boolean
++setLoctorf22(boolean): void
++getLoctorf23(): boolean
++setLoctorf23(boolean): void
++getStepsForToday(): int
++setStepsForToday(int): void
++getDateOfToday(): java.lang.String
++setDateOfToday(java.lang.String): void
++isEnterWasPressed(): boolean
++setEnterWasPressed(boolean): void
++getTotalSteps(): int
++setTotalSteps(int): void
++isNoErrors(): boolean
++returnFalse(): java.lang.String
++getHeight(): int
++setHeight(int): void
++isLoctorf1(): boolean
++isLoctorf2(): boolean
++isLoctorf3(): boolean
++isLoctorf4(): boolean
++isLoctorf5(): boolean
++isLoctorf6(): boolean
++isLoctorf7(): boolean
++isLoctorf8(): boolean
++isLoctorf9(): boolean
++isLoctorf10(): boolean
++isLoctorf11(): boolean
++isLoctorf12(): boolean
++isLoctorf13(): boolean
++isLoctorf14(): boolean
++isLoctorf15(): boolean
++isLoctorf16(): boolean
++isLoctorf17(): boolean
++isLoctorf18(): boolean
++isLoctorf19(): boolean
++isLoctorf20(): boolean
++isLoctorf21(): boolean
++isLoctorf22(): boolean
++isLoctorf23(): boolean
++isLoctorf1a(): boolean
++isLoctorf1a(boolean): void
++getAge(): int
++setAge(int): void
++setLoctorf1a(boolean): void
++isLoctorf2a(): boolean
++setLoctorf2a(boolean): void
++isLoctorf3a(): boolean
++setLoctorf3a(boolean): void
++isLoctorf4a(): boolean
++setLoctorf4a(boolean): void
++isLoctorf5a(): boolean
++setLoctorf5a(boolean): void
++isLoctorf6a(): boolean
++setLoctorf6a(boolean): void
++isLoctorf7a(): boolean
++setLoctorf7a(boolean): void
++isLoctorf8a(): boolean
++setLoctorf8a(boolean): void
++isLoctorf9a(): boolean
++setLoctorf9a(boolean): void
++isLoctorf10a(): boolean
++setLoctorf10a(boolean): void
++isLoctorf11a(): boolean
++setLoctorf11a(boolean): void
++isLoctorf12a(): boolean
++setLoctorf12a(boolean): void
++isLoctorf13a(): boolean
++setLoctorf13a(boolean): void
++isLoctorf14a(): boolean
++setLoctorf14a(boolean): void
++isLoctorf15a(): boolean
++setLoctorf15a(boolean): void
++isLoctorf16a(): boolean
++setLoctorf16a(boolean): void
++isLoctorf17a(): boolean
++setLoctorf17a(boolean): void
++isLoctorf18a(): boolean
++setLoctorf18a(boolean): void
++isLoctorf19a(): boolean
++setLoctorf19a(boolean): void
++isLoctorf20a(): boolean
++setLoctorf20a(boolean): void
++isLoctorf21a(): boolean
++setLoctorf21a(boolean): void
++isLoctorf22a(): boolean
++setLoctorf22a(boolean): void
++isLoctorf23a(): boolean
++setLoctorf23a(boolean): void
++isGender(): boolean
++setGender(boolean): void
++getCounter2(): int
++setCounter2(int): void
++getReturnzero(): int
++setReturnzero(int): void
++getReturnone(): int
++setReturnone(int): void
++setWeight(double): void
++getWeight(): double
++getCaloriesBurned(): double
++setCaloriesBurned(double): void
++getTotalcaloriesburned(): double
++setTotalcaloriesburned(double): void
++isLoctorf24(): boolean
++setLoctorf24(boolean): void
++isLoctorf25(): boolean
++setLoctorf25(boolean): void
++isLoctorf26(): boolean
++setLoctorf26(boolean): void
++isLoctorf27(): boolean
++setLoctorf27(boolean): void
++isLoctorf28(): boolean
++setLoctorf28(boolean): void
++getTourfinished(): java.lang.String
++setTourfinished(java.lang.String): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>0</y>
+      <w>380</w>
+      <h>4560</h>
+    </coordinates>
+    <panel_attributes>business::Member
+--
+-memid: String
+-firstnm: String
+-weight: double
+-height: int
+-age: int
+-Gender: boolean
+-tourfinished: String
+-memdt: Date
+-password: String
+-steps: int
+-counter: int
+-counter2: int
+-startdate: String
+-loctorf1: boolean
+-loctorf2: boolean
+-loctorf3: boolean
+-loctorf4: boolean
+-loctorf5: boolean
+-loctorf6: boolean
+-loctorf7: boolean
+-loctorf8: boolean
+-loctorf9: boolean
+-loctorf10: boolean
+-loctorf11: boolean
+-loctorf12: boolean
+-loctorf13: boolean
+-loctorf14: boolean
+-loctorf15: boolean
+-loctorf16: boolean
+-loctorf17: boolean
+-loctorf18: boolean
+-loctorf19: boolean
+-loctorf20: boolean
+-loctorf21: boolean
+-loctorf22: boolean
+-loctorf23: boolean
+-loctorf24: boolean
+-loctorf25: boolean
+-loctorf26: boolean
+-loctorf27: boolean
+-loctorf28: boolean
+-loctorf1a: boolean
+-loctorf2a: boolean
+-loctorf3a: boolean
+-loctorf4a: boolean
+-loctorf5a: boolean
+-loctorf6a: boolean
+-loctorf7a: boolean
+-loctorf8a: boolean
+-loctorf9a: boolean
+-loctorf10a: boolean
+-loctorf11a: boolean
+-loctorf12a: boolean
+-loctorf13a: boolean
+-loctorf14a: boolean
+-loctorf15a: boolean
+-loctorf16a: boolean
+-loctorf17a: boolean
+-loctorf18a: boolean
+-loctorf19a: boolean
+-loctorf20a: boolean
+-loctorf21a: boolean
+-loctorf22a: boolean
+-loctorf23a: boolean
+-caloriesBurned: double
+-totalcaloriesburned: double
+-passattempt: String
+-StepsForToday: int
+-dateOfToday = "": String
+-EnterWasPressed: boolean
+-totalSteps: int
+-noErrors: boolean
+-returnzero: int
+-returnone: int
+-tourIsFinished: boolean
+--
++Member(): ctor
++isTourIsFinished(): boolean
++setTourIsFinished(boolean tourIsFinished): void
++getNoerrors(): boolean
++setNoErrors(boolean noErrors): void
++getMemid(): String
++setMemid(String memid): void
++getFirstnm(): String
++setFirstnm(String firstnm): void
++getMemdt(): Date
++setMemdt(Date memdt): void
++getMemDtS(): String
++getPassword(): String
++setPassword(String password): void
++setPassAttempt(String patt): void
++isAuthenticated(): boolean
++getDateoftoday(): String
++setDateoftoday(String date): void
++getEnterwaspressed(): boolean
++setEnterwaspressed(boolean enterWasPressed): void
++getPassattempt(): String
++setPassattempt(String passattempt): void
++getStepsfortoday(): int
++setStepsfortoday(int stepsForToday): void
++getTotalsteps(): int
++setTotalsteps(int totSteps): void
++getsteps(): int
++setsteps(int totSteps): void
++getCounter(): int
++setCounter(int counter): void
++getStartdate(): String
++setStartdate(String startdate): void
++getSteps(): int
++setSteps(int steps): void
++getLoctorf1(): boolean
++setLoctorf1(boolean torf): void
++getLoctorf2(): boolean
++setLoctorf2(boolean toorf): void
++getLoctorf3(): boolean
++setLoctorf3(boolean loctorf3): void
++getLoctorf4(): boolean
++setLoctorf4(boolean loctorf4): void
++getLoctorf5(): boolean
++setLoctorf5(boolean loctorf5): void
++getLoctorf6(): boolean
++setLoctorf6(boolean loctorf6): void
++getLoctorf7(): boolean
++setLoctorf7(boolean loctorf7): void
++getLoctorf8(): boolean
++setLoctorf8(boolean loctorf8): void
++getLoctorf9(): boolean
++setLoctorf9(boolean loctorf9): void
++getLoctorf10(): boolean
++setLoctorf10(boolean loctorf10): void
++getLoctorf11(): boolean
++setLoctorf11(boolean loctorf11): void
++getLoctorf12(): boolean
++setLoctorf12(boolean loctorf12): void
++getLoctorf13(): boolean
++setLoctorf13(boolean loctorf13): void
++getLoctorf14(): boolean
++setLoctorf14(boolean loctorf14): void
++getLoctorf15(): boolean
++setLoctorf15(boolean loctorf15): void
++getLoctorf16(): boolean
++setLoctorf16(boolean loctorf16): void
++getLoctorf17(): boolean
++setLoctorf17(boolean loctorf17): void
++getLoctorf18(): boolean
++setLoctorf18(boolean loctorf18): void
++getLoctorf19(): boolean
++setLoctorf19(boolean loctorf19): void
++getLoctorf20(): boolean
++setLoctorf20(boolean loctorf20): void
++getLoctorf21(): boolean
++setLoctorf21(boolean loctorf21): void
++getLoctorf22(): boolean
++setLoctorf22(boolean loctorf22): void
++getLoctorf23(): boolean
++setLoctorf23(boolean loctorf23): void
++getStepsForToday(): int
++setStepsForToday(int StepsForToday): void
++getDateOfToday(): String
++setDateOfToday(String dateOfToday): void
++isEnterWasPressed(): boolean
++setEnterWasPressed(boolean EnterWasPressed): void
++getTotalSteps(): int
++setTotalSteps(int totalSteps): void
++isNoErrors(): boolean
++returnFalse(): String
++getHeight(): int
++setHeight(int height): void
++isLoctorf1(): boolean
++isLoctorf2(): boolean
++isLoctorf3(): boolean
++isLoctorf4(): boolean
++isLoctorf5(): boolean
++isLoctorf6(): boolean
++isLoctorf7(): boolean
++isLoctorf8(): boolean
++isLoctorf9(): boolean
++isLoctorf10(): boolean
++isLoctorf11(): boolean
++isLoctorf12(): boolean
++isLoctorf13(): boolean
++isLoctorf14(): boolean
++isLoctorf15(): boolean
++isLoctorf16(): boolean
++isLoctorf17(): boolean
++isLoctorf18(): boolean
++isLoctorf19(): boolean
++isLoctorf20(): boolean
++isLoctorf21(): boolean
++isLoctorf22(): boolean
++isLoctorf23(): boolean
++isLoctorf1a(): boolean
++isLoctorf1a(boolean LocTOF1a): void
++getAge(): int
++setAge(int age): void
++setLoctorf1a(boolean loctorf1a): void
++isLoctorf2a(): boolean
++setLoctorf2a(boolean loctorf2a): void
++isLoctorf3a(): boolean
++setLoctorf3a(boolean loctorf3a): void
++isLoctorf4a(): boolean
++setLoctorf4a(boolean loctorf4a): void
++isLoctorf5a(): boolean
++setLoctorf5a(boolean loctorf5a): void
++isLoctorf6a(): boolean
++setLoctorf6a(boolean loctorf6a): void
++isLoctorf7a(): boolean
++setLoctorf7a(boolean loctorf7a): void
++isLoctorf8a(): boolean
++setLoctorf8a(boolean loctorf8a): void
++isLoctorf9a(): boolean
++setLoctorf9a(boolean loctorf9a): void
++isLoctorf10a(): boolean
++setLoctorf10a(boolean loctorf10a): void
++isLoctorf11a(): boolean
++setLoctorf11a(boolean loctorf11a): void
++isLoctorf12a(): boolean
++setLoctorf12a(boolean loctorf12a): void
++isLoctorf13a(): boolean
++setLoctorf13a(boolean loctorf13a): void
++isLoctorf14a(): boolean
++setLoctorf14a(boolean loctorf14a): void
++isLoctorf15a(): boolean
++setLoctorf15a(boolean loctorf15a): void
++isLoctorf16a(): boolean
++setLoctorf16a(boolean loctorf16a): void
++isLoctorf17a(): boolean
++setLoctorf17a(boolean loctorf17a): void
++isLoctorf18a(): boolean
++setLoctorf18a(boolean loctorf18a): void
++isLoctorf19a(): boolean
++setLoctorf19a(boolean loctorf19a): void
++isLoctorf20a(): boolean
++setLoctorf20a(boolean loctorf20a): void
++isLoctorf21a(): boolean
++setLoctorf21a(boolean loctorf21a): void
++isLoctorf22a(): boolean
++setLoctorf22a(boolean loctorf22a): void
++isLoctorf23a(): boolean
++setLoctorf23a(boolean loctorf23a): void
++isGender(): boolean
++setGender(boolean Gender): void
++getCounter2(): int
++setCounter2(int counter2): void
++getReturnzero(): int
++setReturnzero(int zero): void
++getReturnone(): int
++setReturnone(int returnone): void
++setWeight(double weight): void
++getWeight(): double
++getCaloriesBurned(): double
++setCaloriesBurned(double caloriesBurned): void
++getTotalcaloriesburned(): double
++setTotalcaloriesburned(double totalcaloriesburned): void
++isLoctorf24(): boolean
++setLoctorf24(boolean loctorf24): void
++isLoctorf25(): boolean
++setLoctorf25(boolean loctorf25): void
++isLoctorf26(): boolean
++setLoctorf26(boolean loctorf26): void
++isLoctorf27(): boolean
++setLoctorf27(boolean loctorf27): void
++isLoctorf28(): boolean
++setLoctorf28(boolean loctorf28): void
++getTourfinished(): String
++setTourfinished(String tourfinished): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>0</y>
+      <w>830</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>business::MemberDB
+--
+--
++MemberDB(): ctor
++getMemberByID(java.lang.String): business.Member
++addNewRecord(java.lang.String, java.util.Date, java.lang.String, double, int, int, boolean, java.lang.String, business.Member): void
++updateMember(business.Member): void
++setTotalSteps(int, business.Member): void
++setCaloriesForDay(double, business.Member): void
++settotalCalories(double, business.Member): void
++finishedTour(business.Member, boolean): void
++getCurrentTotalCalories(business.Member): double
++getCaloriesForTheDay(business.Member): double
++getCurrentSteps(business.Member): int
++getFinihsedTourStatus(business.Member): boolean
++getTORFValueForLocation(java.lang.String, int): boolean
++getTORFValueForLocationa(java.lang.String, int): boolean
++getCurrentCounter(business.Member): int
++getCurrentCounter2(business.Member): int
++setTotalCounter(int, business.Member): void
++setTotalCounter2(int, business.Member): void
++setTimeStamp(business.Member): void
++getTheDateStamp(business.Member): java.lang.String
++DestinationUnlocked(int, business.Member): java.lang.String
++setLocationValueForMemberToTrue(boolean, java.lang.String, int, business.RouteWithSteps): void
++setLocationValueForMemberToTrueVar2(boolean, java.lang.String, int): void
++setLocationValueForMemberToFalseVar2(boolean, java.lang.String, int): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1510</x>
+      <y>0</y>
+      <w>340</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>business::RouteWithSteps
+--
+-locationID: int
+-location: java.lang.String
+-addresss: java.lang.String
+-miles: double
+-stepsToGetToLocation: int
+-totalSteps: int
+-unlockedLocation: boolean
+~TheUnlockedDestinationLocation: java.lang.String
+--
++getLocationID(): int
++RouteWithSteps(): ctor
++setLocationID(int): void
++getLocation(): java.lang.String
++setLocation(java.lang.String): void
++getAddresss(): java.lang.String
++setAddresss(java.lang.String): void
++getMiles(): double
++setMiles(double): void
++getStepsToGetToLocation(): int
++setStepsToGetToLocation(int): void
++getTotalSteps(): int
++setTotalSteps(int): void
++isUnlockedLocation(): boolean
++setUnlockedLocation(boolean): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1860</x>
+      <y>0</y>
+      <w>970</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>business::MemberDB
+--
+--
++getMemberByID(String UserID): Member
++addNewRecord(String MemID, Date date4, String firstName, double weight1, int height, int age, boolean command, String passWord1, Member m): void
++updateMember(Member m): void
++setTotalSteps(int steps, Member m): void
++setCaloriesForDay(double calories, Member m): void
++settotalCalories(double calories, Member m): void
++finishedTour(Member m, boolean isTrue): void
++getCurrentTotalCalories(Member m): double
++getCaloriesForTheDay(Member m): double
++getCurrentSteps(Member m): int
++getFinihsedTourStatus(Member m): boolean
++getTORFValueForLocation(String m, int locid): boolean
++getTORFValueForLocationa(String m, int locid): boolean
++getCurrentCounter(Member m): int
++getCurrentCounter2(Member m): int
++setTotalCounter(int counter, Member m): void
++setTotalCounter2(int counter2, Member m): void
++setTimeStamp(Member m): void
++getTheDateStamp(Member m): String
++DestinationUnlocked(int steps, Member m): String
++setLocationValueForMemberToTrue(boolean setToTrue, String memID, int locationID, RouteWithSteps r): void
++setLocationValueForMemberToTrueVar2(boolean setToTrue, String memID, int locationID): void
++setLocationValueForMemberToFalseVar2(boolean setToFalse, String memID, int locationID): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2840</x>
+      <y>0</y>
+      <w>390</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>business::RouteWithSteps
+--
+-locationID: int
+-location: String
+-addresss: String
+-miles: double
+-stepsToGetToLocation: int
+-totalSteps: int
+-unlockedLocation: boolean
+~TheUnlockedDestinationLocation: String
+--
++RouteWithSteps(): ctor
++getLocationID(): int
++setLocationID(int locationID): void
++getLocation(): String
++setLocation(String location): void
++getAddresss(): String
++setAddresss(String addresss): void
++getMiles(): double
++setMiles(double miles): void
++getStepsToGetToLocation(): int
++setStepsToGetToLocation(int stepsToGetToLocation): void
++getTotalSteps(): int
++setTotalSteps(int totalSteps): void
++isUnlockedLocation(): boolean
++setUnlockedLocation(boolean unlockedLocation): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3240</x>
+      <y>0</y>
+      <w>270</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>business::Pictures
+--
+-imageid: java.math.BigInteger
+-pictureName: java.lang.String
+-images: java.sql.Blob
+-imageAsBytes: byte[]
+-base64Image: java.lang.String
+--
++Pictures(): ctor
++getImageid(): java.math.BigInteger
++setImageid(java.math.BigInteger): void
++getPictureName(): java.lang.String
++setPictureName(java.lang.String): void
++getImages(): java.sql.Blob
++setImages(java.sql.Blob): void
++getImageAsBytes(): byte[]
++setImageAsBytes(byte[]): void
++getBase64Image(): java.lang.String
++setBase64Image(java.lang.String): void
++getByteArrayString1(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3520</x>
+      <y>0</y>
+      <w>310</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>business::Pictures
+--
+-imageid: BigInteger
+-pictureName: String
+-images: Blob
+-imageAsBytes: byte[]
+-base64Image: String
+--
++getImageid(): BigInteger
++setImageid(BigInteger imageid): void
++getPictureName(): String
++setPictureName(String pictureName): void
++getImages(): Blob
++setImages(Blob images): void
++getImageAsBytes(): byte[]
++setImageAsBytes(byte[] imageAsBytes1): void
++getBase64Image(): String
++setBase64Image(String base64Image): void
++getByteArrayString1(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3840</x>
+      <y>0</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>business::ProgressBar
+--
+~pbar: javax.swing.JProgressBar
+~min: int
+~max: int
+--
++ProgressBar(): ctor
++updateBar(int): void
++main(java.lang.String[]): void
+~ProgressBar(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4070</x>
+      <y>0</y>
+      <w>260</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>business::ProgressDetails
+--
+-total: int
+-totalProcessed: int
++taskProgressHash: java.util.HashMap
+--
++ProgressDetails(): ctor
++setTotalProcessed(int): void
++setTotal(int): void
+~ProgressDetails(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4340</x>
+      <y>0</y>
+      <w>510</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>business::RouteWithStepsDB
+--
+~sessionFactory: org.hibernate.SessionFactory
+~session1: org.hibernate.Session
+~createDate: java.util.Date
+--
++RouteWithStepsDB(): ctor
++setLocationValueToTrue(boolean, int, business.RouteWithSteps): void
++setLocationValueToFalse(java.lang.String, int, business.RouteWithSteps): void
++getDestination(business.RouteWithSteps, int): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4860</x>
+      <y>0</y>
+      <w>170</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>business::Test
+--
+-picDAO: business.DAO
+--
++Test(): ctor
++runBeforeClass(): void
++runAfterClass(): void
++testSaveBook(): void
++testGetBook(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5040</x>
+      <y>0</y>
+      <w>650</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>servlets::SplashScreenServlet
+--
+--
++SplashScreenServlet(): ctor
++isInteger(java.lang.String): boolean
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5700</x>
+      <y>0</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>business::ProgressBar
+--
+~pbar: JProgressBar
+~min = 0: int
+~max = 100: int
+--
++ProgressBar(): ctor
++updateBar(int newValue): void
++main(String args[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5920</x>
+      <y>0</y>
+      <w>550</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>business::RouteWithStepsDB
+--
+~sessionFactory = HibernateUtil.getSessionFactory(): SessionFactory
+~session1 = null: Session
+~createDate = null: Date
+--
++setLocationValueToTrue(boolean setToTrue, int locationID, RouteWithSteps r): void
++setLocationValueToFalse(String setToFalse, int locationID, RouteWithSteps r): void
++getDestination(RouteWithSteps R, int loc): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6480</x>
+      <y>0</y>
+      <w>400</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>business::HIbernateUtil1
+--
+-registry: org.hibernate.boot.registry.StandardServiceRegistry
+-sessionFactory: org.hibernate.SessionFactory
+--
++HIbernateUtil1(): ctor
++getSessionFactory(): org.hibernate.SessionFactory
++shutdown(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6890</x>
+      <y>0</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::BackToHealthLogonPageServlet
+--
+--
++BackToHealthLogonPageServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::CreateAccountServlet
+--
+--
++CreateAccountServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::GoBackToSplashScreenServlet
+--
+--
++GoBackToSplashScreenServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::GoToCreateAccountServlet
+--
+--
++GoToCreateAccountServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1990</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::InvalidateServlet
+--
+--
++InvalidateServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2650</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::LogonServlet
+--
+--
++LogonServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3310</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::MemberUpdateServlet
+--
+--
++MemberUpdateServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3970</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::SetLocValsToFalseServlet
+--
+--
++SetLocValsToFalseServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4630</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::ToTheSplashScreenServlet
+--
+--
++ToTheSplashScreenServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5290</x>
+      <y>4570</y>
+      <w>650</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::UnlockedServlet
+--
+--
++UnlockedServlet(): ctor
+#processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
+#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void
++getServletInfo(): java.lang.String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5950</x>
+      <y>4570</y>
+      <w>640</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>business::ProgressDetails
+--
+-total = 0: int
+-totalProcessed = 0: int
++taskProgressHash = new HashMap&lt;String, ProgressDetails&gt;(): HashMap&lt;String, ProgressDetails&gt;
+--
++setTotalProcessed(int totalProcessed): void
++setTotal(int total): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6600</x>
+      <y>4570</y>
+      <w>170</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>business::Test
+--
+-picDAO: DAO
+--
++runBeforeClass(): void
++runAfterClass(): void
++testSaveBook(): void
++testGetBook(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>servlets::SplashScreenServlet
+--
+--
++isInteger(final String s): boolean
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>4720</y>
+      <w>340</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>business::HibernateUtil2
+--
+-sessionFactory: org.hibernate.SessionFactory
+--
++HibernateUtil2(): ctor
++getSessionFactory(): org.hibernate.SessionFactory
+~HibernateUtil2(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>4720</y>
+      <w>460</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>business::PicturesDB
+--
+--
++PicturesDB(): ctor
++getLocByID(java.lang.Integer): business.Pictures
++toByteArray(java.sql.Blob): byte[]
++toByteArrayImpl(java.sql.Blob, java.io.ByteArrayOutputStream): byte[]
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1380</x>
+      <y>4720</y>
+      <w>320</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>business::ProgressBar$1
+--
+~val$percent: int
+~this$0: business.ProgressBar
+--
+~ProgressBar$1(business.ProgressBar, int): ctor
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1710</x>
+      <y>4720</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>business::HIbernateUtil1
+--
+-registry: StandardServiceRegistry
+-sessionFactory: SessionFactory
+--
++getSessionFactory(): SessionFactory
++shutdown(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1980</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::BackToHealthLogonPageServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2530</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::CreateAccountServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3080</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::GoBackToSplashScreenServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3630</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::GoToCreateAccountServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4180</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::InvalidateServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4730</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::LogonServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5280</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::MemberUpdateServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5830</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::SetLocValsToFalseServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6380</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::ToTheSplashScreenServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6930</x>
+      <y>4720</y>
+      <w>540</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>servlets::UnlockedServlet
+--
+--
+#processRequest(HttpServletRequest request, HttpServletResponse response): void
+#doGet(HttpServletRequest request, HttpServletResponse response): void
+#doPost(HttpServletRequest request, HttpServletResponse response): void
++getServletInfo(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>4870</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>business::DAO
+--
+--
++DAO(): ctor
++savePicture(business.Pictures): business.Pictures
++getBook(java.lang.Integer): business.Pictures
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>4870</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>business::HibernateUtil
+--
+-sessionFactory: org.hibernate.SessionFactory
+--
++HibernateUtil(): ctor
++getSessionFactory(): org.hibernate.SessionFactory
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>4870</y>
+      <w>500</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>business::PicturesDB
+--
+--
++getLocByID(Integer locID): Pictures
++toByteArray(Blob fromImageBlob): byte[]
++toByteArrayImpl(Blob fromImageBlob, ByteArrayOutputStream baos): byte[]
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1220</x>
+      <y>4870</y>
+      <w>240</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>business::DAO
+--
+--
++savePicture(Pictures pic): Pictures
++getBook(Integer imageId): Pictures
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1470</x>
+      <y>4870</y>
+      <w>260</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>business::HibernateUtil
+--
+-sessionFactory: SessionFactory
+--
++getSessionFactory(): SessionFactory
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1740</x>
+      <y>4870</y>
+      <w>260</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>business::HibernateUtil2
+--
+-sessionFactory: SessionFactory
+--
++getSessionFactory(): SessionFactory
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

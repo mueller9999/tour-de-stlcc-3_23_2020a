@@ -79,6 +79,8 @@ $(document).ready(function() {
         
         
         <form id="memupdate" action="MemberUpdate" method="post">
+          
+            <div id= "div1" style = "display:none">
             <table class="member-details">
             <tr>
                 <td>Member ID:</td>
@@ -104,8 +106,8 @@ $(document).ready(function() {
                 <td>Member Weight in pounds(lb unit):</td>
                 <td><input type="password" id="weight" name="weight" 
                            value="${m.weight}" ></td>
-                <td><input type="checkbox" onclick="Toggle()"> 
-    <b>Show/hide Weight</b> </td>
+               <%-- <td><input type="checkbox" onclick="Toggle()"> --%>
+  <%--  <b>Show/hide Weight</b> </td>--%>
             </tr>
             
             <script> 
@@ -167,14 +169,9 @@ $(document).ready(function() {
                 <td>Password:</td>
                 <td><input type="password" id="psswd" name="psswd" 
                            value="${m.password}" size="22"></td>
-                <td><input type="checkbox" onclick="TogglePass()"> 
-    <b>Show/hide Password</b> </td>
+             <%--   <td><input type="checkbox" onclick="TogglePass()"> 
+    <b>Show/hide Password</b> </td>--%>
             </tr>
-            
-            
-           
-            
-            
             
             <tr>
                 <hr>
@@ -182,11 +179,34 @@ $(document).ready(function() {
                 <td><input type="submit" style="height: 60px;width: 150px;" value="Insert Member data" onclick=form.action="MemberUpdate"><br><br><br></td>
             </tr>
             <br>
-            
-            
+          
          </table>
-            
-         </form> 
+        </div>
+         </form>
+      
+        <%--code from https://stackoverflow.com/questions/18421082/show-hide-div-if-checkbox-selected--%> 
+            <input type="checkbox" name="c1" onclick="showMe('div1')">Show Hide Member data
+            <%--end code from https://stackoverflow.com/questions/18421082/show-hide-div-if-checkbox-selected--%>
+
+    <script>
+        <%--code from https://stackoverflow.com/questions/18421082/show-hide-div-if-checkbox-selected --%>
+        
+         function showMe (box) {
+
+    var chboxs = document.getElementsByName("c1");
+    var vis = "none";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "block";
+            break;
+        }
+    }
+    document.getElementById(box).style.display = vis;
+
+
+}
+<%--end code from https://stackoverflow.com/questions/18421082/show-hide-div-if-checkbox-selected --%>
+</script>
             <form id="starttourornot" action="MemberUpdate" method="post">
           <table>
             <tr>

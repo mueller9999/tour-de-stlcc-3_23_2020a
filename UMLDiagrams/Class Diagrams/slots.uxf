@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>430</w>
+      <h>770</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsView
+--
++startingAmount1: double
++matched1: int
++matched2: int
++matched3: int
++matched4: int
+~enterAmount: boolean
++wins: int
++amountWon: double
+-btnSpin: javax.swing.JButton
+-jLabel1: javax.swing.JLabel
+-jLabel2: javax.swing.JLabel
+-jLabel3: javax.swing.JLabel
+-jLabel4: javax.swing.JLabel
+-jLabel5: javax.swing.JLabel
+-jLabel6: javax.swing.JLabel
+-lblWinnings: javax.swing.JLabel
+-mainPanel: javax.swing.JPanel
+-menuBar: javax.swing.JMenuBar
+-progressBar: javax.swing.JProgressBar
+-statusAnimationLabel: javax.swing.JLabel
+-statusMessageLabel: javax.swing.JLabel
+-statusPanel: javax.swing.JPanel
+-messageTimer: javax.swing.Timer
+-busyIconTimer: javax.swing.Timer
+-idleIcon: javax.swing.Icon
+-busyIcons: javax.swing.Icon[]
+-busyIconIndex: int
+-aboutBox: javax.swing.JDialog
+--
++SlotsView(org.jdesktop.application.SingleFrameApplication): ctor
++showAboutBox(): void
+-initComponents(): void
++btnSpin(): void
+~access$000(slots.SlotsView): javax.swing.JLabel
+~access$102(slots.SlotsView, int): int
+~access$100(slots.SlotsView): int
+~access$200(slots.SlotsView): javax.swing.Icon[]
+~access$300(slots.SlotsView): javax.swing.JLabel
+~access$400(slots.SlotsView): javax.swing.Timer
+~access$500(slots.SlotsView): javax.swing.JProgressBar
+~access$600(slots.SlotsView): javax.swing.Icon
+~access$700(slots.SlotsView): javax.swing.Timer
+~SlotsView(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>10</y>
+      <w>720</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsView
+--
++startingAmount1: double
++matched1 = 0: int
++matched2 = 0: int
++matched3 = 0: int
++matched4 = 0: int
+~enterAmount = true: boolean
++wins = 0: int
++amountWon = 0.0: double
+-btnSpin: javax.swing.JButton
+-jLabel1: javax.swing.JLabel
+-jLabel2: javax.swing.JLabel
+-jLabel3: javax.swing.JLabel
+-jLabel4: javax.swing.JLabel
+-jLabel5: javax.swing.JLabel
+-jLabel6: javax.swing.JLabel
+-lblWinnings: javax.swing.JLabel
+-mainPanel: javax.swing.JPanel
+-menuBar: javax.swing.JMenuBar
+-progressBar: javax.swing.JProgressBar
+-statusAnimationLabel: javax.swing.JLabel
+-statusMessageLabel: javax.swing.JLabel
+-statusPanel: javax.swing.JPanel
+-messageTimer: Timer
+-busyIconTimer: Timer
+-idleIcon: Icon
+-busyIcons = new Icon[15]: Icon[]
+-busyIconIndex = 0: int
+-aboutBox: JDialog
+--
++SlotsView(SingleFrameApplication app): ctor
++showAboutBox(): void
+-initComponents(): // &lt;editor-fold defaultstate="collapsed" desc="Generated Code"&gt;//GEN-BEGIN:initComponents&#13;
+void
++btnSpin(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1180</x>
+      <y>10</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsApp
+--
+--
++SlotsApp(): ctor
+#startup(): void
+#configureWindow(java.awt.Window): void
++getApplication(): slots.SlotsApp
++main(java.lang.String[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>790</y>
+      <w>250</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsAboutBox
+--
+-closeButton: javax.swing.JButton
+--
++SlotsAboutBox(java.awt.Frame): ctor
++closeAboutBox(): void
+-initComponents(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>790</y>
+      <w>300</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsAboutBox
+--
+-closeButton: javax.swing.JButton
+--
++SlotsAboutBox(java.awt.Frame parent): ctor
++closeAboutBox(): void
+-initComponents(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>790</y>
+      <w>310</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsApp
+--
+--
+#startup(): void
+#configureWindow(java.awt.Window root): void
++getApplication(): SlotsApp
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>790</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsView$1
+--
+~this$0: slots.SlotsView
+--
+~SlotsView$1(slots.SlotsView): ctor
++actionPerformed(java.awt.event.ActionEvent): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1250</x>
+      <y>790</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsView$2
+--
+~this$0: slots.SlotsView
+--
+~SlotsView$2(slots.SlotsView): ctor
++actionPerformed(java.awt.event.ActionEvent): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>920</y>
+      <w>380</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>slots::SlotsView$3
+--
+~this$0: slots.SlotsView
+--
+~SlotsView$3(slots.SlotsView): ctor
++propertyChange(java.beans.PropertyChangeEvent): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

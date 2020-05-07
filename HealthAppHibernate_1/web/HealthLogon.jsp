@@ -177,7 +177,7 @@ function deleteAllHistory()
 </div>
 </section>
      
-     <form >
+     <form method="POST">
     <img class="mb-4" src="images/stlcc_logo.jpg" alt="" width="200" height="72">
     <h2 class="h3 mb-3 font-weight-normal">Login</h1>
      
@@ -199,11 +199,25 @@ function deleteAllHistory()
                  <tr>
                      <td><h2>Password:</h2></td>
                      <td><input class="LoginCSS" type="password" name="password" id="password" >
-                    </td>
+                     <td><input type="checkbox" onclick="TogglePass()"> 
+    <b>Show/hide Password</b> </td>
+            </tr>
+                     </td>
                 </tr>
             
               </table>
-                
+                <script> 
+    // Change the type of input to password or text 
+        function TogglePass() { 
+            var temp = document.getElementById("password"); 
+            if (temp.type === "password") { 
+                temp.type = "text"; 
+            } 
+            else { 
+                temp.type = "password"; 
+            } 
+        } 
+</script> 
             
               <table>
               <tr>
@@ -236,12 +250,7 @@ function deleteAllHistory()
         <h3 style="background-color: #D57900">${msg2}</h3>
     
     
-    
       <br>
-        
- 
-     
-     
-     
+          
  </body>    
 </html>

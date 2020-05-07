@@ -76,8 +76,8 @@
                 <td>Weight in pounds(lb unit):</td>
                 <td><input type="password" id="weight" name="weight" 
                            value="" ></td>
-                <td><input type="checkbox" onclick="Toggle()"> 
-    <b>Show/hide Weight</b> </td>
+              <%--  <td><input type="checkbox" onclick="Toggle()"> 
+    <b>Show/hide Weight</b> </td>--%>
              </tr>
  <script>
               function Toggle() { 
