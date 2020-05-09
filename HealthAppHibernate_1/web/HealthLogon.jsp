@@ -19,7 +19,16 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">
+  <%--code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
+    <script>
+        function preback{window.history.forward();}
+        setTimeout("preback()",0);
+        window.onload()= function(){null};
+        
+    </script>
+     <%--end code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
+    
+    <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">

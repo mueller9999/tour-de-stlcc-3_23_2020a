@@ -9,6 +9,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+        function preback{window.history.forward();}
+        setTimeout("preback()",0);
+        window.onload()= function(){null};
+        
+        
+        </script>
+     <%--end code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
         <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->

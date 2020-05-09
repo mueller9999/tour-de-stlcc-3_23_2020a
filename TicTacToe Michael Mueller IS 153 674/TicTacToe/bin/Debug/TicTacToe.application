@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="TicTacToe.exe.manifest" size="3462">
+    <dependentAssembly dependencyType="install" codebase="TicTacToe.exe.manifest" size="3464">
       <assemblyIdentity name="TicTacToe.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I52g4257dS5hCIUdMaCIfpPhyBgyP/s62YAxNBI8T1A=</dsig:DigestValue>
+        <dsig:DigestValue>yDnjwfcdCILsrrHge3b4vF0TeFZyGIVz4QJPexf9jOg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
