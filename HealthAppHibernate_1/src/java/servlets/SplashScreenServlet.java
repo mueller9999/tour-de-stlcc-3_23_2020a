@@ -180,7 +180,15 @@ public class SplashScreenServlet extends HttpServlet
   
            result = stepsAsBigInt.compareTo(largerThanInt);
             
-            
+//           if(Integer.parseInt(stepsAsString)< Integer.MIN_VALUE)
+//           {
+//               msg2+="The value entered was too small of a integer number"
+//                       + "number must be larger than " + Integer.MIN_VALUE +" " +
+//                       "to trigger the number entered was less than zero error ";
+//               
+//           }
+           
+           
                 try
                 {
                    Integer.parseInt(stepsAsString);
@@ -202,7 +210,8 @@ public class SplashScreenServlet extends HttpServlet
                 }
                 else if(result ==-1)
                 {
-                
+                    msg2+="number entered was too small to trigger less than zero error "+
+                            "number must be " + " greater than or equal to: " + Integer.MIN_VALUE; 
                 }  
                 else
                 {     
@@ -282,7 +291,7 @@ public class SplashScreenServlet extends HttpServlet
             
             if(steps < 0)
             {
-                msg2 += "Enter a number greater than 0 ";
+                msg2 += "Enter a number greater than or equal to 0 ";
                 
             }
             
