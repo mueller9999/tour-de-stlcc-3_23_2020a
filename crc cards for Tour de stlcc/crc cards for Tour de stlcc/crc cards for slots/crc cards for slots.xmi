@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmi.version="1.2" xmlns:UML="org.omg/UML/1.4">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Visual Paradigm for UML</XMI.exporter>
+      <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4" />
+  </XMI.header>
+  <XMI.content>
+    <UML:Model name="C:\Users\miken\Documents\powerpoint\crc cards for Tour de stlcc\crc cards for slots\crc cards for slots.xmi" xmi.id="Zt62Kng8RFp13UsW" xmlns:UML="UML">
+      <UML:Namespace.ownedElement>
+        <UML:Class name="SlotsView" xmi.id="Ti1s9HLl68Aex0E" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="SlotsApp(collaborator)" xmi.id="Ux26Pdf5Z0Amk3W" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="startingAmount1" xmi.id="Vp7c4Q3EbDw09Zd" ownerScope="instance" visibility="private" type="Vp7c4Q3EbDw09ZdA" />
+            <UML:Attribute name="matched1" xmi.id="Gr5n9Z2Ipb4ARc3" ownerScope="instance" visibility="private" type="Gr5n9Z2Ipb4ARc3A" />
+            <UML:Attribute name="matched2" xmi.id="o6ZMv4s1I0GiLw7" ownerScope="instance" visibility="private" type="o6ZMv4s1I0GiLw7A" />
+            <UML:Attribute name="matched3" xmi.id="Uh15Ser4OTt79Kc" ownerScope="instance" visibility="private" type="Uh15Ser4OTt79KcA" />
+            <UML:Attribute name="matched4" xmi.id="p1JWj04DaYw72Lf" ownerScope="instance" visibility="private" type="p1JWj04DaYw72LfA" />
+            <UML:Attribute name="enterAmount" xmi.id="Xf24Edw9KNn17Oh" ownerScope="instance" visibility="private" type="Xf24Edw9KNn17OhA" />
+            <UML:Attribute name="wins" xmi.id="Ku9d5A3Bnr4PTp6" ownerScope="instance" visibility="private" type="Ku9d5A3Bnr4PTp6A" />
+            <UML:Attribute name="amountWon" xmi.id="Ad6w1QNm5r9W4Vy" ownerScope="instance" visibility="private" type="Ad6w1QNm5r9W4VyA" />
+            <UML:Attribute name="btnSpin" xmi.id="e3FJa6q5YEl4r8I" ownerScope="instance" visibility="private" type="e3FJa6q5YEl4r8IA" />
+            <UML:Attribute name="jLabel1" xmi.id="j7J4Qso8XEg09Ob" ownerScope="instance" visibility="private" type="j7J4Qso8XEg09ObA" />
+            <UML:Attribute name="jLabel2" xmi.id="Dz27Hbh4QGq8n9F" ownerScope="instance" visibility="private" type="Dz27Hbh4QGq8n9FA" />
+            <UML:Attribute name="jLabel3" xmi.id="o6U7GyFz20Knv5S" ownerScope="instance" visibility="private" type="o6U7GyFz20Knv5SA" />
+            <UML:Attribute name="jLabel4" xmi.id="u8J7Php3Z0Kck9F" ownerScope="instance" visibility="private" type="u8J7Php3Z0Kck9FA" />
+            <UML:Attribute name="jLabel5" xmi.id="i7J9Yfv8EZs60Fe" ownerScope="instance" visibility="private" type="i7J9Yfv8EZs60FeA" />
+            <UML:Attribute name="jLabel6" xmi.id="Ge32Ldo7DQp41Ca" ownerScope="instance" visibility="private" type="Ge32Ldo7DQp41CaA" />
+            <UML:Attribute name="lblWinnings" xmi.id="v8JRj79FbTy02Nx" ownerScope="instance" visibility="private" type="v8JRj79FbTy02NxA" />
+            <UML:Attribute name="mainPanel" xmi.id="On9i3UKo71FwIm2" ownerScope="instance" visibility="private" type="On9i3UKo71FwIm2A" />
+            <UML:Attribute name="menuBar" xmi.id="h1POd6o3MWy54Zq" ownerScope="instance" visibility="private" type="h1POd6o3MWy54ZqA" />
+            <UML:Attribute name="statusAnimationLabel" xmi.id="w5V6XuWb21Zcq0B" ownerScope="instance" visibility="private" type="w5V6XuWb21Zcq0BA" />
+            <UML:Attribute name="statusMessageLabel" xmi.id="Sf0m1W7IcRj62Zg" ownerScope="instance" visibility="private" type="Sf0m1W7IcRj62ZgA" />
+            <UML:Attribute name="messageTimer" xmi.id="Dv7n5CAh82Nrg3F" ownerScope="instance" visibility="private" type="Dv7n5CAh82Nrg3FA" />
+            <UML:Attribute name="busyIconTimer" xmi.id="Sy6t0B8NjHd3h1Y" ownerScope="instance" visibility="private" type="Sy6t0B8NjHd3h1YA" />
+            <UML:Attribute name="idelIcon" xmi.id="r1R0ZaVu7i9L3Uh" ownerScope="instance" visibility="private" type="r1R0ZaVu7i9L3UhA" />
+            <UML:Attribute name="busyIcons" xmi.id="y0SQw3c5W2Eai4G" ownerScope="instance" visibility="private" type="y0SQw3c5W2Eai4GA" />
+            <UML:Attribute name="busyIconIndex" xmi.id="r1ABp7g3H6NeRw8" ownerScope="instance" visibility="private" type="r1ABp7g3H6NeRw8A" />
+            <UML:Attribute name="aboutBox" xmi.id="k8I9KnPl5p4LRs6" ownerScope="instance" visibility="private" type="k8I9KnPl5p4LRs6A" />
+            <UML:Attribute name="" xmi.id="d7WSe54Mnj2F6Hp" ownerScope="instance" visibility="private" type="d7WSe54Mnj2F6HpA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Vp7c4Q3EbDw09ZdA" visibility="public" />
+        <UML:DataType name="" xmi.id="Gr5n9Z2Ipb4ARc3A" visibility="public" />
+        <UML:DataType name="" xmi.id="o6ZMv4s1I0GiLw7A" visibility="public" />
+        <UML:DataType name="" xmi.id="Uh15Ser4OTt79KcA" visibility="public" />
+        <UML:DataType name="" xmi.id="p1JWj04DaYw72LfA" visibility="public" />
+        <UML:DataType name="" xmi.id="Xf24Edw9KNn17OhA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ku9d5A3Bnr4PTp6A" visibility="public" />
+        <UML:DataType name="" xmi.id="Ad6w1QNm5r9W4VyA" visibility="public" />
+        <UML:DataType name="" xmi.id="e3FJa6q5YEl4r8IA" visibility="public" />
+        <UML:DataType name="" xmi.id="j7J4Qso8XEg09ObA" visibility="public" />
+        <UML:DataType name="" xmi.id="Dz27Hbh4QGq8n9FA" visibility="public" />
+        <UML:DataType name="" xmi.id="o6U7GyFz20Knv5SA" visibility="public" />
+        <UML:DataType name="" xmi.id="u8J7Php3Z0Kck9FA" visibility="public" />
+        <UML:DataType name="" xmi.id="i7J9Yfv8EZs60FeA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ge32Ldo7DQp41CaA" visibility="public" />
+        <UML:DataType name="" xmi.id="v8JRj79FbTy02NxA" visibility="public" />
+        <UML:DataType name="" xmi.id="On9i3UKo71FwIm2A" visibility="public" />
+        <UML:DataType name="" xmi.id="h1POd6o3MWy54ZqA" visibility="public" />
+        <UML:DataType name="" xmi.id="w5V6XuWb21Zcq0BA" visibility="public" />
+        <UML:DataType name="" xmi.id="Sf0m1W7IcRj62ZgA" visibility="public" />
+        <UML:DataType name="" xmi.id="Dv7n5CAh82Nrg3FA" visibility="public" />
+        <UML:DataType name="" xmi.id="Sy6t0B8NjHd3h1YA" visibility="public" />
+        <UML:DataType name="" xmi.id="r1R0ZaVu7i9L3UhA" visibility="public" />
+        <UML:DataType name="" xmi.id="y0SQw3c5W2Eai4GA" visibility="public" />
+        <UML:DataType name="" xmi.id="r1ABp7g3H6NeRw8A" visibility="public" />
+        <UML:DataType name="" xmi.id="k8I9KnPl5p4LRs6A" visibility="public" />
+        <UML:DataType name="" xmi.id="d7WSe54Mnj2F6HpA" visibility="public" />
+        <UML:Class name="SlotsApp" xmi.id="k1FCy84Yxj6Q2Vc" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="SlotsAboutBox(collaborator)" xmi.id="c2I5Vpl1KJa0u3G" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SlotsView(collaborator)" xmi.id="z2FYx56XkRw01Ht" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class name="SlotsAboutBox" xmi.id="Ig9e4C6GqSf27Lv" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="SlotsView(collaborator)" xmi.id="Ew7m8JKf93Pxk5B" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SlotsView(collaborator)" xmi.id="Vw2c0S8XlIf9k4B" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="closeButton" xmi.id="Nv0e2XLd8x1IFt4" ownerScope="instance" visibility="private" type="Nv0e2XLd8x1IFt4A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Nv0e2XLd8x1IFt4A" visibility="public" />
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Diagram name="Class Diagram" xmi.id="c4HRa90Ixs3V5TnP" diagramType="ClassDiagram" documentation="" toolName="Visual Paradigm for UML" xmlns:UML="UML">
+      <UML:Diagram.element>
+        <UML:DiagramElement connectionPointType="2" xmi.id="Ti1s9HLl68Aex0EB" headerLength="40" lineLength="10" subject="Ti1s9HLl68Aex0E" zorder="0" geometry="190,0,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="k1FCy84Yxj6Q2VcB" headerLength="40" lineLength="10" subject="k1FCy84Yxj6Q2Vc" zorder="1" geometry="190,140,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Ig9e4C6GqSf27LvB" headerLength="40" lineLength="10" subject="Ig9e4C6GqSf27Lv" zorder="2" geometry="190,280,80,100" />
+      </UML:Diagram.element>
+    </UML:Diagram>
+  </XMI.content>
+</XMI>

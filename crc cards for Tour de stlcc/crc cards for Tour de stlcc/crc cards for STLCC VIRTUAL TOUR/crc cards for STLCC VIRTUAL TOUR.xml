@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <m_xmiID>v8W5Mng6LTx7k3Q</m_xmiID>
+  <name>CRC card builder doc</name>
+  <crcCards>
+    <crcCard>
+      <m_xmiID>Lv7q0JMs2a3ZPu6</m_xmiID>
+      <name>Member</name>
+      <description>GoBackToSplashScreenServlet</description>
+      <attributes>
+        <attribute>
+          <m_xmiID>c8J9Xog0FYr36Zy</m_xmiID>
+          <name>memid</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>d2I7Zwa0O9Azr3C</m_xmiID>
+          <name>firstnm</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>o5GYp9m7C8JzXu0</m_xmiID>
+          <name>weight</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Bx7l2DWh3w6QRu5</m_xmiID>
+          <name>tourfinished</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gf1s3H8MoSc72Rz</m_xmiID>
+          <name>memdt</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ev17Srn5Z6Oqh2V</m_xmiID>
+          <name>password</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>g9I2QnCe3q0Z4Dk</m_xmiID>
+          <name>steps</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ir68Jui5N4OxGc0</m_xmiID>
+          <name>counter</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>q3SKm0a9G7Mvr4A</m_xmiID>
+          <name>startdate</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>w2KYt58QfRv9k4D</m_xmiID>
+          <name>loctorf1</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>h7YGk53Qdg8EKx4</m_xmiID>
+          <name>loctorf2</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Xo0h4ZAn19Bli5W</m_xmiID>
+          <name>loctorf3</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Go8e2FKw95Trp1I</m_xmiID>
+          <name>loctorf4</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>g4FWm27Gbo3BVn9</m_xmiID>
+          <name>loctorf5</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gk8q7ZMi2n1C3Nr</m_xmiID>
+          <name>loctorf6</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>m7G5Cwz0BEg39Vb</m_xmiID>
+          <name>loctorf7</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Dr01Ttq5O7UgZe2</m_xmiID>
+          <name>loctorf8</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Cm14GeHv67BdJb0</m_xmiID>
+          <name>loctorf9</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>l7VXo1w8OHu40Uk</m_xmiID>
+          <name>loctorf10</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Qo02TlHq8z5YSa6</m_xmiID>
+          <name>loctorf11</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>l3H9NgWp15XxZw0</m_xmiID>
+          <name>loctorf12</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Qh41WoFq95BfXe0</m_xmiID>
+          <name>loctorf13</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>j9E7Qqn0Z2Xbu1J</m_xmiID>
+          <name>loctorf14</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Jw45Soi2UIl89Ta</m_xmiID>
+          <name>loctorf15</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gu40Pkm5SUi2f7Q</m_xmiID>
+          <name>loctorf16</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ed1x6P8Qzm0H7Yg</m_xmiID>
+          <name>loctorf17</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>w9T8Npi0I2HrXd5</m_xmiID>
+          <name>loctorf18</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>By31AbWz2r7P8Vl</m_xmiID>
+          <name>loctorf19</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Dm25Rwv9T8OzKf3</m_xmiID>
+          <name>loctorf20</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Kn85ClLm43DqZz6</m_xmiID>
+          <name>loctorf21</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Tg7e2NVr89LkFs4</m_xmiID>
+          <name>loctorf22</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Fv9x0S3KsEj25Gq</m_xmiID>
+          <name>loctorf23</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Uo14Hve5V2Pmx9F</m_xmiID>
+          <name>loctorf25</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>g3X9VhFa65RvOi4</m_xmiID>
+          <name>loctorf26</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Py3k4X2Hut6ISl1</m_xmiID>
+          <name>loctorf27</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ro7g0V3Eli5ACe8</m_xmiID>
+          <name>loctorf28</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Wp5m8XAd2j7R0Kw</m_xmiID>
+          <name>caloriesBurned</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>k2E5Oco3Y6BtNn1</m_xmiID>
+          <name>totalcaloriesburned</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gg4a3Q2Cvr6DLy1</m_xmiID>
+          <name>passattempt</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Nl96VpBz1c5S4Cd</m_xmiID>
+          <name>StepsForToday</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ag79Okt3R4Vnp6L</m_xmiID>
+          <name>dateOfToday</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>j7M3GbYf51Bks2E</m_xmiID>
+          <name>EnterWasPressed</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>Vi3d1Z0Umj8B7Mo</m_xmiID>
+          <name>totalSteps</name>
+          <card>Member</card>
+        </attribute>
+        <attribute>
+          <m_xmiID>On4r1BJc30Zfj7Q</m_xmiID>
+          <name>noErrors</name>
+          <card>Member</card>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Sw48UcRe61Nol0A</m_xmiID>
+          <name>Set no errors </name>
+          <Methods>
+            <Method>
+              <m_xmiID>l0BXy97Hpe5RUk1</m_xmiID>
+              <name>GoBackToSplashScreenServlet</name>
+            </Method>
+            <Method>
+              <m_xmiID>Ac2t6MTa4m3ULl9</m_xmiID>
+              <name>SplashScreenServlet</name>
+            </Method>
+            <Method>
+              <m_xmiID>g8E3Hpd7IMf69Li</m_xmiID>
+              <name>ToTheSplashScreenServlet</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>x9CZc67NtEn5v3Q</m_xmiID>
+          <name>Member</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ai02Heo6F3UkDd8</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>n1M4Uug0Z7Els2A</m_xmiID>
+              <name>CreateAcccountServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>x6SUv23Zli7C9Jy</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>i3JIy6t1K0Oqb8L</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ub9y1IBp05FlTq3</m_xmiID>
+          <name>Get member id</name>
+          <Methods>
+            <Method>
+              <m_xmiID>w7KBl1x4XQp06Yq</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>y5OWi20Hlj8V4Pt</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>d2Q1Hsj8W5UzSh9</m_xmiID>
+              <name>MemberUopdateServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Yx52Ctr4ZOl83Du</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>h0Y6Brv2C9Tpl3G</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g6FWa07YcEs53Mq</m_xmiID>
+          <name>Get first name</name>
+          <Methods>
+            <Method>
+              <m_xmiID>l1K8Dte2C7RiPa9</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>n4VTy73Xar1BSk9</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Lp68Yvb0C5WlTu3</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Jz72Kbc0GLt19An</m_xmiID>
+              <name>SplashScreen1(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i1L6TgSb35EcUf2</m_xmiID>
+          <name>Set first name</name>
+          <Methods>
+            <Method>
+              <m_xmiID>x7KGc2z9TMk1p0J</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Vj5t1E9IoLq8r2A</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Zd1y3FIb4a6LQm2</m_xmiID>
+          <name>Get member date</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Fe27VvWk69Taf0O</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Qb2u9U0Oly3V6Pt</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Wy7h4F1Iaf0OHi9</m_xmiID>
+          <name>Get password</name>
+          <Methods>
+            <Method>
+              <m_xmiID>a2GYo65IeWz30Xf</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>k4L0OgHb87Kmw5A</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Cs75VfHi4w6UYa2</m_xmiID>
+          <name>Set password</name>
+          <Methods>
+            <Method>
+              <m_xmiID>h0TUx6m1ZAz52Vd</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>w5B9YrFq07PlDo8</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>v3FIr6c7U0TpCu8</m_xmiID>
+          <name>Is authenticated</name>
+          <Methods>
+            <Method>
+              <m_xmiID>o2F6Qwu8N9EnTv3</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Cx52KwVc03TyZq4</m_xmiID>
+          <name>Set date of today</name>
+          <Methods>
+            <Method>
+              <m_xmiID>s0C1Xkc3N7BlLd6</m_xmiID>
+              <name>SplashScreen1(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Gl17MyBk89UxHe4</m_xmiID>
+          <name>Set password attempt</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ai12BkSx54Eml3Y</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>At49MaNk8q3UYs7</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Av06Jmh9Z8Rjt7W</m_xmiID>
+          <name>Get total steps</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Zr10Gsg6BXb98Sw</m_xmiID>
+              <name>RouteWithSteps(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>a6JZf2t8O4LxWn5</m_xmiID>
+          <name>Set total steps</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Yg93MjPo1k8URx2</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>s8Q9Kmi0P4OjZf1</m_xmiID>
+              <name>RouteWithSteps(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Zi7u5A8WmId09Nv</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Kw24PuTy8c7R6Bb</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>d9K3Clh7F8LfYb0</m_xmiID>
+              <name>ToTheSpashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k5XEr7u1N6Fti0S</m_xmiID>
+          <name>Set Location1 visisted true or false </name>
+          <Methods>
+            <Method>
+              <m_xmiID>e7C5Yzh0L1Qjw6B</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>r2WNl79Egs8VFb6</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Nd7g8BUq35Wyj6P</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Go65NjAe4t0ZDq7</m_xmiID>
+          <name>Set Location 2 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Kq1u6H2OhLt45Cj</m_xmiID>
+          <name>Set Location 3 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>x3TKj98BdJq20Or</m_xmiID>
+          <name>Set Location 4 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g2BGc8p0C3Zqz7X</m_xmiID>
+          <name>Set Location 5 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k4HLw0y8C3Feu9E</m_xmiID>
+          <name>Set location visited 6 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i5QFz27Srs3O4An</m_xmiID>
+          <name>Set location 7 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>s1GWt7v9REn4u3F</m_xmiID>
+          <name>Set location 8 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>r3PUy8m9WYh67Cv</m_xmiID>
+          <name>Set location 9 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>c6LRf2d9X8Uqo0Z</m_xmiID>
+          <name>Set location 10 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>x8WYj1n3L5Teu0H</m_xmiID>
+          <name>Set location 11 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ib19LmGq34PaBy0</m_xmiID>
+          <name>Set location 12 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>u3RQb7a4CKt21Mx</m_xmiID>
+          <name>Set location 13 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Av2b4X3Qyi7W6Mx</m_xmiID>
+          <name>Set location visited 14 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ly87FnQw9r1XYu5</m_xmiID>
+          <name>Set location visited 15 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>j9V7WoTf34AnRm5</m_xmiID>
+          <name>Set location visited 16 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>y3U2Qag0K9Gle1S</m_xmiID>
+          <name>Set location visited 17 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>c2VBb6w8IFj39Cn</m_xmiID>
+          <name>Set location visited 18 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>m4U3Pfr8B9Fit6H</m_xmiID>
+          <name>Set location visited 19 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>l1N3BgQi0q9DUx2</m_xmiID>
+          <name>Set location 20 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ok43Iap0U7ZnDd8</m_xmiID>
+          <name>Set location 21 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Rt82DmMf3y4Q7Sj</m_xmiID>
+          <name>Set location 22 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Nj5b9CIc47AuVi1</m_xmiID>
+          <name>Set location 23 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>z9W4Mwx6L8Ccd2P</m_xmiID>
+          <name>Set location 24 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>j2G3SpMd65Jmg8O</m_xmiID>
+          <name>Set location 25 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>r9E7TgDw18Keh3P</m_xmiID>
+          <name>Set location 26 visited true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Fx80Quw3Z4Vvn1I</m_xmiID>
+          <name>Set location visited 27 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Wu91JpUm5h6LKy8</m_xmiID>
+          <name>Set location visited 28 true or false</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ia2l3M1Ktq9TSh0</m_xmiID>
+          <name>Set date of today</name>
+          <Methods>
+            <Method>
+              <m_xmiID>z2LJi47HuYs0w5K</m_xmiID>
+              <name>SplashScreen1</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>b7QOd0p9U1Ijx2B</m_xmiID>
+      <name>MemberDB</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Sb9l5OKm1a2M8Ee</m_xmiID>
+          <name>Get Member By ID</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Au6h4D0OcXi2r7T</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>p9SPh13ZqXg6y5A</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>t2JVr10Ogs6K9La</m_xmiID>
+          <name>Add new record</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Tp50XoOe9w8LJt6</m_xmiID>
+              <name>CreateAccountServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Dz1j7H6KkEv8g5U</m_xmiID>
+          <name>UpdateMember</name>
+          <Methods>
+            <Method>
+              <m_xmiID>d7UNh86Gvf9KVc1</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Kv3d5VCc12JiBw9</m_xmiID>
+              <name>MemberUpdateServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>b8SXj32CzQs64Iu</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>i0ZFj47RnWy8z6D</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Jh60CvAy8g9P4Zi</m_xmiID>
+          <name>SetTotalSteps</name>
+          <Methods>
+            <Method>
+              <m_xmiID>p0EVj63LzUg5o8P</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaboraotor)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Eg83UeAx06Saz7K</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Kr0s8UIm4z1LCe9</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>q4OYl62Lxw7VKz9</m_xmiID>
+          <name>SetCaloriesForDay</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Wi4d0BRb8e9PKh6</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Wb19TlDg05SpCm6</m_xmiID>
+              <name>SplashScreentServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Be46Qri7LMc1o3C</m_xmiID>
+              <name>ToTheSpashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Xu51KoUa84Srd6A</m_xmiID>
+          <name>SettotalCalories</name>
+          <Methods>
+            <Method>
+              <m_xmiID>c3B1IgHa6h0MJi8</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Yd47Biv3OQu9z6R</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>v0JEs1r6Y4Onh9Z</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>h6TZl10Oas9A8Fb</m_xmiID>
+          <name>GetCurrentTotalCalories</name>
+          <Methods>
+            <Method>
+              <m_xmiID>g8OCb4j3G0Pzh7M</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Ln1e2QZy9p4T8Sc</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Vs89Iuc0P6JkZy4</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Bv5c0V6IsAi47Zq</m_xmiID>
+          <name>GetCurrentSteps</name>
+          <Methods>
+            <Method>
+              <m_xmiID>p5B1Zdm7QUv40Lx</m_xmiID>
+              <name>GoBackToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>a0T8EvLj35Xps1F</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>w0V8QdHh54Bkx3T</m_xmiID>
+              <name>ToTheSplashScreenServlet</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Zn37Oxt8D6Nje9V</m_xmiID>
+          <name>GetTORFValueForLocation</name>
+          <Methods>
+            <Method>
+              <m_xmiID>m1CJr86Unb7IMt5</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>u7F3OlPb8n9S5Gv</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>p1AEa5w4QLr7e8B</m_xmiID>
+              <name>ToTheSplashScreenServlet(colaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>s5O3Ato1P2QbLr7</m_xmiID>
+          <name>Get true or false value for location a</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ej68WcCe53Bvs4J</m_xmiID>
+          <name>Get Current Counter</name>
+          <Methods>
+            <Method>
+              <m_xmiID>r8O9Htj0NQb3q4S</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Za84Kfm7H2Yep1D</m_xmiID>
+          <name>Set Time Stamp</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ly38Ikp0F9PeRv2</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>f2L9Raq8E5HrNk4</m_xmiID>
+          <name>Get The Date Stamp</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ki4r0IFk85HjTw3</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Oc8f2X9Wqs3MVv1</m_xmiID>
+          <name>Destination Unlocked</name>
+          <Methods>
+            <Method>
+              <m_xmiID>g9J0Qnu3SXy4m1P</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k1B9Xoj8RZa6g3G</m_xmiID>
+          <name>Set the location for member to true</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Bl95Sbn2L3Jey6C</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Nr1i8A0Hec4U7Py</m_xmiID>
+              <name>SplashScreenServlet</name>
+            </Method>
+            <Method>
+              <m_xmiID>Pl65Tug9O2WjEi4</m_xmiID>
+              <name>ToTheSplashScreenServlet</name>
+            </Method>
+            <Method>
+              <m_xmiID>Er3o9OWm87CsUa4</m_xmiID>
+              <name />
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Sm42Wwa8F5BnIo1</m_xmiID>
+      <name>RouteWithSteps</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Dx0u8E9Hje6M7Ow</m_xmiID>
+          <name>locationID</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>q1X3Itv9NVn84Yi</m_xmiID>
+          <name>location</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>a1NRn9m7ICl2w6M</m_xmiID>
+          <name>address</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>o3K5HgIx14Cfy2B</m_xmiID>
+          <name>miles</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Rh76Sfo0ZVv8k1Y</m_xmiID>
+          <name>stepsToGetToLocation</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>t6Q0VdJv3o8N9Mp</m_xmiID>
+          <name>totalSteps</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>p6ODr8z2MRg3y1C</m_xmiID>
+          <name>unlockedLocation</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Bt35Dfr0G7CsUb2</m_xmiID>
+          <name>TheUnlockedDestinationLocation</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Bm2k1KVl50Qic9L</m_xmiID>
+          <name>RouteWithSteps</name>
+          <Methods>
+            <Method>
+              <m_xmiID>n5C9Uyq0V2Jos4A</m_xmiID>
+              <name>GoToCreateAccountServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Qn8w6Y4Usu2LFl0</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Xs35LwOp8f7DTt6</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>r7Y2LdCs94WeBh6</m_xmiID>
+              <name>RouteWithStepsDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Vb84OiRq5w7INf6</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Gs6w4B5Euc9MYx8</m_xmiID>
+              <name>ToTheSplashScreenServlet(colaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>j3Z9Dva1MFs2i0Y</m_xmiID>
+          <name>Set location id</name>
+          <Methods>
+            <Method>
+              <m_xmiID>c6K4Var2DWu07Is</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>m5K3Asp0DIo48Uh</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Me9d4JXo81Qlf6I</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ga5z3O8Jps6RNy1</m_xmiID>
+          <name>Set location</name>
+          <Methods>
+            <Method>
+              <m_xmiID>k6ECq3s8XWb7e5K</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>u4E2Tey7MBk93Jh</m_xmiID>
+              <name>GoToCreateAccountServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Sv97Qgk4V3OlXe1</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>q9XSw2k8E1Lfs6Q</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Ny0h2T1EoZp54Cu</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Pk17VsXv92GnMy5</m_xmiID>
+      <name>RouteWithStepsDB</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>s6E8SpHb20AdIz5</m_xmiID>
+          <name>sessionFactory</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gq0u8LCy6w1JHh4</m_xmiID>
+          <name>session1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Fk6p0C5Boe8Y7Vd</m_xmiID>
+          <name>createDate</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Hh38Obe2R1WdIk4</m_xmiID>
+          <name>Route with steps db</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Hz20GmSi8s7L3Nb</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator) </name>
+            </Method>
+            <Method>
+              <m_xmiID>b4ACo7l6P0OaVc8</m_xmiID>
+              <name>GoToCreateAccountServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Wq0e4K6YdTn3z8G</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Aw50Ziz6IFu89Dn</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Gp3w4SVb91LgEo7</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>z8EPb07Wih5LRt6</m_xmiID>
+          <name>Set location value to true</name>
+          <Methods>
+            <Method>
+              <m_xmiID>v9W6Lwp1TPb37Hl</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>t5TGz0u2O1Vrm8N</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>q0X6ImRd1j7ZTk3</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Bx12OyKt9a6N7Ji</m_xmiID>
+          <name>Set location value to false</name>
+          <Methods>
+            <Method>
+              <m_xmiID>An25Bfw3H1GzIq4</m_xmiID>
+              <name>GoToCreateAccountServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Rq3j9PGr85Wcy0M</m_xmiID>
+              <name>LogonServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Dt0x9Q8Kwr7L5Ez</m_xmiID>
+          <name>Get destination</name>
+          <Methods>
+            <Method>
+              <m_xmiID>j9Y3Atg2PBv6w0C</m_xmiID>
+              <name>GoBackToSplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Jr19ZoNv3l5OIg4</m_xmiID>
+              <name>SplashScreenServlet(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>Ni1w5Q2OdEb9k3H</m_xmiID>
+              <name>ToTheSplashScreenServlet(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>u2THx9o4U0CaWk8</m_xmiID>
+      <name>SplashScreenServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>p1SZa26UqHy5n9E</m_xmiID>
+          <name>Is integer</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ul4s2WAf8h6E1Zu</m_xmiID>
+          <name>Splash screen servlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Rm95Afi7K2Mjz8T</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Tw8t3HCy07Jin6X</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>s2T3Vbe8HYi6p7Q</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Cn47Sjg5V6NqRi0</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Xk84Sqe9B7IgFx3</m_xmiID>
+      <name>HIbernateUtil1</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>r4M1Sie5PYz97Zy</m_xmiID>
+          <name>registry</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Qc24YsXz36WdSx8</m_xmiID>
+          <name>sessionFactory</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>s7D8GdFt03UpIc5</m_xmiID>
+          <name>Hibernate utillity 1</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ts2g7CFl4e0G5Pp</m_xmiID>
+          <name>Get session factory</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>h2S1FoTq9n7B4Gd</m_xmiID>
+          <name>Shutdown</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Np8k7B5QuDq09Tw</m_xmiID>
+      <name>BackToHealthLogonPageServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>s2K5IxFf1o9S7Na</m_xmiID>
+          <name>BackToHealthLogonPageServlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yb79KjEf0w6F4Zr</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Wu26Tjp3ZQt4v8D</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Hf7c5ZEy31CbOd0</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Kv3f7Z5ToXi4q2V</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Ht64EaJg05UeVi1</m_xmiID>
+      <name>CreateAccountServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Vl8d5U6XvEb14Lk</m_xmiID>
+          <name>Create account servlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>n5JOj9c4HNe02Rl</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yh2m5E0Lkj7IHd6</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>z3A6Ylv7I9EpGa5</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ho7b6N1VuOg24Uk</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>m2SBr34GaTf65Ne</m_xmiID>
+      <name>SplashScreenServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Mj2b5UCx1t7G3Pd</m_xmiID>
+          <name>Is integer</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Wb94NrJp2w6P1Mt</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>x8X4CfQj2i1YMv9</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g6FIq13Sxu7N2Qo</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Rx2f7W6Ogn9V8Bp</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Py4g5C1UlLk07Xs</m_xmiID>
+      <name>HibernateUtil</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Vr84Slc6X3QxZq7</m_xmiID>
+          <name>sessionFactory</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>d4PCr7o5S8Ayn9L</m_xmiID>
+          <name>Hibernate utillity</name>
+          <Methods>
+            <Method>
+              <m_xmiID>i9VJh7z5F4LmZl0</m_xmiID>
+              <name>MemberDB(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>l6SJh1i8HBc52Rm</m_xmiID>
+              <name>RouteWithStepsDB(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>c1RGk7a5YHo2r3Z</m_xmiID>
+      <name>GoBackToSplashScreenServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Uq03Hbn9A2VfTu5</m_xmiID>
+          <name>Go back to splash screen servlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g8AQe72CaTr9k5W</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Kl1z2B6Ucf3FTs7</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>s7S9KbAq31Mtc4Z</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i9ZWj0x3A5Xqv8S</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>k4K8Mmr0B2Gtv9P</m_xmiID>
+      <name>GoToCreateAccountServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Zf70HoCp2d9LPc4</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Zm31JjNz60Oiu9I</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yz5b9EQy07Cuw3R</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>r8RQa96Ikp3O4Vm</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>e5NAs37VzBr6f8L</m_xmiID>
+      <name>InvalidateServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>z0FLa2w4IPx95Dv</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>f5LJl8t0V7BnAh3</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ra8d2M0Pns3ACt1</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>j6T3NyCx08Sbk4J</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>f2H8WiPe53Dkx7C</m_xmiID>
+      <name>ToTheSplashScreenServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Cd4p8T6VkZe2o5X</m_xmiID>
+          <name>To The Splash Screen Servlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>b1S3AeCv9l7R0Ed</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Kc4k8Z0LaEb2v6O</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>b2GXp96Ufy5E7Ov</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Dm39Hng0QCw2r7J</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>n5L9EmDp1q8BAd0</m_xmiID>
+      <name>UnlockedServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>g8MYv6x3AQj2d4R</m_xmiID>
+          <name>Unlocked servlet</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>r0U6Inm1TWy4l7E</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>b1DAh40EnVp7g2R</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>h6SAo07XcZp3y9R</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g6YMj20Rdu8N5Lx</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Uw15YvEd3x7NDi9</m_xmiID>
+      <name>LogonServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Mm95QoSs4i3APa2</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k8W4FoTq95Zve3M</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>l1VNq8z3S9Ehn2J</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i9WYd8t2Q4CmNp7</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Bw42XuHq70Ucd6D</m_xmiID>
+      <name>MemberUpdateServlet</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Vo78JqTv2c0F3Ah</m_xmiID>
+          <name>Process request</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>l1I0Kah5C9Vpo2B</m_xmiID>
+          <name>Do get</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Vt1i0Q6Xeb8O3Zn</m_xmiID>
+          <name>Do post</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yl6k4NCd5y2FQc3</m_xmiID>
+          <name>Get servlet info</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+  </crcCards>
+  <sequences />
+</Doc>

@@ -1,0 +1,27 @@
+
+
+Version:	3.12
+CmdLine:	C:\Users\miken\Documents\GitHub\tour-de-stlcc-3_23_2020a\GuessingGame_starter\GuessingGame_starter\GuessingGame_starter\dist\GuessingGame.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\miken\Documents\GitHub\tour-de-stlcc-3_23_2020a\GuessingGame_starter\GuessingGame_starter\GuessingGame_starter\dist\.
+Java min ver:	1.000.000
+Java max ver:	1.014.000
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_251
+Check launcher:	C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe (OK)
+Match:		1.008.000_251
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_251
+Ignore:		1.008.000_251
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.008.000_251 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe
+Launcher args:	-jar "C:\Users\miken\Documents\GitHub\tour-de-stlcc-3_23_2020a\GuessingGame_starter\GuessingGame_starter\GuessingGame_starter\dist\GuessingGame.exe"
+Args length:	148/32768 chars
+Exit code:	0

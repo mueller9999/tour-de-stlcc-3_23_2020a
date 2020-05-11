@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmi.version="1.2" xmlns:UML="org.omg/UML/1.4">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Visual Paradigm for UML</XMI.exporter>
+      <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4" />
+  </XMI.header>
+  <XMI.content>
+    <UML:Model name="C:\Users\miken\Documents\powerpoint\crc cards for Tour de stlcc\crc cards for STLCC VIRTUAL TOUR\crc cards for STLCC VIRTUAL TOUR.xmi" xmi.id="h0R9Cxi7F4Zkw1Q2" xmlns:UML="UML">
+      <UML:Namespace.ownedElement>
+        <UML:Class name="Member" xmi.id="Lv7q0JMs2a3ZPu6" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GoBackToSplashScreenServlet" xmi.id="l0BXy97Hpe5RUk1" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet" xmi.id="Ac2t6MTa4m3ULl9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet" xmi.id="g8E3Hpd7IMf69Li" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="Ai02Heo6F3UkDd8" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="CreateAcccountServlet(collaborator)" xmi.id="n1M4Uug0Z7Els2A" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="x6SUv23Zli7C9Jy" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="i3JIy6t1K0Oqb8L" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="w7KBl1x4XQp06Yq" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="y5OWi20Hlj8V4Pt" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUopdateServlet(collaborator)" xmi.id="d2Q1Hsj8W5UzSh9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Yx52Ctr4ZOl83Du" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="h0Y6Brv2C9Tpl3G" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="l1K8Dte2C7RiPa9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="n4VTy73Xar1BSk9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="Lp68Yvb0C5WlTu3" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreen1(collaborator)" xmi.id="Jz72Kbc0GLt19An" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="x7KGc2z9TMk1p0J" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="Vj5t1E9IoLq8r2A" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="Fe27VvWk69Taf0O" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="Qb2u9U0Oly3V6Pt" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="a2GYo65IeWz30Xf" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="k4L0OgHb87Kmw5A" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="h0TUx6m1ZAz52Vd" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="w5B9YrFq07PlDo8" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="o2F6Qwu8N9EnTv3" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreen1(collaborator)" xmi.id="s0C1Xkc3N7BlLd6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Ai12BkSx54Eml3Y" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="At49MaNk8q3UYs7" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="RouteWithSteps(collaborator)" xmi.id="Zr10Gsg6BXb98Sw" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="Yg93MjPo1k8URx2" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="RouteWithSteps(collaborator)" xmi.id="s8Q9Kmi0P4OjZf1" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="Zi7u5A8WmId09Nv" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Kw24PuTy8c7R6Bb" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSpashScreenServlet(collaborator)" xmi.id="d9K3Clh7F8LfYb0" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="e7C5Yzh0L1Qjw6B" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="r2WNl79Egs8VFb6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Nd7g8BUq35Wyj6P" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreen1" xmi.id="z2LJi47HuYs0w5K" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="memid" xmi.id="c8J9Xog0FYr36Zy" ownerScope="instance" visibility="private" type="c8J9Xog0FYr36ZyA" />
+            <UML:Attribute name="firstnm" xmi.id="d2I7Zwa0O9Azr3C" ownerScope="instance" visibility="private" type="d2I7Zwa0O9Azr3CA" />
+            <UML:Attribute name="weight" xmi.id="o5GYp9m7C8JzXu0" ownerScope="instance" visibility="private" type="o5GYp9m7C8JzXu0A" />
+            <UML:Attribute name="tourfinished" xmi.id="Bx7l2DWh3w6QRu5" ownerScope="instance" visibility="private" type="Bx7l2DWh3w6QRu5A" />
+            <UML:Attribute name="memdt" xmi.id="Gf1s3H8MoSc72Rz" ownerScope="instance" visibility="private" type="Gf1s3H8MoSc72RzA" />
+            <UML:Attribute name="password" xmi.id="Ev17Srn5Z6Oqh2V" ownerScope="instance" visibility="private" type="Ev17Srn5Z6Oqh2VA" />
+            <UML:Attribute name="steps" xmi.id="g9I2QnCe3q0Z4Dk" ownerScope="instance" visibility="private" type="g9I2QnCe3q0Z4DkA" />
+            <UML:Attribute name="counter" xmi.id="Ir68Jui5N4OxGc0" ownerScope="instance" visibility="private" type="Ir68Jui5N4OxGc0A" />
+            <UML:Attribute name="startdate" xmi.id="q3SKm0a9G7Mvr4A" ownerScope="instance" visibility="private" type="q3SKm0a9G7Mvr4AA" />
+            <UML:Attribute name="loctorf1" xmi.id="w2KYt58QfRv9k4D" ownerScope="instance" visibility="private" type="w2KYt58QfRv9k4DA" />
+            <UML:Attribute name="loctorf2" xmi.id="h7YGk53Qdg8EKx4" ownerScope="instance" visibility="private" type="h7YGk53Qdg8EKx4A" />
+            <UML:Attribute name="loctorf3" xmi.id="Xo0h4ZAn19Bli5W" ownerScope="instance" visibility="private" type="Xo0h4ZAn19Bli5WA" />
+            <UML:Attribute name="loctorf4" xmi.id="Go8e2FKw95Trp1I" ownerScope="instance" visibility="private" type="Go8e2FKw95Trp1IA" />
+            <UML:Attribute name="loctorf5" xmi.id="g4FWm27Gbo3BVn9" ownerScope="instance" visibility="private" type="g4FWm27Gbo3BVn9A" />
+            <UML:Attribute name="loctorf6" xmi.id="Gk8q7ZMi2n1C3Nr" ownerScope="instance" visibility="private" type="Gk8q7ZMi2n1C3NrA" />
+            <UML:Attribute name="loctorf7" xmi.id="m7G5Cwz0BEg39Vb" ownerScope="instance" visibility="private" type="m7G5Cwz0BEg39VbA" />
+            <UML:Attribute name="loctorf8" xmi.id="Dr01Ttq5O7UgZe2" ownerScope="instance" visibility="private" type="Dr01Ttq5O7UgZe2A" />
+            <UML:Attribute name="loctorf9" xmi.id="Cm14GeHv67BdJb0" ownerScope="instance" visibility="private" type="Cm14GeHv67BdJb0A" />
+            <UML:Attribute name="loctorf10" xmi.id="l7VXo1w8OHu40Uk" ownerScope="instance" visibility="private" type="l7VXo1w8OHu40UkA" />
+            <UML:Attribute name="loctorf11" xmi.id="Qo02TlHq8z5YSa6" ownerScope="instance" visibility="private" type="Qo02TlHq8z5YSa6A" />
+            <UML:Attribute name="loctorf12" xmi.id="l3H9NgWp15XxZw0" ownerScope="instance" visibility="private" type="l3H9NgWp15XxZw0A" />
+            <UML:Attribute name="loctorf13" xmi.id="Qh41WoFq95BfXe0" ownerScope="instance" visibility="private" type="Qh41WoFq95BfXe0A" />
+            <UML:Attribute name="loctorf14" xmi.id="j9E7Qqn0Z2Xbu1J" ownerScope="instance" visibility="private" type="j9E7Qqn0Z2Xbu1JA" />
+            <UML:Attribute name="loctorf15" xmi.id="Jw45Soi2UIl89Ta" ownerScope="instance" visibility="private" type="Jw45Soi2UIl89TaA" />
+            <UML:Attribute name="loctorf16" xmi.id="Gu40Pkm5SUi2f7Q" ownerScope="instance" visibility="private" type="Gu40Pkm5SUi2f7QA" />
+            <UML:Attribute name="loctorf17" xmi.id="Ed1x6P8Qzm0H7Yg" ownerScope="instance" visibility="private" type="Ed1x6P8Qzm0H7YgA" />
+            <UML:Attribute name="loctorf18" xmi.id="w9T8Npi0I2HrXd5" ownerScope="instance" visibility="private" type="w9T8Npi0I2HrXd5A" />
+            <UML:Attribute name="loctorf19" xmi.id="By31AbWz2r7P8Vl" ownerScope="instance" visibility="private" type="By31AbWz2r7P8VlA" />
+            <UML:Attribute name="loctorf20" xmi.id="Dm25Rwv9T8OzKf3" ownerScope="instance" visibility="private" type="Dm25Rwv9T8OzKf3A" />
+            <UML:Attribute name="loctorf21" xmi.id="Kn85ClLm43DqZz6" ownerScope="instance" visibility="private" type="Kn85ClLm43DqZz6A" />
+            <UML:Attribute name="loctorf22" xmi.id="Tg7e2NVr89LkFs4" ownerScope="instance" visibility="private" type="Tg7e2NVr89LkFs4A" />
+            <UML:Attribute name="loctorf23" xmi.id="Fv9x0S3KsEj25Gq" ownerScope="instance" visibility="private" type="Fv9x0S3KsEj25GqA" />
+            <UML:Attribute name="loctorf25" xmi.id="Uo14Hve5V2Pmx9F" ownerScope="instance" visibility="private" type="Uo14Hve5V2Pmx9FA" />
+            <UML:Attribute name="loctorf26" xmi.id="g3X9VhFa65RvOi4" ownerScope="instance" visibility="private" type="g3X9VhFa65RvOi4A" />
+            <UML:Attribute name="loctorf27" xmi.id="Py3k4X2Hut6ISl1" ownerScope="instance" visibility="private" type="Py3k4X2Hut6ISl1A" />
+            <UML:Attribute name="loctorf28" xmi.id="Ro7g0V3Eli5ACe8" ownerScope="instance" visibility="private" type="Ro7g0V3Eli5ACe8A" />
+            <UML:Attribute name="caloriesBurned" xmi.id="Wp5m8XAd2j7R0Kw" ownerScope="instance" visibility="private" type="Wp5m8XAd2j7R0KwA" />
+            <UML:Attribute name="totalcaloriesburned" xmi.id="k2E5Oco3Y6BtNn1" ownerScope="instance" visibility="private" type="k2E5Oco3Y6BtNn1A" />
+            <UML:Attribute name="passattempt" xmi.id="Gg4a3Q2Cvr6DLy1" ownerScope="instance" visibility="private" type="Gg4a3Q2Cvr6DLy1A" />
+            <UML:Attribute name="StepsForToday" xmi.id="Nl96VpBz1c5S4Cd" ownerScope="instance" visibility="private" type="Nl96VpBz1c5S4CdA" />
+            <UML:Attribute name="dateOfToday" xmi.id="Ag79Okt3R4Vnp6L" ownerScope="instance" visibility="private" type="Ag79Okt3R4Vnp6LA" />
+            <UML:Attribute name="EnterWasPressed" xmi.id="j7M3GbYf51Bks2E" ownerScope="instance" visibility="private" type="j7M3GbYf51Bks2EA" />
+            <UML:Attribute name="totalSteps" xmi.id="Vi3d1Z0Umj8B7Mo" ownerScope="instance" visibility="private" type="Vi3d1Z0Umj8B7MoA" />
+            <UML:Attribute name="noErrors" xmi.id="On4r1BJc30Zfj7Q" ownerScope="instance" visibility="private" type="On4r1BJc30Zfj7QA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="c8J9Xog0FYr36ZyA" visibility="public" />
+        <UML:DataType name="" xmi.id="d2I7Zwa0O9Azr3CA" visibility="public" />
+        <UML:DataType name="" xmi.id="o5GYp9m7C8JzXu0A" visibility="public" />
+        <UML:DataType name="" xmi.id="Bx7l2DWh3w6QRu5A" visibility="public" />
+        <UML:DataType name="" xmi.id="Gf1s3H8MoSc72RzA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ev17Srn5Z6Oqh2VA" visibility="public" />
+        <UML:DataType name="" xmi.id="g9I2QnCe3q0Z4DkA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ir68Jui5N4OxGc0A" visibility="public" />
+        <UML:DataType name="" xmi.id="q3SKm0a9G7Mvr4AA" visibility="public" />
+        <UML:DataType name="" xmi.id="w2KYt58QfRv9k4DA" visibility="public" />
+        <UML:DataType name="" xmi.id="h7YGk53Qdg8EKx4A" visibility="public" />
+        <UML:DataType name="" xmi.id="Xo0h4ZAn19Bli5WA" visibility="public" />
+        <UML:DataType name="" xmi.id="Go8e2FKw95Trp1IA" visibility="public" />
+        <UML:DataType name="" xmi.id="g4FWm27Gbo3BVn9A" visibility="public" />
+        <UML:DataType name="" xmi.id="Gk8q7ZMi2n1C3NrA" visibility="public" />
+        <UML:DataType name="" xmi.id="m7G5Cwz0BEg39VbA" visibility="public" />
+        <UML:DataType name="" xmi.id="Dr01Ttq5O7UgZe2A" visibility="public" />
+        <UML:DataType name="" xmi.id="Cm14GeHv67BdJb0A" visibility="public" />
+        <UML:DataType name="" xmi.id="l7VXo1w8OHu40UkA" visibility="public" />
+        <UML:DataType name="" xmi.id="Qo02TlHq8z5YSa6A" visibility="public" />
+        <UML:DataType name="" xmi.id="l3H9NgWp15XxZw0A" visibility="public" />
+        <UML:DataType name="" xmi.id="Qh41WoFq95BfXe0A" visibility="public" />
+        <UML:DataType name="" xmi.id="j9E7Qqn0Z2Xbu1JA" visibility="public" />
+        <UML:DataType name="" xmi.id="Jw45Soi2UIl89TaA" visibility="public" />
+        <UML:DataType name="" xmi.id="Gu40Pkm5SUi2f7QA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ed1x6P8Qzm0H7YgA" visibility="public" />
+        <UML:DataType name="" xmi.id="w9T8Npi0I2HrXd5A" visibility="public" />
+        <UML:DataType name="" xmi.id="By31AbWz2r7P8VlA" visibility="public" />
+        <UML:DataType name="" xmi.id="Dm25Rwv9T8OzKf3A" visibility="public" />
+        <UML:DataType name="" xmi.id="Kn85ClLm43DqZz6A" visibility="public" />
+        <UML:DataType name="" xmi.id="Tg7e2NVr89LkFs4A" visibility="public" />
+        <UML:DataType name="" xmi.id="Fv9x0S3KsEj25GqA" visibility="public" />
+        <UML:DataType name="" xmi.id="Uo14Hve5V2Pmx9FA" visibility="public" />
+        <UML:DataType name="" xmi.id="g3X9VhFa65RvOi4A" visibility="public" />
+        <UML:DataType name="" xmi.id="Py3k4X2Hut6ISl1A" visibility="public" />
+        <UML:DataType name="" xmi.id="Ro7g0V3Eli5ACe8A" visibility="public" />
+        <UML:DataType name="" xmi.id="Wp5m8XAd2j7R0KwA" visibility="public" />
+        <UML:DataType name="" xmi.id="k2E5Oco3Y6BtNn1A" visibility="public" />
+        <UML:DataType name="" xmi.id="Gg4a3Q2Cvr6DLy1A" visibility="public" />
+        <UML:DataType name="" xmi.id="Nl96VpBz1c5S4CdA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ag79Okt3R4Vnp6LA" visibility="public" />
+        <UML:DataType name="" xmi.id="j7M3GbYf51Bks2EA" visibility="public" />
+        <UML:DataType name="" xmi.id="Vi3d1Z0Umj8B7MoA" visibility="public" />
+        <UML:DataType name="" xmi.id="On4r1BJc30Zfj7QA" visibility="public" />
+        <UML:Class name="MemberDB" xmi.id="b7QOd0p9U1Ijx2B" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Au6h4D0OcXi2r7T" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="p9SPh13ZqXg6y5A" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="CreateAccountServlet(collaborator)" xmi.id="Tp50XoOe9w8LJt6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="d7UNh86Gvf9KVc1" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="MemberUpdateServlet(collaborator)" xmi.id="Kv3d5VCc12JiBw9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="b8SXj32CzQs64Iu" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="i0ZFj47RnWy8z6D" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaboraotor)" xmi.id="p0EVj63LzUg5o8P" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Eg83UeAx06Saz7K" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Kr0s8UIm4z1LCe9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="Wi4d0BRb8e9PKh6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreentServlet(collaborator)" xmi.id="Wb19TlDg05SpCm6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSpashScreenServlet(collaborator)" xmi.id="Be46Qri7LMc1o3C" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="c3B1IgHa6h0MJi8" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Yd47Biv3OQu9z6R" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="v0JEs1r6Y4Onh9Z" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="g8OCb4j3G0Pzh7M" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Ln1e2QZy9p4T8Sc" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Vs89Iuc0P6JkZy4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToTheSplashScreenServlet(collaborator)" xmi.id="p5B1Zdm7QUv40Lx" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="a0T8EvLj35Xps1F" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet" xmi.id="w0V8QdHh54Bkx3T" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="m1CJr86Unb7IMt5" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="u7F3OlPb8n9S5Gv" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(colaborator)" xmi.id="p1AEa5w4QLr7e8B" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="r8O9Htj0NQb3q4S" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Ly38Ikp0F9PeRv2" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Ki4r0IFk85HjTw3" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="g9J0Qnu3SXy4m1P" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="Bl95Sbn2L3Jey6C" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet" xmi.id="Nr1i8A0Hec4U7Py" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet" xmi.id="Pl65Tug9O2WjEi4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="" xmi.id="Er3o9OWm87CsUa4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class name="RouteWithSteps" xmi.id="Sm42Wwa8F5BnIo1" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GoToCreateAccountServlet(collaborator)" xmi.id="n5C9Uyq0V2Jos4A" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Qn8w6Y4Usu2LFl0" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Xs35LwOp8f7DTt6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="RouteWithStepsDB(collaborator)" xmi.id="r7Y2LdCs94WeBh6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="Vb84OiRq5w7INf6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(colaborator)" xmi.id="Gs6w4B5Euc9MYx8" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="c6K4Var2DWu07Is" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="m5K3Asp0DIo48Uh" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Me9d4JXo81Qlf6I" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="k6ECq3s8XWb7e5K" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoToCreateAccountServlet(collaborator)" xmi.id="u4E2Tey7MBk93Jh" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Sv97Qgk4V3OlXe1" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="q9XSw2k8E1Lfs6Q" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Ny0h2T1EoZp54Cu" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="locationID" xmi.id="Dx0u8E9Hje6M7Ow" ownerScope="instance" visibility="private" type="Dx0u8E9Hje6M7OwA" />
+            <UML:Attribute name="location" xmi.id="q1X3Itv9NVn84Yi" ownerScope="instance" visibility="private" type="q1X3Itv9NVn84YiA" />
+            <UML:Attribute name="address" xmi.id="a1NRn9m7ICl2w6M" ownerScope="instance" visibility="private" type="a1NRn9m7ICl2w6MA" />
+            <UML:Attribute name="miles" xmi.id="o3K5HgIx14Cfy2B" ownerScope="instance" visibility="private" type="o3K5HgIx14Cfy2BA" />
+            <UML:Attribute name="stepsToGetToLocation" xmi.id="Rh76Sfo0ZVv8k1Y" ownerScope="instance" visibility="private" type="Rh76Sfo0ZVv8k1YA" />
+            <UML:Attribute name="totalSteps" xmi.id="t6Q0VdJv3o8N9Mp" ownerScope="instance" visibility="private" type="t6Q0VdJv3o8N9MpA" />
+            <UML:Attribute name="unlockedLocation" xmi.id="p6ODr8z2MRg3y1C" ownerScope="instance" visibility="private" type="p6ODr8z2MRg3y1CA" />
+            <UML:Attribute name="TheUnlockedDestinationLocation" xmi.id="Bt35Dfr0G7CsUb2" ownerScope="instance" visibility="private" type="Bt35Dfr0G7CsUb2A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Dx0u8E9Hje6M7OwA" visibility="public" />
+        <UML:DataType name="" xmi.id="q1X3Itv9NVn84YiA" visibility="public" />
+        <UML:DataType name="" xmi.id="a1NRn9m7ICl2w6MA" visibility="public" />
+        <UML:DataType name="" xmi.id="o3K5HgIx14Cfy2BA" visibility="public" />
+        <UML:DataType name="" xmi.id="Rh76Sfo0ZVv8k1YA" visibility="public" />
+        <UML:DataType name="" xmi.id="t6Q0VdJv3o8N9MpA" visibility="public" />
+        <UML:DataType name="" xmi.id="p6ODr8z2MRg3y1CA" visibility="public" />
+        <UML:DataType name="" xmi.id="Bt35Dfr0G7CsUb2A" visibility="public" />
+        <UML:Class name="RouteWithStepsDB" xmi.id="Pk17VsXv92GnMy5" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator) " xmi.id="Hz20GmSi8s7L3Nb" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoToCreateAccountServlet(collaborator)" xmi.id="b4ACo7l6P0OaVc8" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Wq0e4K6YdTn3z8G" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Aw50Ziz6IFu89Dn" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Gp3w4SVb91LgEo7" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="v9W6Lwp1TPb37Hl" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="t5TGz0u2O1Vrm8N" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="q0X6ImRd1j7ZTk3" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoToCreateAccountServlet(collaborator)" xmi.id="An25Bfw3H1GzIq4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="LogonServlet(collaborator)" xmi.id="Rq3j9PGr85Wcy0M" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GoBackToSplashScreenServlet(collaborator)" xmi.id="j9Y3Atg2PBv6w0C" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="SplashScreenServlet(collaborator)" xmi.id="Jr19ZoNv3l5OIg4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="ToTheSplashScreenServlet(collaborator)" xmi.id="Ni1w5Q2OdEb9k3H" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="sessionFactory" xmi.id="s6E8SpHb20AdIz5" ownerScope="instance" visibility="private" type="s6E8SpHb20AdIz5A" />
+            <UML:Attribute name="session1" xmi.id="Gq0u8LCy6w1JHh4" ownerScope="instance" visibility="private" type="Gq0u8LCy6w1JHh4A" />
+            <UML:Attribute name="createDate" xmi.id="Fk6p0C5Boe8Y7Vd" ownerScope="instance" visibility="private" type="Fk6p0C5Boe8Y7VdA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="s6E8SpHb20AdIz5A" visibility="public" />
+        <UML:DataType name="" xmi.id="Gq0u8LCy6w1JHh4A" visibility="public" />
+        <UML:DataType name="" xmi.id="Fk6p0C5Boe8Y7VdA" visibility="public" />
+        <UML:Class name="SplashScreenServlet" xmi.id="u2THx9o4U0CaWk8" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="HIbernateUtil1" xmi.id="Xk84Sqe9B7IgFx3" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Attribute name="registry" xmi.id="r4M1Sie5PYz97Zy" ownerScope="instance" visibility="private" type="r4M1Sie5PYz97ZyA" />
+            <UML:Attribute name="sessionFactory" xmi.id="Qc24YsXz36WdSx8" ownerScope="instance" visibility="private" type="Qc24YsXz36WdSx8A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="r4M1Sie5PYz97ZyA" visibility="public" />
+        <UML:DataType name="" xmi.id="Qc24YsXz36WdSx8A" visibility="public" />
+        <UML:Class name="BackToHealthLogonPageServlet" xmi.id="Np8k7B5QuDq09Tw" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="CreateAccountServlet" xmi.id="Ht64EaJg05UeVi1" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="SplashScreenServlet" xmi.id="m2SBr34GaTf65Ne" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="HibernateUtil" xmi.id="Py4g5C1UlLk07Xs" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="MemberDB(collaborator)" xmi.id="i9VJh7z5F4LmZl0" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="RouteWithStepsDB(collaborator)" xmi.id="l6SJh1i8HBc52Rm" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="sessionFactory" xmi.id="Vr84Slc6X3QxZq7" ownerScope="instance" visibility="private" type="Vr84Slc6X3QxZq7A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Vr84Slc6X3QxZq7A" visibility="public" />
+        <UML:Class name="GoBackToSplashScreenServlet" xmi.id="c1RGk7a5YHo2r3Z" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="GoToCreateAccountServlet" xmi.id="k4K8Mmr0B2Gtv9P" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="InvalidateServlet" xmi.id="e5NAs37VzBr6f8L" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="ToTheSplashScreenServlet" xmi.id="f2H8WiPe53Dkx7C" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="UnlockedServlet" xmi.id="n5L9EmDp1q8BAd0" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="LogonServlet" xmi.id="Uw15YvEd3x7NDi9" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+        <UML:Class name="MemberUpdateServlet" xmi.id="Bw42XuHq70Ucd6D" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature />
+        </UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Diagram name="Class Diagram" xmi.id="Uh64Exo2PTk80Vnf" diagramType="ClassDiagram" documentation="" toolName="Visual Paradigm for UML" xmlns:UML="UML">
+      <UML:Diagram.element>
+        <UML:DiagramElement connectionPointType="2" xmi.id="Lv7q0JMs2a3ZPu6B" headerLength="40" lineLength="10" subject="Lv7q0JMs2a3ZPu6" zorder="0" geometry="190,0,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="b7QOd0p9U1Ijx2BB" headerLength="40" lineLength="10" subject="b7QOd0p9U1Ijx2B" zorder="1" geometry="190,140,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Sm42Wwa8F5BnIo1B" headerLength="40" lineLength="10" subject="Sm42Wwa8F5BnIo1" zorder="2" geometry="190,280,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Pk17VsXv92GnMy5B" headerLength="40" lineLength="10" subject="Pk17VsXv92GnMy5" zorder="3" geometry="190,420,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="u2THx9o4U0CaWk8B" headerLength="40" lineLength="10" subject="u2THx9o4U0CaWk8" zorder="4" geometry="190,560,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Xk84Sqe9B7IgFx3B" headerLength="40" lineLength="10" subject="Xk84Sqe9B7IgFx3" zorder="5" geometry="190,700,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Np8k7B5QuDq09TwB" headerLength="40" lineLength="10" subject="Np8k7B5QuDq09Tw" zorder="6" geometry="190,840,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Ht64EaJg05UeVi1B" headerLength="40" lineLength="10" subject="Ht64EaJg05UeVi1" zorder="7" geometry="190,980,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="m2SBr34GaTf65NeB" headerLength="40" lineLength="10" subject="m2SBr34GaTf65Ne" zorder="8" geometry="190,1120,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Py4g5C1UlLk07XsB" headerLength="40" lineLength="10" subject="Py4g5C1UlLk07Xs" zorder="9" geometry="190,1260,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="c1RGk7a5YHo2r3ZB" headerLength="40" lineLength="10" subject="c1RGk7a5YHo2r3Z" zorder="10" geometry="190,1400,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="k4K8Mmr0B2Gtv9PB" headerLength="40" lineLength="10" subject="k4K8Mmr0B2Gtv9P" zorder="11" geometry="190,1540,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="e5NAs37VzBr6f8LB" headerLength="40" lineLength="10" subject="e5NAs37VzBr6f8L" zorder="12" geometry="190,1680,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="f2H8WiPe53Dkx7CB" headerLength="40" lineLength="10" subject="f2H8WiPe53Dkx7C" zorder="13" geometry="190,1820,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="n5L9EmDp1q8BAd0B" headerLength="40" lineLength="10" subject="n5L9EmDp1q8BAd0" zorder="14" geometry="190,1960,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Uw15YvEd3x7NDi9B" headerLength="40" lineLength="10" subject="Uw15YvEd3x7NDi9" zorder="15" geometry="190,2100,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Bw42XuHq70Ucd6DB" headerLength="40" lineLength="10" subject="Bw42XuHq70Ucd6D" zorder="16" geometry="190,2240,80,100" />
+      </UML:Diagram.element>
+    </UML:Diagram>
+  </XMI.content>
+</XMI>

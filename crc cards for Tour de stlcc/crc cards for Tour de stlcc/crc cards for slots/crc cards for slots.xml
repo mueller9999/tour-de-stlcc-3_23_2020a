@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <m_xmiID>Fp1x2T7IbUw5h9K</m_xmiID>
+  <name>CRC card builder doc</name>
+  <crcCards>
+    <crcCard>
+      <m_xmiID>Ti1s9HLl68Aex0E</m_xmiID>
+      <name>SlotsView</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Vp7c4Q3EbDw09Zd</m_xmiID>
+          <name>startingAmount1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gr5n9Z2Ipb4ARc3</m_xmiID>
+          <name>matched1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>o6ZMv4s1I0GiLw7</m_xmiID>
+          <name>matched2</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Uh15Ser4OTt79Kc</m_xmiID>
+          <name>matched3</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>p1JWj04DaYw72Lf</m_xmiID>
+          <name>matched4</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Xf24Edw9KNn17Oh</m_xmiID>
+          <name>enterAmount</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ku9d5A3Bnr4PTp6</m_xmiID>
+          <name>wins</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ad6w1QNm5r9W4Vy</m_xmiID>
+          <name>amountWon</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>e3FJa6q5YEl4r8I</m_xmiID>
+          <name>btnSpin</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>j7J4Qso8XEg09Ob</m_xmiID>
+          <name>jLabel1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Dz27Hbh4QGq8n9F</m_xmiID>
+          <name>jLabel2</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>o6U7GyFz20Knv5S</m_xmiID>
+          <name>jLabel3</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>u8J7Php3Z0Kck9F</m_xmiID>
+          <name>jLabel4</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>i7J9Yfv8EZs60Fe</m_xmiID>
+          <name>jLabel5</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ge32Ldo7DQp41Ca</m_xmiID>
+          <name>jLabel6</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>v8JRj79FbTy02Nx</m_xmiID>
+          <name>lblWinnings</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>On9i3UKo71FwIm2</m_xmiID>
+          <name>mainPanel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>h1POd6o3MWy54Zq</m_xmiID>
+          <name>menuBar</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>w5V6XuWb21Zcq0B</m_xmiID>
+          <name>statusAnimationLabel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Sf0m1W7IcRj62Zg</m_xmiID>
+          <name>statusMessageLabel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Dv7n5CAh82Nrg3F</m_xmiID>
+          <name>messageTimer</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Sy6t0B8NjHd3h1Y</m_xmiID>
+          <name>busyIconTimer</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>r1R0ZaVu7i9L3Uh</m_xmiID>
+          <name>idelIcon</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>y0SQw3c5W2Eai4G</m_xmiID>
+          <name>busyIcons</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>r1ABp7g3H6NeRw8</m_xmiID>
+          <name>busyIconIndex</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>k8I9KnPl5p4LRs6</m_xmiID>
+          <name>aboutBox</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>d7WSe54Mnj2F6Hp</m_xmiID>
+          <name />
+        </attribute>
+        <attribute>
+          <m_xmiID>Kw87Ule1IPm69Ah</m_xmiID>
+          <name>attribute 87</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Qv91Eeg4AXf7l6W</m_xmiID>
+          <name>Slots view</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ux26Pdf5Z0Amk3W</m_xmiID>
+              <name>SlotsApp(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yr87XbPj42Akp9V</m_xmiID>
+          <name>Show About Box</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>a3QJh21Ekc9ZVx5</m_xmiID>
+          <name>InitComponents</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g1XKh38UuVr96Il</m_xmiID>
+          <name>Button spin</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>v5TOz8t7LHd09Kk</m_xmiID>
+          <name>Slots view</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>k1FCy84Yxj6Q2Vc</m_xmiID>
+      <name>SlotsApp</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Pg3s6A2Irb0N5Xk</m_xmiID>
+          <name>Slots app</name>
+          <Methods>
+            <Method>
+              <m_xmiID>c2I5Vpl1KJa0u3G</m_xmiID>
+              <name>SlotsAboutBox(collaborator)</name>
+            </Method>
+            <Method>
+              <m_xmiID>z2FYx56XkRw01Ht</m_xmiID>
+              <name>SlotsView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ek1m0MYu8d6U5Zg</m_xmiID>
+          <name>Startup</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>z7S6Mck8UTs13Fm</m_xmiID>
+          <name>Configure window</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Bu2h8M0Uxa1FPq9</m_xmiID>
+          <name>Get application</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Qz16Hwo7PLf40Gc</m_xmiID>
+          <name>Main</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Ig9e4C6GqSf27Lv</m_xmiID>
+      <name>SlotsAboutBox</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Nv0e2XLd8x1IFt4</m_xmiID>
+          <name>closeButton</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>n8PNr07Wyq4O9Hj</m_xmiID>
+          <name>Slots About Box</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ew7m8JKf93Pxk5B</m_xmiID>
+              <name>SlotsView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>y8R4QfNt97Who1U</m_xmiID>
+          <name>Close About Box</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>g1EZc56Sji9FHm2</m_xmiID>
+          <name>Initialize compenents</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Vw2c0S8XlIf9k4B</m_xmiID>
+              <name>SlotsView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+  </crcCards>
+  <sequences />
+</Doc>

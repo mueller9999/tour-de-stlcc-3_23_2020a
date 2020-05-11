@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <m_xmiID>s3R8Fth2W1NaPr5</m_xmiID>
+  <name>CRC card builder doc</name>
+  <crcCards>
+    <crcCard>
+      <m_xmiID>Nc6z1CSx24IdDw3</m_xmiID>
+      <name>GuessingGameView</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>n4DXi6j5R0QqNx8</m_xmiID>
+          <name>game1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Iw30MhWu85Nfs1H</m_xmiID>
+          <name>interfaceCounter</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Lx62GsMk78DhUp4</m_xmiID>
+          <name>jLabel1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>c0D2CuKz41Avt8J</m_xmiID>
+          <name>jLabel2</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>s5U8XvAn6j7H1Jd</m_xmiID>
+          <name>jLabel3</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Wk1m6QYn08OjBw5</m_xmiID>
+          <name>jScrollPane1</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Oa38IdSu7k4NBj5</m_xmiID>
+          <name>jScrollPane2</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Mj39GlWz8a5QZh6</m_xmiID>
+          <name>jtbnClear</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>d9W4Tgh6OAz1w2E</m_xmiID>
+          <name>jbtnSubmitGuess</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>r9YGo10VpHk64Nz</m_xmiID>
+          <name>jmnuGuessing</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>y5TXb8c3K9HfJe6</m_xmiID>
+          <name>jmnuHiLo</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Zx3q0S7Odn9P1Db</m_xmiID>
+          <name>jmnuHotCold</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Qr95HjYa4p8RAv2</m_xmiID>
+          <name>ttxtHotCold</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>o7I6Drm8O9UzSh0</m_xmiID>
+          <name>jtxtGameName</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>y6C1Gch5X4MtFn3</m_xmiID>
+          <name>jtxtGuess</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Vl8s1NWz36Opj7B</m_xmiID>
+          <name>jtxtGuessHistory </name>
+        </attribute>
+        <attribute>
+          <m_xmiID>a9QZf3l7OPt46Yz</m_xmiID>
+          <name>jtxtInstructions</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>w4W6Nvx9K5EkCj1</m_xmiID>
+          <name>mainPanel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>j0Z6AiUm57YxMc4</m_xmiID>
+          <name>menuBar</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Sv3p7YHe84ZiNm6</m_xmiID>
+          <name>progressBar</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Bf61Nvk8W0Ica3K</m_xmiID>
+          <name>statusAnimationLabel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Wl9e4GRt73IrKp0</m_xmiID>
+          <name>statusMessageLabel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>g7ULb8d5ZTk92Oh</m_xmiID>
+          <name>statusPanel</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>e0E4ImXs59Hpa3U</m_xmiID>
+          <name>messageTimer</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Cr0f6TDi7w2NAs1</m_xmiID>
+          <name>busyIconTimer</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>e7M9OuSb04Tlp2X</m_xmiID>
+          <name>idleIcon</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Kb81ViSd29Phw6J</m_xmiID>
+          <name>busyIcons</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ug5y9E7SxZi8p2R</m_xmiID>
+          <name>busyIconIndex</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>a6DCg12Wpk0JRx9</m_xmiID>
+          <name>aboutBox</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Dd56Clk8IUo41Aa</m_xmiID>
+          <name>Guessing Game View</name>
+          <Methods>
+            <Method>
+              <m_xmiID>u1PQt5q6GZi23Re</m_xmiID>
+              <name>GuessingGameApp(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Pc0k9M1Eho2GDv5</m_xmiID>
+          <name>Show About Box</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>p2R6Shi0LKg38Os</m_xmiID>
+          <name>Initialize components</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k3VHw4a5YKb6y2E</m_xmiID>
+          <name>JbuttonSubmit Guess Action Performed</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Xw6t2Y8Iud9B1Sh</m_xmiID>
+          <name>Jmenu HiLo Action Performed</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>p7OXl98Yzf3ZAo5</m_xmiID>
+          <name>Jmenu Hot Cold Action Performed</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ac2i7MOj93Poe1K</m_xmiID>
+          <name>Jbutton clear action performed</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Wy58RaCe3t9M0Hc</m_xmiID>
+          <name>J menu high low item state changed</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>r5P1ZhVd94Ewc0F</m_xmiID>
+      <name>GuessingBothGames</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Aa96DtPu1e7ZVx8</m_xmiID>
+          <name>endmsg</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>By91Xib5MLq83Kk</m_xmiID>
+          <name>errmsg</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Dj13CgXb0e9ISo2</m_xmiID>
+          <name>gametype</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>w5P8Apx0XRc6e7W</m_xmiID>
+          <name>mum</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Wu42Lbq7MVm69Ew</m_xmiID>
+          <name>lastguess</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Gy1j3JUt56MsQe9</m_xmiID>
+          <name>prevcat</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>p2SUn83Iul6VOr1</m_xmiID>
+          <name>prevdiff</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ju4m1DMx5q7W6So</m_xmiID>
+          <name>over</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Fh8y4LCz7g5VZf2</m_xmiID>
+          <name>gcount</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Wz0l2VZm53Cob8X</m_xmiID>
+          <name>Guessing Both Games</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>t2U8JpFr1u6R3Wo</m_xmiID>
+          <name>Set Random</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ac67YoGy29PaUh8</m_xmiID>
+          <name> get random</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i0R4QuFf7r9E5Vt</m_xmiID>
+          <name>Get Last Guess</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Pl91ApTu47Bfm8X</m_xmiID>
+          <name>Set Move</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>On42TcEb08CjDa7</m_xmiID>
+          <name>Get End Msg</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>p3HMm79Qdi2TDv1</m_xmiID>
+          <name>Is game over</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>d4E1VcPv52TiIh0</m_xmiID>
+          <name>Get error message</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>p8BPj5g3N0Fud2W</m_xmiID>
+          <name>Get Instructions</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>p1YGf82HrWj04It</m_xmiID>
+          <name>Get game name</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ei68Mlo5I1ZdDy7</m_xmiID>
+          <name>Get move results</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>k6GHp5j4IWg8q0F</m_xmiID>
+          <name>Get move by High low</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>n7Z4Fdt3M5Urc0L</m_xmiID>
+          <name>Get move by hot cold</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>b5CNv39Akt4ZDi7</m_xmiID>
+      <name>Guessing</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Kw2g7X3Hbk6V8Aq</m_xmiID>
+          <name>endmsg</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>g7U4Qma5D0Kot1C</m_xmiID>
+          <name>ermsg</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Ac0u1T3Ldr8BJg9</m_xmiID>
+          <name>mum</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>u0WCe7w8G9Xto1K</m_xmiID>
+          <name>lastguess</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>z2XKm98Hyc5Q1Rt</m_xmiID>
+          <name>gametype</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>Df19Sek3RIp5a6J</m_xmiID>
+          <name>over</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>c9LWb1y0IYh2p6D</m_xmiID>
+          <name>gcount</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Ww6g1VXc85PtDm7</m_xmiID>
+          <name>Guessing</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Mg95ZsIh6i4NTe0</m_xmiID>
+          <name>Set random</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Kn2g6HLk04AiSf5</m_xmiID>
+          <name>Set guess</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Eu40OqIs3y1LNj9</m_xmiID>
+          <name>Get End message</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>j1Q3BcAt8v6Y9Rg</m_xmiID>
+          <name>Get error message</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Rn31KbLg07TfQm8</m_xmiID>
+          <name>Is over</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>l6MEg8t9NRc74Wu</m_xmiID>
+          <name>Get R num</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>m8Z0XpTw16Dfv7M</m_xmiID>
+          <name>Get Last Guess</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>i8Z2Eem5YAo0j7K</m_xmiID>
+          <name>Set game type</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>q9M4Lyp7N3TbAi2</m_xmiID>
+          <name>Get game type</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>c7ZHn6o4Q2Adk8J</m_xmiID>
+          <name>Get guess result</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ek18RxDb93HzFs6</m_xmiID>
+          <name>Get Game Name</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>h3N1Iyb9VHm56Me</m_xmiID>
+          <name>Get instructions</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Fh73Wyz0DQi5v9K</m_xmiID>
+      <name>Game</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>g9E5Bfw3X6ZpOr2</m_xmiID>
+          <name>Get game name</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Qg76MfFn8s4LGm1</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Yc95Plm2INq1g6W</m_xmiID>
+          <name>Get instructions</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Ly35EzOg6c9JGx0</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Qq1n2J5RlTh4f7E</m_xmiID>
+          <name>Set guess</name>
+          <Methods>
+            <Method>
+              <m_xmiID>k3ZVm25Wpd4R7Xl</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Jh30Wnx9X2Ptr1S</m_xmiID>
+          <name>Get guess result</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Tb48Ous6J2Qzt0N</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>q3I9DsLg5f2F1Gv</m_xmiID>
+          <name>Get error message</name>
+          <Methods>
+            <Method>
+              <m_xmiID>a0KGv97OmAw1r3S</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>h0WGc79Uko4Z5Sf</m_xmiID>
+          <name>Get end message</name>
+          <Methods>
+            <Method>
+              <m_xmiID>b5LOz14DdWu3e8K</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>z1NHd93Stv0T7Ll</m_xmiID>
+          <name>Is over</name>
+          <Methods>
+            <Method>
+              <m_xmiID>y4R9OmBj8t0SGq2</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>v9LFe61Wsz3EXc2</m_xmiID>
+      <name>GuessHotCold</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>p8O2Jkm4R0Wso7Y</m_xmiID>
+          <name>INSTRUCTIONS</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>e2Q0UlLp63Kak5A</m_xmiID>
+          <name>GAMENAME</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>p6Q3YaHg51Ikf0M</m_xmiID>
+          <name>prevcat</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>g6BVk1m8GZo5c7C</m_xmiID>
+          <name>prevdiff</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Jl0w3RFk64Xtz7I</m_xmiID>
+          <name>Guess hot cold</name>
+          <Methods>
+            <Method>
+              <m_xmiID>It4k2W5Jrq3Q7Hb</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>c9A0Frg8L7Nkj3G</m_xmiID>
+          <name>Get game name</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Rd1i2GQs43XyAw7</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Tu46UrAj78VfWw2</m_xmiID>
+          <name>Get instructions</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Oo20PnRy34Fjt9M</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>n6MSx7m9QUh53Zo</m_xmiID>
+          <name>Get guess result</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Cq6n8U3RyNa42Mm</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Wq16Bbn4A5Uck9C</m_xmiID>
+      <name>GuessHiLo</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Ek3o4VPn62QuGi0</m_xmiID>
+          <name>INSTRUCTIONS</name>
+        </attribute>
+        <attribute>
+          <m_xmiID>j6U0Cqp8SKo37Wf</m_xmiID>
+          <name>GAMENAME</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>Yq51DaGp20AmLr6</m_xmiID>
+          <name>Guess high low</name>
+          <Methods>
+            <Method>
+              <m_xmiID>w7Y9RxHe56Czg1Z</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>a0T9QyIz1h6Y2He</m_xmiID>
+          <name>Get game name</name>
+          <Methods>
+            <Method>
+              <m_xmiID>p0U6Kog7DCx53Ge</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Uh31Zid8X6Ege2V</m_xmiID>
+          <name>Get instructions</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Yt6d5HMk98WpBb3</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>St6u2REh9f5MNb0</m_xmiID>
+          <name>Get guess result</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Vc16ZsNw28EbTe9</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>Mr7i2ZRa1y5N8Sx</m_xmiID>
+      <name>GuessingGameApp</name>
+      <attributes />
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>h1TPb4g2I7Yex6U</m_xmiID>
+          <name>Guessing game app</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Zy5k2VLl0d3WJr6</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ke38Rto4JBq61Fw</m_xmiID>
+          <name>Startup</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Uk5s0Q3Rym9I8Ln</m_xmiID>
+              <name>GuessingGameApp(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Hg3s7MSm9x0BPn5</m_xmiID>
+          <name>Configure windows</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Lv90Ctd4ZWp5n3A</m_xmiID>
+          <name>Get application</name>
+          <Methods>
+            <Method>
+              <m_xmiID>Jq1u9LAe5n8FKk4</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>o1HMg24Nsb3Y8Xe</m_xmiID>
+          <name>Main</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+    <crcCard>
+      <m_xmiID>e2A4Etg6GVq30Tz</m_xmiID>
+      <name>GuessingGameAboutBox</name>
+      <attributes>
+        <attribute>
+          <m_xmiID>Yq12Xor0N4VdRl7</m_xmiID>
+          <name>closeButton</name>
+        </attribute>
+      </attributes>
+      <Responsibilities>
+        <Responsibility>
+          <m_xmiID>g9X2QcJq53Ixv1Z</m_xmiID>
+          <name>Guessing Game About Box</name>
+          <Methods>
+            <Method>
+              <m_xmiID>d0JQt83VvCw47Ry</m_xmiID>
+              <name>GuessingGameView(collaborator)</name>
+            </Method>
+          </Methods>
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>v8P6VzHp5g0QZf2</m_xmiID>
+          <name>Close about box</name>
+          <Methods />
+        </Responsibility>
+        <Responsibility>
+          <m_xmiID>Ya4z8AJe1t5ZCd6</m_xmiID>
+          <name>Initialize componenets</name>
+          <Methods />
+        </Responsibility>
+      </Responsibilities>
+      <superclass />
+    </crcCard>
+  </crcCards>
+  <sequences />
+</Doc>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmi.version="1.2" xmlns:UML="org.omg/UML/1.4">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Visual Paradigm for UML</XMI.exporter>
+      <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4" />
+  </XMI.header>
+  <XMI.content>
+    <UML:Model name="C:\Users\miken\Documents\GitHub\crc cards for Tour de stlcc\crc cards for java guessing game\java guessing game crc.xmi" xmi.id="Py08Mue4L7Czs9Z6" xmlns:UML="UML">
+      <UML:Namespace.ownedElement>
+        <UML:Class name="GuessingGameView" xmi.id="Nc6z1CSx24IdDw3" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameApp(collaborator)" xmi.id="u1PQt5q6GZi23Re" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="game1" xmi.id="n4DXi6j5R0QqNx8" ownerScope="instance" visibility="private" type="n4DXi6j5R0QqNx8A" />
+            <UML:Attribute name="interfaceCounter" xmi.id="Iw30MhWu85Nfs1H" ownerScope="instance" visibility="private" type="Iw30MhWu85Nfs1HA" />
+            <UML:Attribute name="jLabel1" xmi.id="Lx62GsMk78DhUp4" ownerScope="instance" visibility="private" type="Lx62GsMk78DhUp4A" />
+            <UML:Attribute name="jLabel2" xmi.id="c0D2CuKz41Avt8J" ownerScope="instance" visibility="private" type="c0D2CuKz41Avt8JA" />
+            <UML:Attribute name="jLabel3" xmi.id="s5U8XvAn6j7H1Jd" ownerScope="instance" visibility="private" type="s5U8XvAn6j7H1JdA" />
+            <UML:Attribute name="jScrollPane1" xmi.id="Wk1m6QYn08OjBw5" ownerScope="instance" visibility="private" type="Wk1m6QYn08OjBw5A" />
+            <UML:Attribute name="jScrollPane2" xmi.id="Oa38IdSu7k4NBj5" ownerScope="instance" visibility="private" type="Oa38IdSu7k4NBj5A" />
+            <UML:Attribute name="jtbnClear" xmi.id="Mj39GlWz8a5QZh6" ownerScope="instance" visibility="private" type="Mj39GlWz8a5QZh6A" />
+            <UML:Attribute name="jbtnSubmitGuess" xmi.id="d9W4Tgh6OAz1w2E" ownerScope="instance" visibility="private" type="d9W4Tgh6OAz1w2EA" />
+            <UML:Attribute name="jmnuGuessing" xmi.id="r9YGo10VpHk64Nz" ownerScope="instance" visibility="private" type="r9YGo10VpHk64NzA" />
+            <UML:Attribute name="jmnuHiLo" xmi.id="y5TXb8c3K9HfJe6" ownerScope="instance" visibility="private" type="y5TXb8c3K9HfJe6A" />
+            <UML:Attribute name="jmnuHotCold" xmi.id="Zx3q0S7Odn9P1Db" ownerScope="instance" visibility="private" type="Zx3q0S7Odn9P1DbA" />
+            <UML:Attribute name="ttxtHotCold" xmi.id="Qr95HjYa4p8RAv2" ownerScope="instance" visibility="private" type="Qr95HjYa4p8RAv2A" />
+            <UML:Attribute name="jtxtGameName" xmi.id="o7I6Drm8O9UzSh0" ownerScope="instance" visibility="private" type="o7I6Drm8O9UzSh0A" />
+            <UML:Attribute name="jtxtGuess" xmi.id="y6C1Gch5X4MtFn3" ownerScope="instance" visibility="private" type="y6C1Gch5X4MtFn3A" />
+            <UML:Attribute name="jtxtGuessHistory " xmi.id="Vl8s1NWz36Opj7B" ownerScope="instance" visibility="private" type="Vl8s1NWz36Opj7BA" />
+            <UML:Attribute name="jtxtInstructions" xmi.id="a9QZf3l7OPt46Yz" ownerScope="instance" visibility="private" type="a9QZf3l7OPt46YzA" />
+            <UML:Attribute name="mainPanel" xmi.id="w4W6Nvx9K5EkCj1" ownerScope="instance" visibility="private" type="w4W6Nvx9K5EkCj1A" />
+            <UML:Attribute name="menuBar" xmi.id="j0Z6AiUm57YxMc4" ownerScope="instance" visibility="private" type="j0Z6AiUm57YxMc4A" />
+            <UML:Attribute name="progressBar" xmi.id="Sv3p7YHe84ZiNm6" ownerScope="instance" visibility="private" type="Sv3p7YHe84ZiNm6A" />
+            <UML:Attribute name="statusAnimationLabel" xmi.id="Bf61Nvk8W0Ica3K" ownerScope="instance" visibility="private" type="Bf61Nvk8W0Ica3KA" />
+            <UML:Attribute name="statusMessageLabel" xmi.id="Wl9e4GRt73IrKp0" ownerScope="instance" visibility="private" type="Wl9e4GRt73IrKp0A" />
+            <UML:Attribute name="statusPanel" xmi.id="g7ULb8d5ZTk92Oh" ownerScope="instance" visibility="private" type="g7ULb8d5ZTk92OhA" />
+            <UML:Attribute name="messageTimer" xmi.id="e0E4ImXs59Hpa3U" ownerScope="instance" visibility="private" type="e0E4ImXs59Hpa3UA" />
+            <UML:Attribute name="busyIconTimer" xmi.id="Cr0f6TDi7w2NAs1" ownerScope="instance" visibility="private" type="Cr0f6TDi7w2NAs1A" />
+            <UML:Attribute name="idleIcon" xmi.id="e7M9OuSb04Tlp2X" ownerScope="instance" visibility="private" type="e7M9OuSb04Tlp2XA" />
+            <UML:Attribute name="busyIcons" xmi.id="Kb81ViSd29Phw6J" ownerScope="instance" visibility="private" type="Kb81ViSd29Phw6JA" />
+            <UML:Attribute name="busyIconIndex" xmi.id="Ug5y9E7SxZi8p2R" ownerScope="instance" visibility="private" type="Ug5y9E7SxZi8p2RA" />
+            <UML:Attribute name="aboutBox" xmi.id="a6DCg12Wpk0JRx9" ownerScope="instance" visibility="private" type="a6DCg12Wpk0JRx9A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="n4DXi6j5R0QqNx8A" visibility="public" />
+        <UML:DataType name="" xmi.id="Iw30MhWu85Nfs1HA" visibility="public" />
+        <UML:DataType name="" xmi.id="Lx62GsMk78DhUp4A" visibility="public" />
+        <UML:DataType name="" xmi.id="c0D2CuKz41Avt8JA" visibility="public" />
+        <UML:DataType name="" xmi.id="s5U8XvAn6j7H1JdA" visibility="public" />
+        <UML:DataType name="" xmi.id="Wk1m6QYn08OjBw5A" visibility="public" />
+        <UML:DataType name="" xmi.id="Oa38IdSu7k4NBj5A" visibility="public" />
+        <UML:DataType name="" xmi.id="Mj39GlWz8a5QZh6A" visibility="public" />
+        <UML:DataType name="" xmi.id="d9W4Tgh6OAz1w2EA" visibility="public" />
+        <UML:DataType name="" xmi.id="r9YGo10VpHk64NzA" visibility="public" />
+        <UML:DataType name="" xmi.id="y5TXb8c3K9HfJe6A" visibility="public" />
+        <UML:DataType name="" xmi.id="Zx3q0S7Odn9P1DbA" visibility="public" />
+        <UML:DataType name="" xmi.id="Qr95HjYa4p8RAv2A" visibility="public" />
+        <UML:DataType name="" xmi.id="o7I6Drm8O9UzSh0A" visibility="public" />
+        <UML:DataType name="" xmi.id="y6C1Gch5X4MtFn3A" visibility="public" />
+        <UML:DataType name="" xmi.id="Vl8s1NWz36Opj7BA" visibility="public" />
+        <UML:DataType name="" xmi.id="a9QZf3l7OPt46YzA" visibility="public" />
+        <UML:DataType name="" xmi.id="w4W6Nvx9K5EkCj1A" visibility="public" />
+        <UML:DataType name="" xmi.id="j0Z6AiUm57YxMc4A" visibility="public" />
+        <UML:DataType name="" xmi.id="Sv3p7YHe84ZiNm6A" visibility="public" />
+        <UML:DataType name="" xmi.id="Bf61Nvk8W0Ica3KA" visibility="public" />
+        <UML:DataType name="" xmi.id="Wl9e4GRt73IrKp0A" visibility="public" />
+        <UML:DataType name="" xmi.id="g7ULb8d5ZTk92OhA" visibility="public" />
+        <UML:DataType name="" xmi.id="e0E4ImXs59Hpa3UA" visibility="public" />
+        <UML:DataType name="" xmi.id="Cr0f6TDi7w2NAs1A" visibility="public" />
+        <UML:DataType name="" xmi.id="e7M9OuSb04Tlp2XA" visibility="public" />
+        <UML:DataType name="" xmi.id="Kb81ViSd29Phw6JA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ug5y9E7SxZi8p2RA" visibility="public" />
+        <UML:DataType name="" xmi.id="a6DCg12Wpk0JRx9A" visibility="public" />
+        <UML:Class name="GuessingBothGames" xmi.id="r5P1ZhVd94Ewc0F" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Attribute name="endmsg" xmi.id="Aa96DtPu1e7ZVx8" ownerScope="instance" visibility="private" type="Aa96DtPu1e7ZVx8A" />
+            <UML:Attribute name="errmsg" xmi.id="By91Xib5MLq83Kk" ownerScope="instance" visibility="private" type="By91Xib5MLq83KkA" />
+            <UML:Attribute name="gametype" xmi.id="Dj13CgXb0e9ISo2" ownerScope="instance" visibility="private" type="Dj13CgXb0e9ISo2A" />
+            <UML:Attribute name="mum" xmi.id="w5P8Apx0XRc6e7W" ownerScope="instance" visibility="private" type="w5P8Apx0XRc6e7WA" />
+            <UML:Attribute name="lastguess" xmi.id="Wu42Lbq7MVm69Ew" ownerScope="instance" visibility="private" type="Wu42Lbq7MVm69EwA" />
+            <UML:Attribute name="prevcat" xmi.id="Gy1j3JUt56MsQe9" ownerScope="instance" visibility="private" type="Gy1j3JUt56MsQe9A" />
+            <UML:Attribute name="prevdiff" xmi.id="p2SUn83Iul6VOr1" ownerScope="instance" visibility="private" type="p2SUn83Iul6VOr1A" />
+            <UML:Attribute name="over" xmi.id="Ju4m1DMx5q7W6So" ownerScope="instance" visibility="private" type="Ju4m1DMx5q7W6SoA" />
+            <UML:Attribute name="gcount" xmi.id="Fh8y4LCz7g5VZf2" ownerScope="instance" visibility="private" type="Fh8y4LCz7g5VZf2A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Aa96DtPu1e7ZVx8A" visibility="public" />
+        <UML:DataType name="" xmi.id="By91Xib5MLq83KkA" visibility="public" />
+        <UML:DataType name="" xmi.id="Dj13CgXb0e9ISo2A" visibility="public" />
+        <UML:DataType name="" xmi.id="w5P8Apx0XRc6e7WA" visibility="public" />
+        <UML:DataType name="" xmi.id="Wu42Lbq7MVm69EwA" visibility="public" />
+        <UML:DataType name="" xmi.id="Gy1j3JUt56MsQe9A" visibility="public" />
+        <UML:DataType name="" xmi.id="p2SUn83Iul6VOr1A" visibility="public" />
+        <UML:DataType name="" xmi.id="Ju4m1DMx5q7W6SoA" visibility="public" />
+        <UML:DataType name="" xmi.id="Fh8y4LCz7g5VZf2A" visibility="public" />
+        <UML:Class name="Guessing" xmi.id="b5CNv39Akt4ZDi7" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Attribute name="endmsg" xmi.id="Kw2g7X3Hbk6V8Aq" ownerScope="instance" visibility="private" type="Kw2g7X3Hbk6V8AqA" />
+            <UML:Attribute name="ermsg" xmi.id="g7U4Qma5D0Kot1C" ownerScope="instance" visibility="private" type="g7U4Qma5D0Kot1CA" />
+            <UML:Attribute name="mum" xmi.id="Ac0u1T3Ldr8BJg9" ownerScope="instance" visibility="private" type="Ac0u1T3Ldr8BJg9A" />
+            <UML:Attribute name="lastguess" xmi.id="u0WCe7w8G9Xto1K" ownerScope="instance" visibility="private" type="u0WCe7w8G9Xto1KA" />
+            <UML:Attribute name="gametype" xmi.id="z2XKm98Hyc5Q1Rt" ownerScope="instance" visibility="private" type="z2XKm98Hyc5Q1RtA" />
+            <UML:Attribute name="over" xmi.id="Df19Sek3RIp5a6J" ownerScope="instance" visibility="private" type="Df19Sek3RIp5a6JA" />
+            <UML:Attribute name="gcount" xmi.id="c9LWb1y0IYh2p6D" ownerScope="instance" visibility="private" type="c9LWb1y0IYh2p6DA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Kw2g7X3Hbk6V8AqA" visibility="public" />
+        <UML:DataType name="" xmi.id="g7U4Qma5D0Kot1CA" visibility="public" />
+        <UML:DataType name="" xmi.id="Ac0u1T3Ldr8BJg9A" visibility="public" />
+        <UML:DataType name="" xmi.id="u0WCe7w8G9Xto1KA" visibility="public" />
+        <UML:DataType name="" xmi.id="z2XKm98Hyc5Q1RtA" visibility="public" />
+        <UML:DataType name="" xmi.id="Df19Sek3RIp5a6JA" visibility="public" />
+        <UML:DataType name="" xmi.id="c9LWb1y0IYh2p6DA" visibility="public" />
+        <UML:Class name="Game" xmi.id="Fh73Wyz0DQi5v9K" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Qg76MfFn8s4LGm1" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Ly35EzOg6c9JGx0" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="k3ZVm25Wpd4R7Xl" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Tb48Ous6J2Qzt0N" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="a0KGv97OmAw1r3S" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="b5LOz14DdWu3e8K" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="y4R9OmBj8t0SGq2" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class name="GuessHotCold" xmi.id="v9LFe61Wsz3EXc2" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="It4k2W5Jrq3Q7Hb" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Rd1i2GQs43XyAw7" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Oo20PnRy34Fjt9M" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Cq6n8U3RyNa42Mm" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="INSTRUCTIONS" xmi.id="p8O2Jkm4R0Wso7Y" ownerScope="instance" visibility="private" type="p8O2Jkm4R0Wso7YA" />
+            <UML:Attribute name="GAMENAME" xmi.id="e2Q0UlLp63Kak5A" ownerScope="instance" visibility="private" type="e2Q0UlLp63Kak5AA" />
+            <UML:Attribute name="prevcat" xmi.id="p6Q3YaHg51Ikf0M" ownerScope="instance" visibility="private" type="p6Q3YaHg51Ikf0MA" />
+            <UML:Attribute name="prevdiff" xmi.id="g6BVk1m8GZo5c7C" ownerScope="instance" visibility="private" type="g6BVk1m8GZo5c7CA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="p8O2Jkm4R0Wso7YA" visibility="public" />
+        <UML:DataType name="" xmi.id="e2Q0UlLp63Kak5AA" visibility="public" />
+        <UML:DataType name="" xmi.id="p6Q3YaHg51Ikf0MA" visibility="public" />
+        <UML:DataType name="" xmi.id="g6BVk1m8GZo5c7CA" visibility="public" />
+        <UML:Class name="GuessHiLo" xmi.id="Wq16Bbn4A5Uck9C" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="w7Y9RxHe56Czg1Z" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="p0U6Kog7DCx53Ge" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Yt6d5HMk98WpBb3" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Vc16ZsNw28EbTe9" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="INSTRUCTIONS" xmi.id="Ek3o4VPn62QuGi0" ownerScope="instance" visibility="private" type="Ek3o4VPn62QuGi0A" />
+            <UML:Attribute name="GAMENAME" xmi.id="j6U0Cqp8SKo37Wf" ownerScope="instance" visibility="private" type="j6U0Cqp8SKo37WfA" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Ek3o4VPn62QuGi0A" visibility="public" />
+        <UML:DataType name="" xmi.id="j6U0Cqp8SKo37WfA" visibility="public" />
+        <UML:Class name="GuessingGameApp" xmi.id="Mr7i2ZRa1y5N8Sx" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Zy5k2VLl0d3WJr6" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameApp(collaborator)" xmi.id="Uk5s0Q3Rym9I8Ln" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="Jq1u9LAe5n8FKk4" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class name="GuessingGameAboutBox" xmi.id="e2A4Etg6GVq30Tz" isAbstract="false" isActive="false" isLeaf="false" isRoot="false" visibility="public">
+          <UML:Classifier.feature>
+            <UML:Operation name="GuessingGameView(collaborator)" xmi.id="d0JQt83VvCw47Ry" isAbstract="false" isQuery="false" ownerScope="instance" visibility="public" />
+            <UML:Attribute name="closeButton" xmi.id="Yq12Xor0N4VdRl7" ownerScope="instance" visibility="private" type="Yq12Xor0N4VdRl7A" />
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:DataType name="" xmi.id="Yq12Xor0N4VdRl7A" visibility="public" />
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Diagram name="Class Diagram" xmi.id="Ic54QvAf8h2B3Ymd" diagramType="ClassDiagram" documentation="" toolName="Visual Paradigm for UML" xmlns:UML="UML">
+      <UML:Diagram.element>
+        <UML:DiagramElement connectionPointType="2" xmi.id="Nc6z1CSx24IdDw3B" headerLength="40" lineLength="10" subject="Nc6z1CSx24IdDw3" zorder="0" geometry="190,0,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="r5P1ZhVd94Ewc0FB" headerLength="40" lineLength="10" subject="r5P1ZhVd94Ewc0F" zorder="1" geometry="190,140,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="b5CNv39Akt4ZDi7B" headerLength="40" lineLength="10" subject="b5CNv39Akt4ZDi7" zorder="2" geometry="190,280,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Fh73Wyz0DQi5v9KB" headerLength="40" lineLength="10" subject="Fh73Wyz0DQi5v9K" zorder="3" geometry="190,420,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="v9LFe61Wsz3EXc2B" headerLength="40" lineLength="10" subject="v9LFe61Wsz3EXc2" zorder="4" geometry="190,560,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Wq16Bbn4A5Uck9CB" headerLength="40" lineLength="10" subject="Wq16Bbn4A5Uck9C" zorder="5" geometry="190,700,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="Mr7i2ZRa1y5N8SxB" headerLength="40" lineLength="10" subject="Mr7i2ZRa1y5N8Sx" zorder="6" geometry="190,840,80,100" />
+        <UML:DiagramElement connectionPointType="2" xmi.id="e2A4Etg6GVq30TzB" headerLength="40" lineLength="10" subject="e2A4Etg6GVq30Tz" zorder="7" geometry="190,980,80,100" />
+      </UML:Diagram.element>
+    </UML:Diagram>
+  </XMI.content>
+</XMI>
