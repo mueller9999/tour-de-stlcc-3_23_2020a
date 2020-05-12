@@ -19,16 +19,7 @@
 <!DOCTYPE html>
 
 <head>
-  <%--code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
-    <script>
-        function preback{window.history.forward();}
-        setTimeout("preback()",0);
-        window.onload()= function(){null};
-        
-    </script>
-     <%--end code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
-    
-    <meta charset="utf-8">
+  <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">
@@ -49,7 +40,37 @@
 
        
     }
+.sidenavright {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
 
+.sidenavleft {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 </style>
  </head> 
  <body >
@@ -78,16 +99,20 @@ function deleteAllHistory()
         window.onload = disableBack();
         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
     });
-    </script>        
+    </script>      
+     
+      <section id = "title">
+   <div class="colored-section">
+  <h1 class="big-heading"> STLCC Virtual Tour </h1>
+</div>
+</section>
     
-   
-    
-    <div id= "container">
-    <canvas id="myCanvas" width="500" height="500"></canvas>
+     <div id= "container" class="sidenavright">
+    <canvas id="myCanvas1" width="250" height="900"></canvas>
 </div>
      
 <script>
-    var mainCanvas = document.getElementById("myCanvas");
+    var mainCanvas = document.getElementById("myCanvas1");
     var mainContext = mainCanvas.getContext('2d');
 
 
@@ -165,7 +190,7 @@ function deleteAllHistory()
     setupCircles();
     function drawAndUpdate()
     {
-        mainContext.clearRect(0, 0, 500, 500);
+        mainContext.clearRect(0, 0, 250, 900);
         
         for(var i=0;i< circles.length;i++)
         {
@@ -179,14 +204,108 @@ function deleteAllHistory()
     }
 
 </script>
-     
-      <section id = "title">
-   <div class="colored-section">
-  <h1 class="big-heading"> STLCC Virtual Tour </h1>
+
+
+
+     <div id= "container2" class="sidenavright">
+    <canvas id="myCanvas2" width="250" height="900"></canvas>
 </div>
-</section>
      
-     <form method="POST">
+<script>
+    var mainCanvas = document.getElementById("myCanvas2");
+    var mainContext = mainCanvas.getContext('2d');
+
+
+    var circles=[];
+
+    function Circle(radius,speed,width,xPos,yPos)
+    {
+
+        this.radius = radius;
+        this.speed = speed;
+        this.width = width;
+        this.xPos = xPos;
+        this.yPos = yPos
+
+        this.opacity = .05 + Math.random() * .5;
+
+        this.counter =0;
+
+        var signHelper = Math.floor(Math.random()*2);
+
+        if(signHelper==1)
+        {
+            this.sign = -1;
+
+        }
+        else
+        {
+            this.sign = -1;
+
+
+        }
+
+
+
+    }
+
+    Circle.prototype.update = function()
+    {
+
+        this.counter += this.sign * this.speed;
+        mainContext.beginPath();
+        mainContext.arc(this.xPos
+         + Math.cos(this.counter/100) * this.radius,this.yPos
+        +Math.sin(this.counter/100) * this.radius,
+        this.width,
+        0,
+        Math.PI *2,
+        false); 
+        
+        mainContext.closePath();
+        mainContext.fillStyle='rgba(185,211,238', this.opacity+')';
+        mainContext.fill();     
+
+    };
+
+    function setupCircles()
+    {
+        for(var i=0;i<20;i++)
+        {
+            var randomX = Math.round(-200 + Math.round(-200 + Math.random()* 700));
+            var randomY = Math.round(-200 + Math.random()*700);
+            var speed = .2 + Math.random() * 3;
+            var size = 5 + Math.random() * 100;
+
+
+            var circle = new Circle(20,speed,size,randomX,randomY);
+
+
+            circles.push(circle);
+
+        }
+
+        drawAndUpdate();
+    }
+    setupCircles();
+    function drawAndUpdate()
+    {
+        mainContext.clearRect(0, 0, 250, 900);
+        
+        for(var i=0;i< circles.length;i++)
+        {
+
+            var myCircle = circles[i];
+            myCircle.update();
+        }
+
+        requestAnimationFrame(drawAndUpdate);
+
+    }
+
+</script>
+    
+     <form method="POST" float="center">
     <img class="mb-4" src="images/stlcc_logo.jpg" alt="" width="200" height="72">
     <h2 class="h3 mb-3 font-weight-normal">Login</h1>
      
