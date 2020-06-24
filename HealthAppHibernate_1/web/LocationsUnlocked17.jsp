@@ -27,8 +27,31 @@
      <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+   
     </script>
-    
+     <script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>    
+ <script> 
+         deleteAllHistory();
+        
+     </script>    
+     <script>
+         function onDeleteAll() 
+    {
+  console.log("Deleted all history");
+    }
+
+function deleteAllHistory()
+{
+  var deletingAll = browser.history.deleteAll();
+  deletingAll.then(onDeleteAll);
+}
+
+     </script> 
     </head>
    
     <body>

@@ -9,13 +9,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-        function preback{window.history.forward();}
-        setTimeout("preback()",0);
-        window.onload()= function(){null};
+ 
+        <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+        </SCRIPT>
+        <%-- Hide JavaScript from older browsers--%> 
+       
+<script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>
         
-        
-        </script>
      <%--end code from youtube https://www.youtube.com/watch?v=jRvN1uQJN2Q--%>
         <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
@@ -26,32 +33,44 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
     </script>
     <%-- code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html --%>
-    <SCRIPT type="text/javascript">
-window.history.forward();
-function noBack() { window.history.forward(); }
-</SCRIPT>
+    
 <%--end code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
+ 
     </head>
     <meta name="viewport"
            content ="width=device-width,initial-scale=1.0">
        <meta name="viewport"
            content ="width=device-height,initial-scale=1.0">  
     <%--code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
-    <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+    <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
         <%--end code from https://www.javaprogrammingforums.com/javaserver-pages-jsp-jstl/7185-how-disable-forward-backward-buttons-using-javascript.html--%>
         
 <%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
-    <script>    
+ <script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>   
+<script> 
+         deleteAllHistory();
+        
+     </script>    
+     <script>
+         function onDeleteAll() 
+    {
+  console.log("Deleted all history");
+    }
 
-$(document).ready(function() {
-        function disableBack() { window.history.forward() }
+function deleteAllHistory()
+{
+  var deletingAll = browser.history.deleteAll();
+  deletingAll.then(onDeleteAll);
+}
 
-        window.onload = disableBack();
-        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-    });
-
-    </script>
-           
+     </script>  
+            
 
         
         <c:choose>

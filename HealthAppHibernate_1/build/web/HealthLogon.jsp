@@ -19,6 +19,17 @@
 <!DOCTYPE html>
 
 <head>
+      
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+    </SCRIPT>
+    <script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>
   <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->
@@ -73,9 +84,11 @@
 }
 </style>
  </head> 
- <body >
+ <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
      <script> 
          deleteAllHistory();
+        
      </script>    
      <script>
          function onDeleteAll() 
@@ -91,15 +104,7 @@ function deleteAllHistory()
 
      </script> 
     
-     <script>
-<%--code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>
-    $(document).ready(function() {
-        function disableBack() { window.history.forward() }
-
-        window.onload = disableBack();
-        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-    });
-    </script>      
+      
      
       <section id = "title">
    <div class="colored-section">

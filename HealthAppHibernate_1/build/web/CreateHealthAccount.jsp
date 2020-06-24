@@ -18,7 +18,12 @@
 <!DOCTYPE html>
  
  <head>
-        <meta charset="utf-8">
+      
+     <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+    </SCRIPT>
+     <meta charset="utf-8">
      <link rel="stylesheet" href="css/styles.css">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Reenie+Beanie&display=swap" rel="stylesheet">   <link rel="stylesheet" href="css/styles.css">
@@ -32,12 +37,19 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
     </script>
      <%--end code--%>
-    
+     <script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>
  </head>
 
 
 
-<body>
+<body onload="noBack();" 
+	 
+	onpageshow="if (event.persisted) noBack();" onunload="">
       
     <script>
 <%--begin code from https://www.codeproject.com/Questions/844491/how-to-disable-back-and-forward-button-in-browser--%>

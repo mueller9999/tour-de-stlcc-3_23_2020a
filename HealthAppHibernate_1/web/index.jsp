@@ -13,6 +13,12 @@
 <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
+       <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+
+
 		<!--
 		
 		STLCC Virtual Tour
@@ -51,8 +57,30 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
     </script>
    
-    
-    
+  <script type = "text/javascript" >
+history.pushState(null, null, 'HealthLogon.jsp');
+window.addEventListener('popstate', function(event) {
+history.pushState(null, null, 'HealthLogon.jsp');
+});
+</script>    
+ <script> 
+         deleteAllHistory();
+        
+     </script>    
+     <script>
+         function onDeleteAll() 
+    {
+  console.log("Deleted all history");
+    }
+
+function deleteAllHistory()
+{
+  var deletingAll = browser.history.deleteAll();
+  deletingAll.then(onDeleteAll);
+}
+
+     </script>     
+
    </head>
      
    
@@ -111,7 +139,8 @@
             
 		<section id="map" class="white-section">
     
-                    
+   
+    
     <title>Clock</title>
     
    
@@ -125,7 +154,8 @@
   
    <%-- <h1>Current Time</h1>--%>
    <h2>Welcome User ${member.firstnm} </h2>
-   
+    <h2>Do you want to see the slide show for unlocked Tour Places?</h2>
+    
         <fieldset>
             <legend><h5> Clock</h5></legend>
             <span id="hours">&nbsp;</span>:
@@ -574,7 +604,8 @@ function update(percentcomplete)
 
         </tr>
       </thead>
-      <tbody>
+      <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
         <tr>
           <th scope="row"><a href="https://www.stlcc.edu/campus-life-community/our-locations/meramec/"target="_blank">STLCC-Meramec</a></th>
           <td>11333 Big Bend Rd</td>
